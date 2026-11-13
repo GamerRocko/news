@@ -13,18 +13,18 @@ socket.setdefaulttimeout(20)  # yanıt vermeyen siteler en fazla 20 sn bekletsin
 
 # ---------- AYARLAR ----------
 FEEDS = [  # (sitede görünecek kaynak adı, RSS adresi) -> adı istediğin gibi yazabilirsin
-    ("Destructoid", "http://www.destructoid.com/?mode=atom",
-    ("Eurogamer", "https://www.eurogamer.net/feed/news",
-    ("Game Informer", "https://gameinformer.com/news.xml",
-    ("Gameguru Mania", "http://www.ggmania.com/rss/index.xml",
-    ("GamesIndustry.biz", "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss",
-    ("GameSpot", "https://www.gamespot.com/feeds/mashup/",
-    ("GamesRadar", "http://www.gamesradar.com/all-platforms/news/rss/",
-    ("IGN", "http://feeds.feedburner.com/ign/news",
-    ("Kotaku", "http://kotaku.com/index.xml",
-    ("PCGamesN", "http://www.pcgamesn.com/mainrss.xml",
-    ("Polygon", "http://www.polygon.com/rss/index.xml",
-    ("RockPaperShotgun", "http://feeds.feedburner.com/RockPaperShotgun",
+    ("Destructoid", "http://www.destructoid.com/?mode=atom"),
+    ("Eurogamer", "https://www.eurogamer.net/feed/news"),
+    ("Game Informer", "https://gameinformer.com/news.xml"),
+    ("Gameguru Mania", "http://www.ggmania.com/rss/index.xml"),
+    ("GamesIndustry.biz", "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss"),
+    ("GameSpot", "https://www.gamespot.com/feeds/mashup/"),
+    ("GamesRadar", "http://www.gamesradar.com/all-platforms/news/rss/"),
+    ("IGN", "http://feeds.feedburner.com/ign/news"),
+    ("Kotaku", "http://kotaku.com/index.xml"),
+    ("PCGamesN", "http://www.pcgamesn.com/mainrss.xml"),
+    ("Polygon", "http://www.polygon.com/rss/index.xml"),
+    ("RockPaperShotgun", "http://feeds.feedburner.com/RockPaperShotgun"),
 ]
 # Sağlayıcıyı değiştirmek için sadece bu üç satır yeter (hepsi OpenAI uyumlu):
 #   Groq:    https://api.groq.com/openai/v1               model: llama-3.3-70b-versatile
