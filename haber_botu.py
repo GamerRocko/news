@@ -14,11 +14,11 @@ socket.setdefaulttimeout(20)  # yanıt vermeyen siteler en fazla 20 sn bekletsin
 # ---------- AYARLAR ----------
 FEEDS = [  # Kendi RSS adreslerini buraya yaz
     "http://www.destructoid.com/?mode=atom",
-    "http://www.eurogamer.net/rss/eurogamer_news_feed.rss",
-    "http://www.gameinformer.com/feeds/thefeedrss.aspx",
+    "https://www.eurogamer.net/feed/news",
+    "https://gameinformer.com/news.xml",
     "http://www.ggmania.com/rss/index.xml",
     "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss",
-    "http://www.gamespot.com/rss/game_updates.php?type=3",
+    "https://www.gamespot.com/feeds/mashup/",
     "http://www.gamesradar.com/all-platforms/news/rss/",
     "http://feeds.feedburner.com/ign/news",
     "http://kotaku.com/index.xml",
