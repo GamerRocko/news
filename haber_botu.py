@@ -12,19 +12,19 @@ import feedparser, requests, trafilatura
 socket.setdefaulttimeout(20)  # yanıt vermeyen siteler en fazla 20 sn bekletsin
 
 # ---------- AYARLAR ----------
-FEEDS = [  # Kendi RSS adreslerini buraya yaz
-    "http://www.destructoid.com/?mode=atom",
-    "https://www.eurogamer.net/feed/news",
-    "https://gameinformer.com/news.xml",
-    "http://www.ggmania.com/rss/index.xml",
-    "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss",
-    "https://www.gamespot.com/feeds/mashup/",
-    "http://www.gamesradar.com/all-platforms/news/rss/",
-    "http://feeds.feedburner.com/ign/news",
-    "http://kotaku.com/index.xml",
-    "http://www.pcgamesn.com/mainrss.xml",
-    "http://www.polygon.com/rss/index.xml",
-    "http://feeds.feedburner.com/RockPaperShotgun",
+FEEDS = [  # (sitede görünecek kaynak adı, RSS adresi) -> adı istediğin gibi yazabilirsin
+    ("Destructoid", "http://www.destructoid.com/?mode=atom",
+    ("Eurogamer", "https://www.eurogamer.net/feed/news",
+    ("Game Informer", "https://gameinformer.com/news.xml",
+    ("Gameguru Mania", "http://www.ggmania.com/rss/index.xml",
+    ("GamesIndustry.biz", "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss",
+    ("GameSpot", "https://www.gamespot.com/feeds/mashup/",
+    ("GamesRadar", "http://www.gamesradar.com/all-platforms/news/rss/",
+    ("IGN", "http://feeds.feedburner.com/ign/news",
+    ("Kotaku", "http://kotaku.com/index.xml",
+    ("PCGamesN", "http://www.pcgamesn.com/mainrss.xml",
+    ("Polygon", "http://www.polygon.com/rss/index.xml",
+    ("RockPaperShotgun", "http://feeds.feedburner.com/RockPaperShotgun",
 ]
 # Sağlayıcıyı değiştirmek için sadece bu üç satır yeter (hepsi OpenAI uyumlu):
 #   Groq:    https://api.groq.com/openai/v1               model: llama-3.3-70b-versatile
@@ -40,6 +40,9 @@ API_KEY = os.getenv("LLM_API_KEY") or (_dosya.read_text(encoding="utf-8").strip(
 HABER_SAYISI = 8          # her çalışmada en fazla kaç haber
 SAAT_SINIRI = 36          # kaç saatten eski haberler alınmasın
 SAKLANAN = 200            # sitede tutulacak toplam haber
+ILK_GOSTERIM = 15         # sayfa ilk açıldığında görünen haber sayısı
+ADIM = 10                 # "Daha fazla" düğmesine her basışta açılacak haber sayısı
+TR = dt.timezone(dt.timedelta(hours=3))   # Türkiye saati (UTC+3)
 # ------------------------------
 
 DATA = pathlib.Path("data/haberler.json")
@@ -60,15 +63,14 @@ def gorsel_bul(e):
 def kaynaklari_oku():
     simdi = time.time()
     liste = []
-    for url in FEEDS:
-        print("RSS okunuyor:", url, flush=True)
+    for kaynak, url in FEEDS:
+        print(f"RSS okunuyor: {kaynak} ({url})", flush=True)
         try:
             d = feedparser.parse(url)
         except Exception as ex:
             print("  RSS hatası:", ex); continue
         if not d.entries:
             print("  -> haber alınamadı (engelli ya da adres değişmiş olabilir)"); continue
-        kaynak = d.feed.get("title", url)
         for e in d.entries:
             t = e.get("published_parsed") or e.get("updated_parsed")
             ts = time.mktime(t) if t else simdi
@@ -118,8 +120,9 @@ PROMPT = """Sen bir Türk oyun haberleri editörüsün. Aşağıdaki İngilizce 
 - Metinde olmayan hiçbir bilgiyi ekleme, tahmin yürütme.
 - Cümleleri çevirme; olayı kendi cümlelerinle anlat (en fazla 120 kelime).
 - Oyun, şirket ve kişi adlarını orijinal yaz.
+- Başlıkta yalnızca ilk kelimenin ilk harfi ve özel isimlerin (oyun, şirket, kişi, platform adları) ilk harfi büyük olsun; diğer tüm kelimeler küçük harfle yazılsın. "Başlıktaki Her Kelime Büyük" biçimini KULLANMA.
 - Haber video oyunları, oyun şirketleri veya oyun donanımıyla ilgili değilse (film, dizi, LEGO, genel teknoloji vb.) sadece {"uygun": false} döndür.
-- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozet": "...", "etiketler": ["...", "..."]}
+- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozet": "..."}
 Başlık: {baslik}
 Metin:
 {metin}"""
@@ -185,12 +188,15 @@ h1{margin:0;font:800 30px/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.5
 .g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .lead .g{border-radius:0;min-height:250px}
 p{margin:0 0 8px;max-width:64ch}
+[hidden]{display:none!important}
+#daha{display:block;margin:28px auto 0;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:10px 26px;font:600 15px "Segoe UI",system-ui,sans-serif;cursor:pointer}
 .tags span{display:inline-block;background:var(--tag);color:var(--accent);border-radius:99px;padding:1px 10px;font-size:13px;margin:0 6px 4px 0}
 .pop{display:inline-block;background:var(--accent);color:#fff;border-radius:4px;padding:0 8px;font-size:12px;margin-bottom:8px}
 small{color:var(--muted)}
 a{color:var(--accent)}
 @media(max-width:640px){.lead{grid-template-columns:1fr}.liste article{grid-template-columns:1fr}.g{min-height:170px}}
 </style>
+<noscript><style>.liste article[hidden]{display:grid!important}#daha{display:none}</style></noscript>
 </head>
 <body>
 <div class="wrap">
@@ -198,11 +204,12 @@ a{color:var(--accent)}
 __ICERIK__
 </div>
 <script>document.getElementById("tema").onclick=function(){var d=document.documentElement,y=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=y;try{localStorage.setItem("tema",y)}catch(e){}}</script>
+<script>(function(){var b=document.getElementById("daha");if(!b)return;b.onclick=function(){var g=document.querySelectorAll("article[hidden]");for(var i=0;i<g.length&&i<__ADIM__;i++)g[i].hidden=false;if(g.length<=__ADIM__)b.style.display="none"}})();</script>
 </body>
 </html>"""
 
 
-def _kart(h, lead=False):
+def _kart(h, lead=False, gizli=False):
     e = html.escape
     a, b = GRADYANLAR[int(h["id"][:2], 16) % len(GRADYANLAR)]
     img = (f'<img src="{e(h["gorsel"])}" alt="" loading="lazy" referrerpolicy="no-referrer" '
@@ -210,25 +217,27 @@ def _kart(h, lead=False):
     gorsel = f'<div class="g" style="--a:{a};--b:{b}">{img}</div>'
     diger = h.get("diger_kaynaklar", [])
     rozet = f'<span class="pop">{1 + len(diger)} kaynak</span>' if diger else ""
-    etiket = "".join(f"<span>#{e(t)}</span>" for t in h.get("etiketler", []))
     kaynaklar = f'<a href="{e(h["link"])}" rel="nofollow noopener">{e(h["kaynak"])}</a>' + "".join(
         f', <a href="{e(d["link"])}" rel="nofollow noopener">{e(d["ad"])}</a>' for d in diger)
     govde = (f'{rozet}<{"h2" if lead else "h3"}>{e(h["baslik_tr"])}</{"h2" if lead else "h3"}>'
-             f'<p>{e(h["ozet"])}</p><div class="tags">{etiket}</div>'
+             f'<p>{e(h["ozet"])}</p>'
              f'<small>Kaynak: {kaynaklar} · {h["tarih"]}</small>')
     if lead:
         return f'<section class="lead">{gorsel}<div class="b">{govde}</div></section>'
-    return f'<article>{gorsel}<div>{govde}</div></article>'
+    return f'<article{" hidden" if gizli else ""}>{gorsel}<div>{govde}</div></article>'
 
 
 def site_uret(haberler):
     SITE.parent.mkdir(exist_ok=True)
     if haberler:
         icerik = _kart(haberler[0], lead=True)
-        icerik += '<section class="liste">' + "".join(_kart(h) for h in haberler[1:]) + "</section>"
+        icerik += '<section class="liste">' + "".join(
+            _kart(h, gizli=(i >= ILK_GOSTERIM)) for i, h in enumerate(haberler) if i > 0) + "</section>"
+        if len(haberler) > ILK_GOSTERIM:
+            icerik += '<button id="daha" type="button">Daha fazla haber göster</button>'
     else:
         icerik = "<p>Henüz haber yok.</p>"
-    sayfa = SAYFA.replace("__TARIH__", dt.datetime.now().strftime("%d.%m.%Y %H:%M")).replace("__ICERIK__", icerik)
+    sayfa = SAYFA.replace("__TARIH__", dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M")).replace("__ICERIK__", icerik).replace("__ADIM__", str(ADIM))
     SITE.write_text(sayfa, encoding="utf-8")
 
 
@@ -265,10 +274,10 @@ def main():
                 print("Oyun dışı, atlandı:", a["baslik"])
                 continue
             yeni.append(dict(id=hashlib.md5(a["link"].encode()).hexdigest(), baslik_tr=out["baslik"],
-                             ozet=out["ozet"], etiketler=out.get("etiketler", []), link=a["link"],
+                             ozet=out["ozet"], link=a["link"],
                              kaynak=a["kaynak"], diger_kaynaklar=a["diger_kaynaklar"],
                              gorsel=a["gorsel"] or og, puan=a["puan"],
-                             tarih=dt.datetime.now().strftime("%d.%m.%Y %H:%M")))
+                             tarih=dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M")))
             print("OK:", out["baslik"])
             time.sleep(7)  # ücretsiz katmanda dakika limitine takılmamak için
         except Exception as ex:
