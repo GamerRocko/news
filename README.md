@@ -1,0 +1,2 @@
+# news
+AI Gaming News
