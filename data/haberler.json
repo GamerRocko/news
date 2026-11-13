@@ -1,7 +1,113 @@
 [
  {
+  "id": "02cf204e7c3fb687a6513ebd83086081",
+  "baslik_tr": "The Blood of Dawnwalker oyununa yeni güncellemeyle New Game Plus modu geliyor",
+  "bd": true,
+  "ozet": "Vampir temalı RPG oyunu The Blood of Dawnwalker, gelecek haftaki Update 1.2 güncellemesi ile New Game Plus moduna kavuşuyor. Rebel Wolves tarafından geliştirilen bu mod sayesinde oyuncular seviyelerini, yeteneklerini ve envanterlerini sonraki oyuna aktarabilecek. Yeni modda seviye sınırı 100'e çıkarılırken düşmanlar ve eşyalar da bu sisteme göre yeniden dengelenecek. Güncelleme ayrıca düşman sağlığı ve yetenek kullanım sıklığında ayarlamalar ile arazi geometrisinde iyileştirmeler içerecek.",
+  "link": "https://www.eurogamer.net/blood-of-dawnwalker-new-game-plus",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [
+   {
+    "ad": "GamesRadar",
+    "link": "https://www.gamesradar.com/games/rpg/the-blood-of-dawnwalker-is-getting-new-game-next-week-with-patch-bringing-the-level-cap-for-the-ex-witcher-devs-vampire-rpg-up-to-100/"
+   }
+  ],
+  "gorsel": "https://assetsio.gnwcdn.com/blood_of_dawnwalker_rescue_family_header.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 8.84,
+  "tarih": "14.11.2026 01:05"
+ },
+ {
+  "id": "02af6df68ac10069180b855ca3c70ce7",
+  "baslik_tr": "Magic: The Gathering animasyon dizisi Planeswalker, 2027 yılında Netflix'e geliyor",
+  "bd": true,
+  "ozet": "Wizards of the Coast, MagicCon Atlanta etkinliğinde uzun süredir geliştirme aşamasında olan Magic: The Gathering animasyon dizisinin adının Planeswalker olduğunu duyurdu. Castlevania tarzında animasyon olarak hazırlanan yapım, 2027'de Netflix'te izleyiciyle buluşacak. Hikayenin merkezinde ateş büyücüsü Chandra Nalaar yer alacak. Projenin yürütücülüğünü Terry Matalas ve Cindy Appel üstleniyor; daha önce Russo Kardeşler projeden ayrılmıştı.",
+  "link": "https://www.ign.com/articles/the-magic-the-gathering-show-planeswalker-is-finally-coming-to-netflix-in-2027",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [
+   {
+    "ad": "GameSpot",
+    "link": "https://www.gamespot.com/articles/magic-the-gathering-planeswalker-hits-netflix-in-2027/"
+   }
+  ],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/13/magic-the-gathering-planeswalker-netflix-1794601578152.png",
+  "puan": 8.67,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "ded3889b7c9f9933393c1be22f0061d5",
+  "baslik_tr": "The Legend of Zelda: ocarina of time yeniden yapımındaki ilginç karakterler Nintendo Switch 2 için incelendi",
+  "bd": true,
+  "ozet": "Bir yazar, The Legend of Zelda: Ocarina of Time oyununun Nintendo Switch 2 için hazırlanan yeniden yapımında yer alan tuhaf karakterlerin son durumunu inceledi. Listesindeki tüm karakterlerin oyunda yer aldığını belirten editör, bazı karakterlerin görünümünün orijinaline göre gerilediğini, bazılarının ise geliştiğini ifade etti. Kimi karakterler listeden çıkarılırken, yeni isimler listeye eklendi.",
+  "link": "https://kotaku.com/checking-in-on-the-weird-little-guys-in-ocarina-of-time-to-see-how-they-fared-in-the-remake-2000756684",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [],
+  "gorsel": "https://kotaku.com/app/uploads/2026/11/freaks-17-1280x720.jpg",
+  "puan": 5.99,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "23f456611ef6511c0a4fd4e0e24884ac",
+  "baslik_tr": "Warhammer Survivors oyunu hakkındaki ilk izlenimler ve detaylar",
+  "bd": true,
+  "ozet": "Yazar, Vampire Survivors tarzı oynanışa sahip Warhammer Survivors oyununu deneyimledi. Oyunun düşman kalabalıklarına karşı hayatta kalma mekaniklerinin yanı sıra el bombaları ve yükseltmeler gibi unsurlarla beklenenden daha fazla strateji gerektirdiğini belirtti. Hazine sandıklarının slot makinesi mantığıyla çalışmasını ve psikolojik taktikleri eleştiren yazar, asıl rahatsız olduğu konunun oyunun türü değil, sürekli Ultramarine karakterleriyle karşılaşmak ve Horus Heresy evrenine yer verilmemiş olmasıだと ifade etti.",
+  "link": "https://kotaku.com/warhammer-survivors-puts-your-brain-in-a-blender-with-non-stop-action-but-precious-little-engagement-2000756655",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [],
+  "gorsel": "https://kotaku.com/app/uploads/2026/11/warhammersurvivors-1280x720.jpg",
+  "puan": 5.93,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "8825064388cbb8adb50da22c4508e222",
+  "baslik_tr": "Steam istek listesine ekleyebileceğiniz 6 oyun duyuruldu",
+  "bd": true,
+  "ozet": "Polygon ekibi, haftalık bültenleri Wishlister için rastlantı sonucu keşfettikleri ve Steam istek listesine eklenmeyi hak eden altı gelecek vadeden oyunu derledi. Bu listede yer alan yapımlar arasında Paperfrog'un geliştirdiği anlatı odaklı oyun Bub, 1942 yılında bir denizaltında geçen savaş şifreleme oyunu False Echo, retro tarzı arcade oyunu Strikemania, Turbo Button'ın VR olmayan ilk fizik komedisi Floor Plan: Slap Out Of it!, karavan tamir etme temalı açık dünya sürüş oyunu Hodka ve piksel sanatına sahip rol yapma oyunu World of Anterra bulunuyor.",
+  "link": "https://www.polygon.com/wishlister-nov-13/",
+  "kaynak": "Polygon",
+  "diger_kaynaklar": [],
+  "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/sharedimages/2026/11/floor-plan-slap-out-of-it-press-image-6.jpg",
+  "puan": 5.93,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "b7d13ec996e002c50f2411c891713a22",
+  "baslik_tr": "PS5, fiyatı hiç düşmeden 100 milyon satan ilk Sony konsolu oldu",
+  "bd": true,
+  "ozet": "Sony tarafından yapılan açıklamaya göre PS5, piyasaya çıkışından bu yana kalıcı bir fiyat indirimi görmeden 100 milyon satış rakamına ulaşan ilk Sony oyun konsolu olmayı başardı. Pandemi dönemi tedarik sorunları, ekonomik zorluklar ve donanım fiyatlarının yüksek seyretmesine rağmen konsol bu önemli satış eşiğini geride bıraktı.",
+  "link": "https://www.gamesradar.com/games/ps5-is-the-first-sony-console-to-hit-100-million-units-sold-without-a-price-cut/",
+  "kaynak": "GamesRadar",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/7R4ugXpP3JfGrwnJ2xc72K-1920-80.jpg",
+  "puan": 5.9,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "a45e42099cdc7d54e757a13f3b25a400",
+  "baslik_tr": "The Legend of Zelda: ocarina of time oyunundaki trajik hikaye ve link karakteri üzerine",
+  "bd": true,
+  "ozet": "The Legend of Zelda: Ocarina of Time oyunundaki zaman atlaması ve ana karakter Link'in yaşadığı trajik kayıplar ele alınıyor. Orijinal Nintendo 64 oyununa kıyasla yapımın yeniden yapım sürümünde, Link'in çocuk yaşta büyük bir sorumluluk altına girdiği ve masumiyetini kaybettiği detaylar aracılığıyla daha net vurgulanıyor. Rauru karakteri Link'in yedi yılını kaybettiğini üzüntüyle belirtirken, Zelda ise onun çocukluğunu yaşayabilmesi için geçmişe geri gönderiyor. Ayrıca serinin devam oyunları ve Link'in gelecekteki kaderine dair olası yapımlar da değerlendiriliyor.",
+  "link": "https://kotaku.com/legend-zelda-ocarina-of-time-young-link-adult-master-sword-scene-heros-shade-2000756682",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [],
+  "gorsel": "https://kotaku.com/app/uploads/2026/11/IMG_1778-1280x720.jpg",
+  "puan": 5.86,
+  "tarih": "14.11.2026 01:06"
+ },
+ {
+  "id": "b8f3eb44b12a0b8993ecec9df56bb0c8",
+  "baslik_tr": "Transport Fever 3 oyununun Cities: Skylines alternatifi olarak beklentileri aştığı belirtiliyor",
+  "bd": true,
+  "ozet": "Cities: Skylines oyununa benzerliğiyle dikkat çeken Transport Fever 3, geleneksel şehir kurma dinamiklerinden ziyade lojistik ve ulaştırma odaklı yapısıyla öne çıkıyor. Şehir içi imar planlamasından ziyade taşıma hatları, sanayi bağlantıları ve trafik yönetimi gibi detaylı lojistik bulmacalar sunan yapım, oyunculara daha derinlemesine bir planlama süreci vadediyor. Arazi eğimleri, tren hatları ve yol türleri gibi unsurlar altyapı yönetimini karmaşıklaştırırken, küçük kasabalardan büyük şehirlere geçiş sürecinde stratejik kararlar almayı zorunlu kılıyor.",
+  "link": "https://www.polygon.com/transport-fever-3-logistics-city-builder-game/",
+  "kaynak": "Polygon",
+  "diger_kaynaklar": [],
+  "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/steamgame.JPG",
+  "puan": 5.86,
+  "tarih": "14.11.2026 01:07"
+ },
+ {
   "id": "62898ca5c9b27bf99544be5f8e70f594",
-  "baslik_tr": "eski nintendo yöneticileri breath of the wild öncesi zelda'nın durumunu değerlendirdi",
+  "baslik_tr": "Eski Nintendo yöneticileri Breath of the Wild öncesi Zelda'nın durumunu değerlendirdi",
   "ozet": "Eski Nintendo pazarlama yetkilileri Kit Ellis ve Krysta Yang, Breath of the Wild çıkmadan önce The Legend of Zelda serisine olan ilginin giderek azaldığını belirtti. Focus grup testlerinde hayran kitlesinin küçüldüğüne dair geri bildirimler aldıklarını ifade eden isimler, serinin o dönemde ciddi bir çıkmazda olduğunu ve köklü bir değişim yapılması gerektiğini vurguladı.",
   "link": "https://www.eurogamer.net/legend-of-zelda-smaller-before-breath-of-the-wild",
   "kaynak": "Eurogamer",
@@ -17,7 +123,8 @@
   ],
   "gorsel": "https://assetsio.gnwcdn.com/Close-up-of-Princess-Zelda-in-Breath-of-the-Wild.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 11.88,
-  "tarih": "13.11.2026 23:48"
+  "tarih": "13.11.2026 23:48",
+  "bd": true
  },
  {
   "id": "cf1c894bb59cda9b5b5e717b99d9f735",
@@ -33,7 +140,8 @@
   ],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/the-blood-of-dawnwalker-how-long-to-beat.jpg",
   "puan": 8.97,
-  "tarih": "13.11.2026 23:48"
+  "tarih": "13.11.2026 23:48",
+  "bd": true
  },
  {
   "id": "e986bcacd3589a509b840a55e0a7c7e0",
@@ -49,11 +157,12 @@
   ],
   "gorsel": "https://assetsio.gnwcdn.com/crimson-deser-kliff.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 8.71,
-  "tarih": "13.11.2026 23:48"
+  "tarih": "13.11.2026 23:48",
+  "bd": true
  },
  {
   "id": "e0d33cb461689498722d0ee55c7ee38f",
-  "baslik_tr": "Rockstar, gta 6 içinde izlenebilecek animasyon dizi duyurdu",
+  "baslik_tr": "Rockstar, GTA 6 içinde izlenebilecek animasyon dizi duyurdu",
   "ozet": "Rockstar Games, çıkışına yaklaşan gta 6 için oyun içinde izlenebilecek \"Macca & Friends\" adlı tam uzunlukta bir animasyon dizi hazırladı. Leonida eyaletinde geçen yapım, Weazel TV ağı üzerinden oyunculara sunulacak. Timsah karakter Macca'yı merkezine alan serinin ürünleri de gta 6 koleksiyon versiyonlarıyla satışa çıkarıldı. Ayrıca Miami Heat takımı da gta 6 temalı formalarla tanıtımlara başladı.",
   "link": "https://www.destructoid.com/rockstar-teases-an-entire-animated-tv-show-you-can-watch-in-gta-6/",
   "kaynak": "Destructoid",
@@ -65,7 +174,8 @@
   ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/13/screenshot-2026-11-13-150934-1794582618953.png",
   "puan": 8.5,
-  "tarih": "13.11.2026 23:48"
+  "tarih": "13.11.2026 23:48",
+  "bd": true
  },
  {
   "id": "3a71b87258442cf66014fc32bdaa4960",
@@ -81,7 +191,8 @@
   ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/02/19/crop-image-project-2-1771515719569.png",
   "puan": 8.43,
-  "tarih": "13.11.2026 23:49"
+  "tarih": "13.11.2026 23:49",
+  "bd": true
  },
  {
   "id": "0b2521dadb7b969b2e4ae29de43fab89",
@@ -97,7 +208,8 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2026/11/Wolfenstein-2-1280x805.jpg",
   "puan": 8.28,
-  "tarih": "13.11.2026 23:49"
+  "tarih": "13.11.2026 23:49",
+  "bd": true
  },
  {
   "id": "5dfd39ffa337913647217d056a98bade",
@@ -108,7 +220,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/CjgAHKdseBwkvcjHniFP6C-1920-80.jpg",
   "puan": 5.98,
-  "tarih": "13.11.2026 23:49"
+  "tarih": "13.11.2026 23:49",
+  "bd": true
  },
  {
   "id": "b8bb3332911b7f2c9deaa250190d4b16",
@@ -119,7 +232,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/pikachu-025-thumbnail.jpg",
   "puan": 5.97,
-  "tarih": "13.11.2026 23:49"
+  "tarih": "13.11.2026 23:49",
+  "bd": true
  },
  {
   "id": "d4e0c4cb424374f692eec2823035dc76",
@@ -141,7 +255,8 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2026/11/Wolfenstein-2-1280x805.jpg",
   "puan": 8.99,
-  "tarih": "13.11.2026 11:34"
+  "tarih": "13.11.2026 11:34",
+  "bd": true
  },
  {
   "id": "565c66236b8e3946ef52fa7791ed268d",
@@ -162,7 +277,8 @@
   ],
   "gorsel": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/11/slay-the-spire-2-update-new-character-the-fool-blitz-dread-modes-mega-crit-roguelike-deckbuilder.jpg",
   "puan": 8.98,
-  "tarih": "13.11.2026 11:34"
+  "tarih": "13.11.2026 11:34",
+  "bd": true
  },
  {
   "id": "0f2c939a6b7927332b9ffb307394233d",
@@ -184,7 +300,8 @@
   ],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/ss_530db0d469982f4d9d85af6d53780dbdca0ffb5a.1920x1080.jpg",
   "puan": 5.99,
-  "tarih": "13.11.2026 11:35"
+  "tarih": "13.11.2026 11:35",
+  "bd": true
  },
  {
   "id": "4eaf44789e1c4ae301013a9bb933a985",
@@ -201,7 +318,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/the-acts-of-kurt-wagner-event-marvel-rivals.jpg",
   "puan": 5.99,
-  "tarih": "13.11.2026 11:35"
+  "tarih": "13.11.2026 11:35",
+  "bd": true
  },
  {
   "id": "a7e0f9d3dd3d641d6980567ff321c87d",
@@ -218,7 +336,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/kWw9FEwneArzWxypW9xKMh-1920-80.jpg",
   "puan": 5.98,
-  "tarih": "13.11.2026 11:35"
+  "tarih": "13.11.2026 11:35",
+  "bd": true
  },
  {
   "id": "2afb367d8147e717bb4c81506759b879",
@@ -236,7 +355,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://kotaku.com/app/uploads/2026/11/Mass-Effect-5-1280x703.jpg",
   "puan": 5.93,
-  "tarih": "13.11.2026 11:35"
+  "tarih": "13.11.2026 11:35",
+  "bd": true
  },
  {
   "id": "9888567f7cbb69b2ef9440c32ee7ba8b",
@@ -253,7 +373,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/09/dune-part-two-muad-dib.webp",
   "puan": 5.87,
-  "tarih": "13.11.2026 11:35"
+  "tarih": "13.11.2026 11:35",
+  "bd": true
  },
  {
   "id": "c449ebcca5f410f6f85dcc14d32d8df9",
@@ -269,7 +390,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/lil-uzi-vert-boss-shooting-fortnite.jpg",
   "puan": 5.86,
-  "tarih": "13.11.2026 11:36"
+  "tarih": "13.11.2026 11:36",
+  "bd": true
  },
  {
   "id": "8d13dfb9e7c8314a9c855b533f76d858",
@@ -285,7 +407,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/08/nvidia-ceo-jensen-huang-1794177110571.png",
   "puan": 4.52,
-  "tarih": "13.11.2026 10:11"
+  "tarih": "13.11.2026 10:11",
+  "bd": true
  },
  {
   "id": "b73006624a5421568d900af42a249675",
@@ -303,7 +426,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/oZYtdNC9BbWn5QUSwQy9J5-1920-80.jpg",
   "puan": 4.51,
-  "tarih": "13.11.2026 10:11"
+  "tarih": "13.11.2026 10:11",
+  "bd": true
  },
  {
   "id": "3ed2770c56203dcd48b9f1c574a6ae67",
@@ -321,7 +445,8 @@
   "diger_kaynaklar": [],
   "gorsel": null,
   "puan": 4.51,
-  "tarih": "13.11.2026 10:12"
+  "tarih": "13.11.2026 10:12",
+  "bd": true
  },
  {
   "id": "ee002c284dbb2cedc71a53935dd9e9e3",
@@ -338,7 +463,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://kotaku.com/app/uploads/2026/11/111226_XBOX-Wire_PCBackCompat-JPG-6d6dbed266e723ed4c62-1280x720.jpg",
   "puan": 4.48,
-  "tarih": "13.11.2026 10:12"
+  "tarih": "13.11.2026 10:12",
+  "bd": true
  },
  {
   "id": "ca754e50c99e8168e2273ca98f9bc5a0",
@@ -355,7 +481,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/gta-6-zelda-remake.jpg",
   "puan": 4.42,
-  "tarih": "13.11.2026 10:12"
+  "tarih": "13.11.2026 10:12",
+  "bd": true
  },
  {
   "id": "7f2dc26f2a952529ee215ee386f8bf77",
@@ -373,7 +500,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assetsio.gnwcdn.com/mycorelic.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 4.42,
-  "tarih": "13.11.2026 10:12"
+  "tarih": "13.11.2026 10:12",
+  "bd": true
  },
  {
   "id": "28124cf250ac91f1877443f189c9a588",
@@ -391,7 +519,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/image-2026-11-12T155712.779.jpg",
   "puan": 4.37,
-  "tarih": "13.11.2026 10:12"
+  "tarih": "13.11.2026 10:12",
+  "bd": true
  },
  {
   "id": "5391fcc4e39d099edde7754b0ee414a1",
@@ -407,7 +536,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/ss_258546065bdba3f2dc14b476a6c0ba8caaf5b367.1920x1080-e1793901863810.jpg",
   "puan": 4.32,
-  "tarih": "13.11.2026 10:13"
+  "tarih": "13.11.2026 10:13",
+  "bd": true
  },
  {
   "id": "a56f49521cd87715ee20a962ffc7cd82",
@@ -429,7 +559,8 @@
   ],
   "gorsel": "https://assetsio.gnwcdn.com/Campaign-firefight-halo.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 8.95,
-  "tarih": "13.11.2026 10:01"
+  "tarih": "13.11.2026 10:01",
+  "bd": true
  },
  {
   "id": "7c17fe40a79820189a72a7bc060e9bdf",
@@ -451,7 +582,8 @@
   ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/01/23/fable-thefirstpreview-blogroll-1769205292794.jpg",
   "puan": 7.28,
-  "tarih": "13.11.2026 10:01"
+  "tarih": "13.11.2026 10:01",
+  "bd": true
  },
  {
   "id": "5041736fb6032cd7e05bdbffd2e3d784",
@@ -466,7 +598,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/02/switch-2-third-party-partner-games-february-direct.jpg",
   "puan": 6.0,
-  "tarih": "13.11.2026 10:02"
+  "tarih": "13.11.2026 10:02",
+  "bd": true
  },
  {
   "id": "4af9c79e61255baf9c9bcf81b5dca07b",
@@ -483,7 +616,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/stand-out-stand-tier-list-for-pvp-and-pve.jpg",
   "puan": 5.99,
-  "tarih": "13.11.2026 10:02"
+  "tarih": "13.11.2026 10:02",
+  "bd": true
  },
  {
   "id": "661dd8208ab08e5e07d19d5ba8d78a74",
@@ -500,11 +634,12 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assetsio.gnwcdn.com/gta-6-no-internet.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.96,
-  "tarih": "13.11.2026 10:02"
+  "tarih": "13.11.2026 10:02",
+  "bd": true
  },
  {
   "id": "7dca53f80c6b349166daf891a93506a2",
-  "baslik_tr": "NVIDIA, The Elder Scrolls V: Skyrim İçin İpuçları Rehberi Yayınladı",
+  "baslik_tr": "Nvidia, The Elder Scrolls V: Skyrim İçin İpuçları Rehberi Yayınladı",
   "ozet": "NVIDIA, The Elder Scrolls V: Skyrim oyunu için genel optimizasyonlar, ayarlar ve zor bulunan yapılandırma seçeneklerini içeren bir rehber paylaştı. Şirket, oyunun nasıl en iyi görüneceğini gösterirken farklı ayarların performansa etkileri hakkında detaylı bilgi sunuyor.",
   "etiketler": [
    "NVIDIA",
@@ -516,7 +651,8 @@
   "diger_kaynaklar": [],
   "gorsel": null,
   "puan": 4.57,
-  "tarih": "13.11.2026 10:03"
+  "tarih": "13.11.2026 10:03",
+  "bd": true
  },
  {
   "id": "9f2379226884cc71cbdb6f287df8af79",
@@ -533,7 +669,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/24446280/COH3_NorthAfrica_Gazala_Trenches.jpg",
   "puan": 4.57,
-  "tarih": "13.11.2026 10:03"
+  "tarih": "13.11.2026 10:03",
+  "bd": true
  },
  {
   "id": "22a16d03f902947df196f2dc5271ebca",
@@ -550,7 +687,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/GpPMsnyd8DyET82KmYH9oY-1920-80.jpg",
   "puan": 4.56,
-  "tarih": "13.11.2026 10:03"
+  "tarih": "13.11.2026 10:03",
+  "bd": true
  },
  {
   "id": "5e0feb2a5e38c78356494f2da8dca19f",
@@ -572,7 +710,8 @@
   ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/7GMWduYvHNCyQpEDcNjMch-1920-80.jpg",
   "puan": 6.86,
-  "tarih": "13.11.2026 09:54"
+  "tarih": "13.11.2026 09:54",
+  "bd": true
  },
  {
   "id": "df508718608bdd3eb74af3c5dcd9fa53",
@@ -588,7 +727,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assetsio.gnwcdn.com/jensen-huang.png?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.79,
-  "tarih": "13.11.2026 09:54"
+  "tarih": "13.11.2026 09:54",
+  "bd": true
  },
  {
   "id": "36c0490ade2f1e01b10f31ea50519b5c",
@@ -605,7 +745,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/629968/sleeping-dogs-definitive-edition-world_1920.0.jpg",
   "puan": 5.26,
-  "tarih": "13.11.2026 09:54"
+  "tarih": "13.11.2026 09:54",
+  "bd": true
  },
  {
   "id": "975fe07ee11347d1bd2e581440a16b15",
@@ -622,7 +763,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/12/burger-shot-skinny-louie-1794518104838.jpg",
   "puan": 4.86,
-  "tarih": "13.11.2026 09:55"
+  "tarih": "13.11.2026 09:55",
+  "bd": true
  },
  {
   "id": "45c2931a2709cc665156a2220af2305e",
@@ -638,7 +780,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/szFJTTSq3qHNtEsKWovxej-1920-80.jpg",
   "puan": 4.84,
-  "tarih": "13.11.2026 09:55"
+  "tarih": "13.11.2026 09:55",
+  "bd": true
  },
  {
   "id": "5b833842968ee5a69a42ca245122498d",
@@ -654,7 +797,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/Screenshot-2026-11-05-120314.png",
   "puan": 4.77,
-  "tarih": "13.11.2026 09:55"
+  "tarih": "13.11.2026 09:55",
+  "bd": true
  },
  {
   "id": "5b31073d1751ca7f9f913ffa1a6f79d9",
@@ -670,7 +814,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/10/image-2-1794348771186.png",
   "puan": 4.76,
-  "tarih": "13.11.2026 09:55"
+  "tarih": "13.11.2026 09:55",
+  "bd": true
  },
  {
   "id": "5e61c58c9cc34fae67aaadd173383275",
@@ -687,7 +832,8 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assetsio.gnwcdn.com/slay-the-spire-2-the-fool.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 4.62,
-  "tarih": "13.11.2026 09:56"
+  "tarih": "13.11.2026 09:56",
+  "bd": true
  },
  {
   "id": "76e3435d268a4a996a4898875170a5a0",
@@ -709,11 +855,12 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2026/11/Slay-the-Spire-2s-new-character-The-Fool-in-the-new-Blitz-Mode.jpg",
   "puan": 7.67,
-  "tarih": "13.11.2026 09:38"
+  "tarih": "13.11.2026 09:38",
+  "bd": true
  },
  {
   "id": "3d727b7a0e33019f0e780d13493d9721",
-  "baslik_tr": "id Software Yeni Oyunu İçin Kolları Sıvadı",
+  "baslik_tr": "İd Software Yeni Oyunu İçin Kolları Sıvadı",
   "ozet": "Doom ve Wolfenstein geliştiricisi id Software, Texas ve Frankfurt stüdyolarının üzerinde çalıştığı yeni bir oyunun müjdesini verdi. Yönetmen koltuğunda yeniden Hugo Martin'in oturacağı projenin geliştirme aşamasının henüz çok başında olduğu belirtilirken, detayların paylaşılması için bir süre daha beklemek gerekecek.",
   "etiketler": [
    "id Software",
@@ -730,7 +877,8 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2025/05/250cc967076310c00db170e16f5039a1-1280x720.jpg",
   "puan": 7.49,
-  "tarih": "13.11.2026 09:38"
+  "tarih": "13.11.2026 09:38",
+  "bd": true
  },
  {
   "id": "aa9736b034a064fe707c3d96891a2ff7",
@@ -752,7 +900,8 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2026/07/Livestream_16x9_Go-Live_Clean_Waypoint-1280x720.jpg",
   "puan": 7.11,
-  "tarih": "13.11.2026 09:39"
+  "tarih": "13.11.2026 09:39",
+  "bd": true
  },
  {
   "id": "626d493d15fd0b70806ccc248223dd89",
@@ -774,7 +923,8 @@
   ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/kcKRq3k63DMmw4vq4kcf6c-1920-80.jpg",
   "puan": 7.04,
-  "tarih": "13.11.2026 09:39"
+  "tarih": "13.11.2026 09:39",
+  "bd": true
  },
  {
   "id": "a1c88a9ee02ff8efe60d0090bde375b4",
@@ -795,7 +945,8 @@
   ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/7maZGTkbtbJXnmxUx2qUo8-1920-80.jpg",
   "puan": 6.99,
-  "tarih": "13.11.2026 09:39"
+  "tarih": "13.11.2026 09:39",
+  "bd": true
  },
  {
   "id": "8c1c714d7b679f0cc2b7805e00a2b9a9",
@@ -816,7 +967,8 @@
   ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/T7AFP5yQRnF6ncVAEd62Jg-1920-80.jpg",
   "puan": 6.91,
-  "tarih": "13.11.2026 09:39"
+  "tarih": "13.11.2026 09:39",
+  "bd": true
  },
  {
   "id": "700c0a7b8e46bcb6858bc9e4acb98025",
@@ -838,7 +990,8 @@
   ],
   "gorsel": "https://kotaku.com/app/uploads/2024/07/d31d08d73fcca3318e5640dc536c3fd4-1280x720.jpg",
   "puan": 6.9,
-  "tarih": "13.11.2026 09:40"
+  "tarih": "13.11.2026 09:40",
+  "bd": true
  },
  {
   "id": "ca542cd069e450137f4c9d6a82f26081",
@@ -855,6 +1008,7 @@
   "diger_kaynaklar": [],
   "gorsel": "https://assetsio.gnwcdn.com/maplestory_gBothMO.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.99,
-  "tarih": "13.11.2026 09:40"
+  "tarih": "13.11.2026 09:40",
+  "bd": true
  }
 ]
