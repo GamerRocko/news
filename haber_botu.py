@@ -162,9 +162,12 @@ SAYFA = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Oyun Haberleri</title>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem("tema")||"dark"}catch(e){document.documentElement.dataset.theme="dark"}</script>
 <style>
 :root{--bg:#eef1f7;--card:#fff;--ink:#141a2e;--muted:#5d6580;--accent:#3a4bff;--line:#d9deea;--tag:#e6e9ff}
-@media (prefers-color-scheme:dark){:root{--bg:#0e1222;--card:#171d33;--ink:#e8ebf7;--muted:#99a2c4;--accent:#8c99ff;--line:#262e4d;--tag:#222a52}}
+:root{color-scheme:light}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0e1222;--card:#171d33;--ink:#e8ebf7;--muted:#99a2c4;--accent:#8c99ff;--line:#262e4d;--tag:#222a52}
+#tema{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:99px;padding:4px 14px;font:14px "Segoe UI",system-ui,sans-serif;cursor:pointer}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Segoe UI",system-ui,-apple-system,sans-serif}
 .wrap{max-width:920px;margin:0 auto;padding:20px 16px 48px}
@@ -188,9 +191,10 @@ a{color:var(--accent)}
 </head>
 <body>
 <div class="wrap">
-<header><h1>Oyun Haberleri</h1><small>Son güncelleme: __TARIH__</small></header>
+<header><h1>Oyun Haberleri</h1><div><small>Son güncelleme: __TARIH__</small> <button id="tema" type="button">Açık/Koyu</button></div></header>
 __ICERIK__
 </div>
+<script>document.getElementById("tema").onclick=function(){var d=document.documentElement,y=d.dataset.theme==="dark"?"light":"dark";d.dataset.theme=y;try{localStorage.setItem("tema",y)}catch(e){}}</script>
 </body>
 </html>"""
 
