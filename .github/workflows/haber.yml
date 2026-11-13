@@ -2,7 +2,7 @@ name: Haberleri güncelle
 
 on:
   schedule:
-    - cron: "*/60 * * * *"   # her 2 saatte bir (UTC); tam saat başından kaçınmak gecikmeyi azaltır
+    - cron: "*/10 * * * *"   # her 2 saatte bir (UTC); tam saat başından kaçınmak gecikmeyi azaltır
   workflow_dispatch:           # Actions sekmesinden elle çalıştırmak için
 
 permissions:
