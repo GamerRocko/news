@@ -22,7 +22,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
 
       - name: Bağımlılıkları kur
         run: pip install feedparser trafilatura requests
@@ -30,9 +29,9 @@ jobs:
       - name: Haber botunu çalıştır
         env:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          # İstersen sağlayıcıyı değiştir (repo Settings > Variables bölümünden):
-          LLM_API_BASE: ${{ vars.LLM_API_BASE || 'https://api.groq.com/openai/v1' }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'llama-3.3-70b-versatile' }}
+          # Varsayılanlar Gemini. Değiştirmek istersen repo Settings > Variables bölümünden tanımla:
+          LLM_API_BASE: ${{ vars.LLM_API_BASE || 'https://generativelanguage.googleapis.com/v1beta/openai' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemini-3.5-flash-lite' }}
         run: python haber_botu.py
 
       - name: Değişiklik varsa repoya kaydet
