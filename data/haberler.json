@@ -1,5 +1,143 @@
 [
  {
+  "id": "8d13dfb9e7c8314a9c855b533f76d858",
+  "baslik_tr": "Nvidia CEO'su Jensen Huang İstifa Etti",
+  "ozet": "Nvidia CEO'su Jensen Huang, şirket içinde yaşanan ilişkiler skandalının ardından görevinden ayrıldı. Şirketin yönetim kurulu, geçici CEO olarak CFO Colette Kress'i atadı ve yeni bir lider arayışına başladı. 1993'ten bu yana Nvidia'yı yöneten Huang'ın istifası, şirketin geleceği ve teknoloji dünyası üzerinde büyük yankı uyandırdı.",
+  "etiketler": [
+   "Nvidia",
+   "Jensen Huang",
+   "Colette Kress"
+  ],
+  "link": "https://www.ign.com/articles/former-nvidia-ceo-jensen-huang-reportedly-had-third-affair-with-another-employee",
+  "kaynak": "IGN News",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/08/nvidia-ceo-jensen-huang-1794177110571.png",
+  "puan": 4.52,
+  "tarih": "13.11.2026 10:11"
+ },
+ {
+  "id": "b73006624a5421568d900af42a249675",
+  "baslik_tr": "Microsoft, Xbox'ın 25. Yılı Şerefine 21 Orijinal Oyunu PC'ye Getirdi",
+  "ozet": "Microsoft, Xbox'ın 25. yıl dönümünü kutlamak amacıyla TimeSplitters 2 ve The Elder Scrolls 3: Morrowind dahil olmak üzere 21 orijinal Xbox oyununu daha PC platformuna taşıdı. LucasArts yapımı Star Wars klasiklerinin de yer aldığı bu yeni liste, konsolun dönüm noktası kapsamında toplamda 25 oyuna ulaştı. Yeni eklenen yapımlar arasında daha önce PC'de yer alan oyunlar ve hayranların favorisi olan TimeSplitters serisi de bulunuyor.",
+  "etiketler": [
+   "Xbox",
+   "PC",
+   "TimeSplitters 2",
+   "The Elder Scrolls 3: Morrowind",
+   "Microsoft"
+  ],
+  "link": "https://www.gamesradar.com/games/microsoft-brings-21-more-original-xbox-games-to-pc-including-goldeneye-successor-timesplitters-2-and-a-version-of-the-elder-scrolls-3-morrowind-you-absolutely-do-not-want-to-play-today/",
+  "kaynak": "GamesRadar+",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/oZYtdNC9BbWn5QUSwQy9J5-1920-80.jpg",
+  "puan": 4.51,
+  "tarih": "13.11.2026 10:11"
+ },
+ {
+  "id": "3ed2770c56203dcd48b9f1c574a6ae67",
+  "baslik_tr": "AMD, SSD'lerin Ömrünü Kısaltan Hatayı Yeni Adrenalin Sürücüsü ile Düzeltti",
+  "ozet": "AMD, özellikle Radeon RX 7000 serisi ve daha yeni ekran kartlarında boşta kalındığında veya pencere boyutları değiştirildiğinde ortaya çıkan ve SSD aşınmasına yol açabilen hatayı yeni Adrenalin sürücüsüyle giderdi. Windows 10 ve 11'i destekleyen isteğe bağlı bu güncelleme, resmi web sitesinden veya Adrenalin yazılımı üzerinden indirilebiliyor.",
+  "etiketler": [
+   "AMD",
+   "Adrenalin",
+   "SSD",
+   "Donanım",
+   "Radeon"
+  ],
+  "link": "https://www.ggmania.com/?smsid=amd-fixes-ssd-wearing-bug-in-new-adrenalin-driver-67349",
+  "kaynak": "Gameguru Mania",
+  "diger_kaynaklar": [],
+  "gorsel": null,
+  "puan": 4.51,
+  "tarih": "13.11.2026 10:12"
+ },
+ {
+  "id": "ee002c284dbb2cedc71a53935dd9e9e3",
+  "baslik_tr": "Xbox, Geriye Dönük Uyumluluk Programına 21 Orijinal Xbox Oyunu Ekledi",
+  "ozet": "Xbox, konsolun 25. yıl dönümü şerefine PC'deki geriye dönük uyumluluk projesine 21 yeni orijinal Xbox oyunu dahil etti. Temmuz ayında çıkan dört oyunla birlikte toplam sayı 25'e ulaştı. Eklenen yapımların 11 tanesi Star Wars oyunlarından oluşuyor. Ayrıca KotOR, KotOR II, Blinx: The Time Sweeper ve Conker: Live and Reloaded oyunlarına başarımlar eklendi ve Xbox gelecekte daha fazla oyuna başarım getirmeyi planlıyor.",
+  "etiketler": [
+   "Xbox",
+   "Star Wars",
+   "PC",
+   "Geriye Dönük Uyumluluk"
+  ],
+  "link": "https://kotaku.com/xbox-releases-21-more-original-xbox-games-on-pc-and-over-half-of-them-are-star-wars-2000756360",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [],
+  "gorsel": "https://kotaku.com/app/uploads/2026/11/111226_XBOX-Wire_PCBackCompat-JPG-6d6dbed266e723ed4c62-1280x720.jpg",
+  "puan": 4.48,
+  "tarih": "13.11.2026 10:12"
+ },
+ {
+  "id": "ca754e50c99e8168e2273ca98f9bc5a0",
+  "baslik_tr": "GTA 6 Konsollarda 30 FPS Hedefliyor",
+  "ozet": "Rockstar, devasa bir ön sipariş başarısının ardından GTA 6'nın konsollarda 30 FPS hedefleyeceğini açıkladı. Bu durum, daha zayıf donanımda 60 FPS sunan Ocarina of Time ile karşılaştırmaları ve FPS tartışmalarını yeniden alevlendirdi. GTA 5'in PC sürümünde 60 FPS'in büyük bir satış kozu olması, benzer bir stratejinin izlenebileceğini düşündürüyor. GTA 6, 19 Kasım'da PlayStation 5 ve Xbox Series X|S için çıkış yapacak.",
+  "etiketler": [
+   "GTA 6",
+   "Rockstar",
+   "Nintendo",
+   "Ocarina of Time"
+  ],
+  "link": "https://www.destructoid.com/60fps-zelda-or-30fps-gta-6-that-is-the-question/",
+  "kaynak": "Destructoid",
+  "diger_kaynaklar": [],
+  "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/gta-6-zelda-remake.jpg",
+  "puan": 4.42,
+  "tarih": "13.11.2026 10:12"
+ },
+ {
+  "id": "7f2dc26f2a952529ee215ee386f8bf77",
+  "baslik_tr": "Mantar temalı Soulslike oyunu MycoRelic 1.0 sürümüne ulaştı",
+  "ozet": "Erken erişim sürecini tamamlayan MycoRelic, 1.0 sürümüyle oyuncularla buluştu. Düşük poligonlu tarzı ve ortaçağ estetiğinden uzak atmosferiyle dikkat çeken yapımda, sihirli mantarlarla kaplanmış bir robotu yönetiyoruz. Oyunda geleneksel sınıflar yer almıyor; bunun yerine oyuncular, gövde parçalarını ve farklı mantarları değiştirerek sağlık, dayanıklılık, iskelet bütünlüğü ile mantar büyüsü güçlerini artırabiliyor. Mantarlar yeni etkiler için birleştirilebiliyor ve iyileştirme suyu gibi farklı amaçlarla kullanılabiliyor. Ayrıca oyunda hava atlayışı, süzülme mekanikleri ve co-op desteği bulunuyor. Oyunun tam sürümünün yanı sıra Steam'de bir demosu da yer alıyor.",
+  "etiketler": [
+   "MycoRelic",
+   "Soulslike",
+   "PC",
+   "Steam",
+   "Oyun Haberleri"
+  ],
+  "link": "https://www.rockpapershotgun.com/cover-your-robot-body-in-magical-fungus-aplenty-and-galavant-across-a-mystical-soulslike-world-in-mycorelic-now-out-in-10",
+  "kaynak": "Rock, Paper, Shotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/mycorelic.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 4.42,
+  "tarih": "13.11.2026 10:12"
+ },
+ {
+  "id": "28124cf250ac91f1877443f189c9a588",
+  "baslik_tr": "Xbox CEO'sundan 25. Yıl Mesajında Yeni Küçülme ve Yapay Zeka Sinyali",
+  "ozet": "Xbox'ın 25. yılını kutlayan CEO Asha Sharma, sosyal medya paylaşımında gelecekte daha az geliştiriciye ve daha fazla üretken yapay zekaya ihtiyaç duyulacağını belirtti. Şirkette bu yıl binlerce çalışanın işten çıkarılmasıyla büyük bir yeniden yapılandırma sürecine imza atan Sharma, küçük ekiplerin ve tek bir kişinin geçmişte yüzlerce geliştirici gerektiren dünyalar kurabileceğini vurgulayarak yeni işten çıkarmaların ve yapay zeka kullanımının kapıda olduğunun sinyalini verdi.",
+  "etiketler": [
+   "Xbox",
+   "Asha Sharma",
+   "Yapay Zeka",
+   "İşten Çıkarma",
+   "Oyun Sektörü"
+  ],
+  "link": "https://www.destructoid.com/xbox-ceo-celebrates-25-years-cant-stop-hinting-downsizing-ai-usage/",
+  "kaynak": "Destructoid",
+  "diger_kaynaklar": [],
+  "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/image-2026-11-12T155712.779.jpg",
+  "puan": 4.37,
+  "tarih": "13.11.2026 10:12"
+ },
+ {
+  "id": "5391fcc4e39d099edde7754b0ee414a1",
+  "baslik_tr": "ROB RUN Oyuncularına Baskın Düzenleme Rehberi",
+  "ozet": "ROB RUN oyununda diğer oyuncuların üslerine baskın yapmak, suç imparatorluğunu büyütmek için etkili bir stratejidir. Bu süreçte başarılı olmak için öncelikle Breach Decoder adı verilen çözücülere ihtiyacınız var. Uncommon Decoder'ları dolaplar, kasalar, konteynerler veya Sezon 1 savaş biletinden bulabilirsiniz. Epic Decoder elde etmek için ise Lenny’s Motel'deki takas tüccarında Uncommon versiyonunu 10.000 dolara takas etmelisiniz. Oyuncu üsleri karmaşık yapıda olduğundan, güvenlik sistemine sahip her bir üs parçası için ayrı çözücüler kullanmanız gerekir. Güvenlik terminalindeki puanları sıfırlayana kadar bu çözücüleri kullanarak baskını tamamlayabilirsiniz.",
+  "etiketler": [
+   "ROB RUN",
+   "Rehber",
+   "Oyun Haberleri"
+  ],
+  "link": "https://www.destructoid.com/how-to-raid-other-players-in-rob-run/",
+  "kaynak": "Destructoid",
+  "diger_kaynaklar": [],
+  "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/11/ss_258546065bdba3f2dc14b476a6c0ba8caaf5b367.1920x1080-e1793901863810.jpg",
+  "puan": 4.32,
+  "tarih": "13.11.2026 10:13"
+ },
+ {
   "id": "a56f49521cd87715ee20a962ffc7cd82",
   "baslik_tr": "Halo: Campaign Evolved İçin Firefight Modu Duyuruldu",
   "ozet": "Xbox Game Studios ve Halo Studios, Halo: Campaign Evolved oyunu için dört oyunculu co-op PvE modu Firefight'ı içeren ücretsiz bir güncellemenin bu kış geleceğini duyurdu. Kesin bir çıkış tarihi henüz verilmezken, güncellemeyle ilgili daha fazla detayın 12-13 Aralık tarihlerinde Seattle'da düzenlenecek Halo Fest'te paylaşılacağı belirtildi. Ayrıca güncelleme için yeni haritalar ve silahlar içeren oynanabilir bir sürümün hazırlandığı aktarıldı.",
