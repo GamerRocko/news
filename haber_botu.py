@@ -5,7 +5,7 @@ Kurulum:   pip install feedparser trafilatura requests
 Çalıştır:  export LLM_API_KEY="..." ; python haber_botu.py
 Çıktı:     data/haberler.json  ve  site/index.html
 """
-import os, sys, json, time, html, hashlib, difflib, datetime as dt, pathlib
+import os, re, sys, json, time, html, hashlib, difflib, datetime as dt, pathlib
 import socket
 import feedparser, requests, trafilatura
 
@@ -43,6 +43,19 @@ SAKLANAN = 200            # sitede tutulacak toplam haber
 ILK_GOSTERIM = 15         # sayfa ilk açıldığında görünen haber sayısı
 ADIM = 10                 # "Daha fazla" düğmesine her basışta açılacak haber sayısı
 TR = dt.timezone(dt.timedelta(hours=3))   # Türkiye saati (UTC+3)
+
+# Başlıklarda HER ZAMAN bu yazımla görünecek özel isimler ve kısaltmalar.
+# Başlıkta yanlış küçük harfle çıkan bir isim görürsen buraya ekle (büyük/küçük harfi doğru yaz).
+SABIT_OZEL_ISIMLER = [
+    "Nintendo", "Zelda", "The Legend of Zelda", "Breath of the Wild", "Tears of the Kingdom", "Mario", "Pokémon",
+    "Xbox", "PlayStation", "Steam", "Steam Deck", "Switch", "Sony", "Microsoft", "Valve", "Rockstar", "Rockstar Games",
+    "Ubisoft", "Capcom", "Sega", "Bandai Namco", "Square Enix", "Bethesda", "Activision", "Blizzard", "Epic Games",
+    "Nvidia", "AMD", "Intel", "Google", "Apple", "Amazon", "Netflix", "Discord", "Twitch", "YouTube",
+    "GTA", "PS5", "PS4", "DLC", "PC", "VR", "AI", "RPG", "FPS", "MMO", "IGN",
+    "The Witcher", "Elden Ring", "Call of Duty", "Fortnite", "Minecraft", "Diablo", "Overwatch", "Halo", "Starfield",
+    "Cyberpunk 2077", "Hollow Knight", "Silksong", "Half-Life", "Counter-Strike", "Valorant", "League of Legends",
+    "Final Fantasy", "Resident Evil", "Metal Gear", "Persona", "Fallout", "Skyrim", "The Elder Scrolls",
+]
 # ------------------------------
 
 DATA = pathlib.Path("data/haberler.json")
@@ -115,14 +128,62 @@ def sayfa_cek(link):
     return metin, (meta.image if meta else None)
 
 
+def _tr_kucuk(s):
+    return s.replace("İ", "i").lower()
+
+
+def _tr_buyuk_ilk(s):
+    if not s:
+        return s
+    return {"i": "İ", "ı": "I"}.get(s[0], s[0].upper()) + s[1:]
+
+
+def _isimleri_uygula(metin, isimler):
+    """Verilen özel isimleri, büyük/küçük harf fark etmeksizin, doğru yazımlarıyla yerleştirir."""
+    for isim in sorted(isimler, key=len, reverse=True):
+        kalip = re.compile(r"(?<!\w)" + re.escape(isim) + r"(?!\w)", re.IGNORECASE)
+        metin = kalip.sub(lambda m, isim=isim: isim, metin)
+    return metin
+
+
+def baslik_duzelt(baslik, ozel_isimler=()):
+    """Cümle düzeninde başlık: ilk harf ve özel isimler büyük, geri kalan her şey küçük.
+    Harf kararını modele bırakmaz; özel isimleri koddan uygular."""
+    baslik = " ".join(str(baslik).split())
+    isimler = set(SABIT_OZEL_ISIMLER)
+    for x in ozel_isimler:                      # modelin bildirdiği isimler (tamamı küçükse bilgi taşımaz, atla)
+        x = str(x).strip()
+        if x and any(c.isupper() for c in x) and len(x.split()) <= 6 and x != baslik:
+            isimler.add(x)
+    # Başlıktaki kısaltmaları (GTA, PS5, DLSS) ve PlayStation/iPhone gibi yazımları da koru;
+    # ancak başlık zaten çoğunlukla büyük harfle geldiyse ya da kelime bilinen bir ismin parçasıysa atla.
+    harfler = [c for c in baslik if c.isalpha()]
+    cogu_buyuk = bool(harfler) and sum(c.isupper() for c in harfler) / len(harfler) > 0.6
+    bilinen = {w.lower() for i in isimler for w in re.findall(r"\w+", i)}
+    if not cogu_buyuk:
+        adaylar = re.findall(r"\b(?=[A-Z0-9]*[A-Z])[A-Z0-9]{2,}\b", baslik) + \
+                  re.findall(r"\b[A-Za-z]*[a-z][A-Z][A-Za-z0-9]*\b", baslik)
+        isimler |= {k for k in adaylar if k.lower() not in bilinen}
+    sonuc = _isimleri_uygula(_tr_kucuk(baslik), isimler)
+    if any(i[:1].islower() and sonuc.startswith(i) for i in isimler):   # "iPhone ..." gibi küçük harfle başlayan marka
+        return sonuc
+    return _tr_buyuk_ilk(sonuc)
+
+
+def basligi_onar(baslik):
+    """Eski kayıtlar için: mevcut büyük/küçük harflere dokunmadan yalnızca bilinen isimleri ve ilk harfi düzeltir."""
+    return _tr_buyuk_ilk(_isimleri_uygula(baslik, set(SABIT_OZEL_ISIMLER)))
+
+
 PROMPT = """Sen bir Türk oyun haberleri editörüsün. Aşağıdaki İngilizce haber metnine DAYANARAK
 özgün bir Türkçe haber yaz. Kurallar:
 - Metinde olmayan hiçbir bilgiyi ekleme, tahmin yürütme.
 - Cümleleri çevirme; olayı kendi cümlelerinle anlat (en fazla 120 kelime).
 - Oyun, şirket ve kişi adlarını orijinal yaz.
-- Başlıkta yalnızca ilk kelimenin ilk harfi ve özel isimlerin (oyun, şirket, kişi, platform adları) ilk harfi büyük olsun; diğer tüm kelimeler küçük harfle yazılsın. "Başlıktaki Her Kelime Büyük" biçimini KULLANMA.
+- Başlık normal Türkçe cümle yazımıyla olsun: ilk kelimenin ilk harfi büyük; özel isimler (oyun, şirket, kişi, platform ve kısaltma adları, ör. Nintendo, Zelda, Breath of the Wild, GTA 6, PlayStation) orijinal büyük/küçük harfleriyle yazılsın; diğer tüm kelimeler küçük harfle yazılsın. "Başlıktaki Her Kelime Büyük" biçimini KULLANMA. Özel isimleri asla tamamen küçük harfle yazma.
+- "ozel_isimler" alanına başlıkta geçen özel isimleri ve kısaltmaları, başlıktaki yazımlarıyla listele.
 - Haber video oyunları, oyun şirketleri veya oyun donanımıyla ilgili değilse (film, dizi, LEGO, genel teknoloji vb.) sadece {"uygun": false} döndür.
-- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozet": "..."}
+- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozel_isimler": ["...", "..."], "ozet": "..."}
 Başlık: {baslik}
 Metin:
 {metin}"""
@@ -257,6 +318,9 @@ def main():
         return modelleri_listele()
     DATA.parent.mkdir(exist_ok=True)
     arsiv = json.loads(DATA.read_text("utf-8")) if DATA.exists() else []
+    for h in arsiv:                              # eski kayıtların başlıklarını bir kez onar
+        if not h.get("bd"):
+            h["baslik_tr"] = basligi_onar(h["baslik_tr"]); h["bd"] = True
     gorulen = {h["id"] for h in arsiv}
     adaylar = [a for a in grupla_ve_puanla(kaynaklari_oku())
                if hashlib.md5(a["link"].encode()).hexdigest() not in gorulen]
@@ -273,12 +337,13 @@ def main():
             if not out.get("uygun", True):
                 print("Oyun dışı, atlandı:", a["baslik"])
                 continue
-            yeni.append(dict(id=hashlib.md5(a["link"].encode()).hexdigest(), baslik_tr=out["baslik"],
+            baslik_tr = baslik_duzelt(out["baslik"], out.get("ozel_isimler", []))
+            yeni.append(dict(id=hashlib.md5(a["link"].encode()).hexdigest(), baslik_tr=baslik_tr, bd=True,
                              ozet=out["ozet"], link=a["link"],
                              kaynak=a["kaynak"], diger_kaynaklar=a["diger_kaynaklar"],
                              gorsel=a["gorsel"] or og, puan=a["puan"],
                              tarih=dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M")))
-            print("OK:", out["baslik"])
+            print("OK:", baslik_tr)
             time.sleep(7)  # ücretsiz katmanda dakika limitine takılmamak için
         except Exception as ex:
             print("Atlandı:", a["baslik"], ex)
