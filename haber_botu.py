@@ -28,12 +28,15 @@ FEEDS = [  # Kendi RSS adreslerini buraya yaz
 ]
 # Sağlayıcıyı değiştirmek için sadece bu üç satır yeter (hepsi OpenAI uyumlu):
 #   Groq:    https://api.groq.com/openai/v1               model: llama-3.3-70b-versatile
-#   Gemini:  https://generativelanguage.googleapis.com/v1beta/openai   model: gemini-2.5-flash
+#   Gemini:  https://generativelanguage.googleapis.com/v1beta/openai   model: gemini-3.5-flash-lite
 #   Ollama:  http://localhost:11434/v1                    model: qwen2.5:14b
 API_BASE = os.getenv("LLM_API_BASE", "https://generativelanguage.googleapis.com/v1beta/openai")
 MODEL = os.getenv("LLM_MODEL", "gemini-3.5-flash-lite")   # 404 alırsan: python haber_botu.py --modeller
-# >>> Google AI Studio API anahtarını aşağıdaki tırnakların içine yapıştır <<<
-API_KEY = os.getenv("LLM_API_KEY", "AQ.Ab8RN6ISv9xAc0OnfDTqaIlaU9CcVb7BWpzNoWGkn5x2hAt_Dw")
+# API anahtarı koda YAZILMAZ. Sırasıyla şuralardan okunur:
+#  1) LLM_API_KEY ortam değişkeni (GitHub Actions'ta secret'tan gelir)
+#  2) bu klasördeki anahtar.txt dosyası (sadece kendi bilgisayarın için; GitHub'a yükleme!)
+_dosya = pathlib.Path("anahtar.txt")
+API_KEY = os.getenv("LLM_API_KEY") or (_dosya.read_text(encoding="utf-8").strip() if _dosya.exists() else "")
 HABER_SAYISI = 8          # her çalışmada en fazla kaç haber
 SAAT_SINIRI = 36          # kaç saatten eski haberler alınmasın
 SAKLANAN = 200            # sitede tutulacak toplam haber
@@ -238,8 +241,9 @@ def modelleri_listele():
 
 
 def main():
-    if not API_KEY or API_KEY.startswith("BURAYA"):
-        raise SystemExit("API anahtarı girilmemiş. Dosyanın başındaki API_KEY satırına anahtarını yapıştır.")
+    if not API_KEY:
+        raise SystemExit("API anahtarı bulunamadı. Bu klasörde anahtar.txt dosyası oluşturup anahtarı içine yapıştır "
+                         "ya da LLM_API_KEY ortam değişkenini tanımla.")
     if "--modeller" in sys.argv:
         return modelleri_listele()
     DATA.parent.mkdir(exist_ok=True)
