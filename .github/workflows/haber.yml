@@ -1,0 +1,43 @@
+name: Haberleri güncelle
+
+on:
+  schedule:
+    - cron: "17 */2 * * *"   # her 2 saatte bir (UTC); tam saat başından kaçınmak gecikmeyi azaltır
+  workflow_dispatch:           # Actions sekmesinden elle çalıştırmak için
+
+permissions:
+  contents: write
+
+concurrency:
+  group: haber
+  cancel-in-progress: false
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Bağımlılıkları kur
+        run: pip install feedparser trafilatura requests
+
+      - name: Haber botunu çalıştır
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          # İstersen sağlayıcıyı değiştir (repo Settings > Variables bölümünden):
+          LLM_API_BASE: ${{ vars.LLM_API_BASE || 'https://api.groq.com/openai/v1' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'llama-3.3-70b-versatile' }}
+        run: python haber_botu.py
+
+      - name: Değişiklik varsa repoya kaydet
+        run: |
+          git config user.name "haber-botu"
+          git config user.email "haber-botu@users.noreply.github.com"
+          git add data site
+          git diff --staged --quiet || (git commit -m "Haberler güncellendi" && git push)
