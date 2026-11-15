@@ -2,7 +2,7 @@ name: Haberleri güncelle
 
 on:
   schedule:
-    - cron: "0 1-23/2 * * *"   # 2 saatte bir, saat başı. UTC tek saatler = Türkiye saatiyle 00:00, 02:00, 04:00 ... (UTC+3)
+    - cron: "5 1-23/2 * * *"   # 2 saatte bir, saat başı. UTC tek saatler = Türkiye saatiyle 00:00, 02:00, 04:00 ... (UTC+3)
   workflow_dispatch:           # Actions sekmesinden elle çalıştırmak için
 
 permissions:
