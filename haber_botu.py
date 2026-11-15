@@ -16,7 +16,6 @@ FEEDS = [  # (sitede görünecek kaynak adı, RSS adresi) -> adı istediğin gib
     ("Destructoid", "http://www.destructoid.com/?mode=atom"),
     ("Eurogamer", "https://www.eurogamer.net/feed/news"),
     ("Game Informer", "https://gameinformer.com/news.xml"),
-    ("Gameguru Mania", "http://www.ggmania.com/rss/index.xml"),
     ("GamesIndustry.biz", "http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss"),
     ("GameSpot", "https://www.gamespot.com/feeds/mashup/"),
     ("GamesRadar", "http://www.gamesradar.com/all-platforms/news/rss/"),
