@@ -1,44 +1,5 @@
 [
- {
-  "id": "778619eef3de8ce6b069f364594e987b",
-  "baslik_tr": "Apex Neural Rendering, DLSS ve diğer alternatiflerle karşılaştırıldı",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Yeni bir video, Apex Computing Neural Rendering teknolojisinin performansını Nvidia DLSS ve AMD çoklu kare oluşturma engelleyici çözümleriyle karşılaştırdı. Yapılan testlerde, Apex Neural Rendering sisteminin DLSS'ten daha iyi olduğunu iddia etmesine rağmen görsel bozulmalar ve kötü arayüz çizimi gibi belirgin sorunlar barındırdığı görüldü. İncelemede, Nvidia ve AMD kartlarında en iyi performans için sırasıyla MFG ve AMDNR gibi alternatif çözümlerin kullanılması tavsiye edildi. Apex Neural Rendering bazı avantajlar sunsa da, özellikle ışın izleme gibi yüksek grafik gereksinimi duyulan oyunlarda şimdilik çeşitli kısıtlamalarla karşı karşıya kalıyor.",
-  "link": "https://www.ggmania.com/?smsid=better-than-dlss-apex-neural-rendering-vs-mfg-unlocker-vs-amd-nr-launcher-amd-amp-nvidia-67367",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 6.02,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=better-than-dlss-apex-neural-rendering-vs-mfg-unlocker-vs-amd-nr-launcher-amd-amp-nvidia-67367"
-  ],
-  "basliklar": [
-   "BETTER than DLSS?? Apex Neural Rendering vs MFG Unloc"
-  ],
-  "ts": 1794739602.0,
-  "tarih": "15.11.2026 13:35"
- },
- {
-  "id": "a79e703d917e6da7ea37b3192382d582",
-  "baslik_tr": "SteamOS 3.10 Preview güncellemesi HDMI 2.1 ve Mesh Shader desteği getiriyor",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Valve, Steam Deck Preview kanalında SteamOS 3.10.0 Preview sürümünü yayınladı. Bu yeni sürümle birlikte AMD grafik kartları VRR, Fixed Rate Link ve Auto Low Latency Mode özellikleriyle birlikte HDMI 2.1 desteğine kavuşuyor. NVIDIA kullanıcıları ise Turing ve daha yeni GPU'larda Mesh Shader desteği elde ederken, Shadow of the Tomb Raider ile The Surge 2 oyunlarındaki bazı görsel sorunlar gideriliyor. Güncelleme ayrıca Linux 7.3 çekirdeğine geçiş yaparken, Masaüstü Modunu KDE Plasma 6.8.2 sürümüne güncelliyor ve VRR çerçeve zamanlamasını iyileştiriyor.",
-  "link": "https://www.ggmania.com/?smsid=steamos-3-10-preview-adds-hdmi-2-1-and-mesh-shaders-67366",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.78,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=steamos-3-10-preview-adds-hdmi-2-1-and-mesh-shaders-67366"
-  ],
-  "basliklar": [
-   "SteamOS 3.10 Preview Adds HDMI 2.1 and Mesh Shaders"
-  ],
-  "ts": 1794732569.0,
-  "tarih": "15.11.2026 13:36"
- },
+
  {
   "id": "ceafdc4a5d86642f8f1d863c92c9ab70",
   "baslik_tr": "Grand Theft Auto 6 oyununun ana hikayesini umursamamak",
@@ -121,26 +82,7 @@
   "ts": 1794711627.0,
   "tarih": "15.11.2026 13:36"
  },
- {
-  "id": "bc6273f6170fa7b160f3f4a9af8341d1",
-  "baslik_tr": "Intel masaüstü işlemci pazar payını yüzde 70'e çıkardı",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Mercury Research verilerine göre Intel, masaüstü işlemci sevkiyat pazarındaki payını yüzde 70'e yükseltti. Uzmanlar bu durumun, şirketin laptop arzını masaüstüne kaydırmasından kaynaklandığını belirtiyor. AMD ise oyuncu PC pazarındaki talebin zayıflaması ve ekran kartı arzı sıkıntıları nedeniyle gerileme yaşadı. Rakamlar son kullanıcı satışlarını değil, üretici sevkiyatlarını kapsıyor.",
-  "link": "https://www.ggmania.com/?smsid=intel-reclaims-70-desktop-cpu-share-as-amd-slips-under-30-in-q3-surprise-67364",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 4.54,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=intel-reclaims-70-desktop-cpu-share-as-amd-slips-under-30-in-q3-surprise-67364"
-  ],
-  "basliklar": [
-   "Intel Reclaims 70% Desktop CPU Share as AMD Slips Und"
-  ],
-  "ts": 1794696804.0,
-  "tarih": "15.11.2026 13:36"
- },
+
  {
   "id": "7a2e5d1d0686a3083788c5c1e5fc7274",
   "baslik_tr": "The Snackbar atcher World duyuruldu",
@@ -295,26 +237,7 @@
   "ts": 1794698685.0,
   "tarih": "15.11.2026 05:31"
  },
- {
-  "id": "08c7c6c29940a2f7e8caa2fdd419fcf9",
-  "baslik_tr": "Steam platformundaki oyunlar ve güncellemeler listelendi",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Paylaşılan verilere göre, Steam üzerinde yer alan çeşitli PC oyunları, DLC paketleri ve bu yapımlara ait hile ile rehber içerikleri derlendi. Listede adında \"what\" kelimesi geçen çok sayıda bağımsız oyun, genişleme paketi ve Beat Saber gibi popüler oyunlar için sunulan müzik paketleri yer aldı.",
-  "link": "https://www.ggmania.com/?smsid=what-really-happened-on-friday-the-13th-67365",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.6,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=what-really-happened-on-friday-the-13th-67365"
-  ],
-  "basliklar": [
-   "What really happened on Friday the 13th"
-  ],
-  "ts": 1794698273.0,
-  "tarih": "15.11.2026 05:31"
- },
+
  {
   "id": "7bc0a37d640f0888631813b0d20f4c10",
   "baslik_tr": "GTA 6 albümünün şarkı listesi çıkışına günler kala sızdırıldı",
@@ -937,24 +860,7 @@
   "basliklar": [],
   "bd2": true
  },
- {
-  "id": "704d920ed0598b7f116e9011a58b5a89",
-  "baslik_tr": "Sturmjager oyununun co-op fragmanı yayınlandı",
-  "ozet": "Byteproduct, bilim kurgu türündeki shoot 'em up oyunu Sturmjager için iki kişilik yerel eşli oyun modunu tanıtan yeni bir fragman paylaştı. Oyun; PlayStation 5, Xbox Series, Switch ve Steam üzerinden PC için 14 Ocak 2027 tarihinde çıkış yapacak.",
-  "link": "https://www.ggmania.com/?smsid=sturmjager-co-op-trailer-67361",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.47,
-  "tarih": "14.11.2026 18:41",
-  "linkler": [
-   "https://www.ggmania.com/?smsid=sturmjager-co-op-trailer-67361"
-  ],
-  "basliklar": [
-   "Sturmjager Co-Op trailer"
-  ],
-  "bd2": true
- },
+
  {
   "id": "ac07c933c291723357b5b106b92373fe",
   "baslik_tr": "Call of Duty Endowment, anma günü için Valor Pack satışlarını vurguluyor",
@@ -1020,24 +926,7 @@
   "basliklar": [],
   "bd2": true
  },
- {
-  "id": "94489a79f2e59e4358c2f098ef11b1cb",
-  "baslik_tr": "Vindictus: Defying Fate için yeni sinematik fragman yayınlandı",
-  "ozet": "NEXON, orta çağ fantezi aksiyon Rpg türündeki Vindictus: defying fate oyunu için \"Let the Righteous Judge\" isimli yeni bir sinematik fragman paylaştı. Yayınlanan bu video, oyunun hikayesini şekillendiren gizli gerçeklere, olaylara ve oyuncuların keşfedeceği dünyaya daha yakından bakma fırsatı sunuyor. Vindictus: defying fate; PlayStation 5 ve Steam üzerinden PC için 2027 yılında çıkış yapacak.",
-  "link": "https://www.ggmania.com/?smsid=vindictus-defying-fate-let-the-righteous-judge-cinematic-trailer-67362",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.95,
-  "tarih": "14.11.2026 17:21",
-  "linkler": [
-   "https://www.ggmania.com/?smsid=vindictus-defying-fate-let-the-righteous-judge-cinematic-trailer-67362"
-  ],
-  "basliklar": [
-   "Vindictus: Defying Fate - 'Let the Righteous Judge' C"
-  ],
-  "bd2": true
- },
+
  {
   "id": "dc9365dc85c28610aeec3373ecb4eacc",
   "baslik_tr": "Battlefield 6 için hafta sonu boyunca ücretsiz deneme fırsatı başladı",
@@ -1295,63 +1184,7 @@
   "basliklar": [],
   "bd2": true
  },
- {
-  "id": "b72442c16187053c7405ce2d8aa503a8",
-  "baslik_tr": "Xbox 25. yıl kutlamalarında yeni Fable oynanış videosu gösterildi",
-  "bd": true,
-  "ozet": "Xbox Game Studios ve geliştirici Playground Games, Xbox'ın 25. yıl kutlamaları kapsamında yeni Fable oyununun dört dakikalık oynanış videosunu paylaştı. Yapım, tekrar oynanabilirliğe odaklanıyor ve farklı karakterlerle eylemlere imkan tanıyor. Oyun; PlayStation 5, Xbox Series, PC ve Game Pass için 23 Şubat 2027 tarihinde çıkış yapacak.",
-  "link": "https://www.ggmania.com/?smsid=fable-xbox-25th-anniversary-quest-gameplay-67357",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.97,
-  "tarih": "14.11.2026 03:16",
-  "linkler": [
-   "https://www.ggmania.com/?smsid=fable-xbox-25th-anniversary-quest-gameplay-67357"
-  ],
-  "basliklar": [
-   "Fable Xbox 25th Anniversary 'Quest' gameplay"
-  ],
-  "bd2": true
- },
- {
-  "id": "7b00f888bb6bb73f4030d1b3346d05be",
-  "baslik_tr": "Cyberpunk 2077 ve diğer oyunlar hakkında güncellemeler",
-  "bd": true,
-  "ozet": "Yayınlanan metinde Neverwinter Nights, Dark Age of Camelot, Galactic Civilizations II: Dark Avatar, Call of Cthulhu: Dark Corners of the Earth ve Cyberpunk 2077 gibi birçok yapım hakkında çeşitli bilgiler, rehberler, ürün sayfaları ve web sitesi bağlantıları yer alıyor. Listede ayrıca Darkwind, Source, ZombieBall, Ghost in the Sheet ve The Sims 3 - Late Night gibi farklı oyunlara dair detaylar da bulunuyor.",
-  "link": "https://www.ggmania.com/?smsid=doom-the-dark-ages-dlc-revelations-slaughter-mode-update-launches-november-16-67356",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.93,
-  "tarih": "14.11.2026 03:16",
-  "linkler": [
-   "https://www.ggmania.com/?smsid=doom-the-dark-ages-dlc-revelations-slaughter-mode-update-launches-november-16-67356"
-  ],
-  "basliklar": [
-   "DOOM: The Dark Ages DLC Revelations - Slaughter Mode"
-  ],
-  "bd2": true
- },
- {
-  "id": "159f3c0e942e89956e58c3297659f636",
-  "baslik_tr": "Xbox Backward Compatibility on PC kütüphanesine 21 oyun eklendi",
-  "bd": true,
-  "ozet": "Xbox Backward Compatibility on PC programına bugün itibarıyla 21 yeni oyun dahil edildi. Bu eklemeyle birlikte The Elder Scrolls III: Morrowind ve Star Wars serisinin çeşitli yapımları gibi oyunlar erişilebilir hale geldi. Daha önce yayınlanan dört yapımla birlikte toplam liste genişlerken, gelecekte platforma daha fazla orijinal Xbox oyununun geleceği açıklandı.",
-  "link": "https://www.ggmania.com/?smsid=xbox-backward-compatibility-on-pc-adds-21-titles-67355",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 5.92,
-  "tarih": "14.11.2026 03:16",
-  "linkler": [
-   "https://www.ggmania.com/?smsid=xbox-backward-compatibility-on-pc-adds-21-titles-67355"
-  ],
-  "basliklar": [
-   "Xbox Backward Compatibility on PC adds 21 titles"
-  ],
-  "bd2": true
- },
+
  {
   "id": "68fb7e437e766cf310d0f81f0fc6ac49",
   "baslik_tr": "Nintendo, Zelda zaman çizgisini 10.000 yıl değiştirdi",
@@ -2057,30 +1890,7 @@
   "basliklar": [],
   "bd2": true
  },
- {
-  "id": "3ed2770c56203dcd48b9f1c574a6ae67",
-  "baslik_tr": "AMD, SSD'lerin Ömrünü Kısaltan Hatayı Yeni Adrenalin Sürücüsü ile Düzeltti",
-  "ozet": "AMD, özellikle Radeon RX 7000 serisi ve daha yeni ekran kartlarında boşta kalındığında veya pencere boyutları değiştirildiğinde ortaya çıkan ve SSD aşınmasına yol açabilen hatayı yeni Adrenalin sürücüsüyle giderdi. Windows 10 ve 11'i destekleyen isteğe bağlı bu güncelleme, resmi web sitesinden veya Adrenalin yazılımı üzerinden indirilebiliyor.",
-  "etiketler": [
-   "AMD",
-   "Adrenalin",
-   "SSD",
-   "Donanım",
-   "Radeon"
-  ],
-  "link": "https://www.ggmania.com/?smsid=amd-fixes-ssd-wearing-bug-in-new-adrenalin-driver-67349",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 4.51,
-  "tarih": "13.11.2026 10:12",
-  "bd": true,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=amd-fixes-ssd-wearing-bug-in-new-adrenalin-driver-67349"
-  ],
-  "basliklar": [],
-  "bd2": true
- },
+
  {
   "id": "ee002c284dbb2cedc71a53935dd9e9e3",
   "baslik_tr": "Xbox, Geriye Dönük Uyumluluk Programına 21 Orijinal Xbox Oyunu Ekledi",
@@ -2337,28 +2147,7 @@
   ],
   "bd2": true
  },
- {
-  "id": "7dca53f80c6b349166daf891a93506a2",
-  "baslik_tr": "Nvidia, The Elder Scrolls V: Skyrim İçin İpuçları Rehberi Yayınladı",
-  "ozet": "NVIDIA, The Elder Scrolls V: Skyrim oyunu için genel optimizasyonlar, ayarlar ve zor bulunan yapılandırma seçeneklerini içeren bir rehber paylaştı. Şirket, oyunun nasıl en iyi görüneceğini gösterirken farklı ayarların performansa etkileri hakkında detaylı bilgi sunuyor.",
-  "etiketler": [
-   "NVIDIA",
-   "Skyrim",
-   "Oyun Rehberi"
-  ],
-  "link": "https://www.ggmania.com/?smsid=nvidia-drops-geforce-621-24-driver-67351",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [],
-  "gorsel": null,
-  "puan": 4.57,
-  "tarih": "13.11.2026 10:03",
-  "bd": true,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=nvidia-drops-geforce-621-24-driver-67351"
-  ],
-  "basliklar": [],
-  "bd2": true
- },
+
  {
   "id": "9f2379226884cc71cbdb6f287df8af79",
   "baslik_tr": "Company of Heroes 3 Steam'de Hafta Sonu Boyunca Ücretsiz Oynanabilir Oldu",
@@ -2762,35 +2551,7 @@
   "basliklar": [],
   "bd2": true
  },
- {
-  "id": "700c0a7b8e46bcb6858bc9e4acb98025",
-  "baslik_tr": "Jensen Huang Nvidia CEO'luğundan Ayrıldı",
-  "ozet": "Nvidia kurucu ortağı Jensen Huang, 12 Kasım 2026 itibarıyla başkanlık, CEO'luk ve yönetim kurulu üyeliğinden istifa etti. Şirketin finans müdürü Colette Kress, kalıcı bir isim bulunana kadar geçici CEO olarak görev yapacak. Yönetim kurulu, Huang'ın ayrılığının ardından operasyonların kesintisiz süreceğini belirtti. Yaşanan gelişmeyle birlikte Nvidia hisseleri borsada hızlı bir düşüş yaşadı.",
-  "etiketler": [
-   "Nvidia",
-   "Jensen Huang",
-   "Colette Kress",
-   "Oyun Donanımı"
-  ],
-  "link": "https://www.ggmania.com/?smsid=jensen-huang-resigns-as-nvidia-ceo-67346",
-  "kaynak": "Gameguru Mania",
-  "diger_kaynaklar": [
-   {
-    "ad": "Kotaku",
-    "link": "https://kotaku.com/jensen-huang-resigns-from-nvidia-2000756256"
-   }
-  ],
-  "gorsel": "https://kotaku.com/app/uploads/2024/07/d31d08d73fcca3318e5640dc536c3fd4-1280x720.jpg",
-  "puan": 6.9,
-  "tarih": "13.11.2026 09:40",
-  "bd": true,
-  "linkler": [
-   "https://www.ggmania.com/?smsid=jensen-huang-resigns-as-nvidia-ceo-67346",
-   "https://kotaku.com/jensen-huang-resigns-from-nvidia-2000756256"
-  ],
-  "basliklar": [],
-  "bd2": true
- },
+
  {
   "id": "ca542cd069e450137f4c9d6a82f26081",
   "baslik_tr": "Nexon'un Üçüncü Çeyrek Gelirleri Artış Gösterdi",
