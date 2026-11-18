@@ -1,19 +1,64 @@
 [
  {
+  "id": "dd4b680d02b8c8e938bf137569f380b6",
+  "baslik_tr": "World of Warcraft: Forever Hilecilerine Cezalar Yağdı",
+  "bd3": true,
+  "ozet": "Blizzard, World of Warcraft: Forever oyunundaki Blackmaw Hold zindanındaki açık yoluyla haksız yere binlerce altın toplayan oyunculara karşı harekete geçti. Şirket, bu açığı kötüye kullanan yüzlerce oyuncunun hesabını askıya aldı, hesaplarına ticaret engeli getirdi ve haksız yolla elde edilen altınları sildi. Geliştirici ekip, zindanı normal şekilde birkaç kez tamamlayan sıradan oyuncuların endişelenmesine gerek olmadığını, cezaların kasıtlı olarak açığı suistimal edenleri kapsadığını belirtti.",
+  "link": "https://www.eurogamer.net/world-of-warcraft-forever-gold-exploit-abusers-suspended-trade-blocked",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/goblin-gold.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.97,
+  "linkler": [
+   "https://www.eurogamer.net/world-of-warcraft-forever-gold-exploit-abusers-suspended-trade-blocked"
+  ],
+  "basliklar": [
+   "Blizzard suspends World of Warcraft: Forever gold exploit abusers, puts trading blocks on their accounts and removes ill-gotten funds for good measure"
+  ],
+  "ts": 1794995420.0,
+  "tarih": "18.11.2026 13:06"
+ },
+ {
+  "id": "95adbcc8e83f6ef5cbe121babc24051e",
+  "baslik_tr": "Eski Take-Two CEO'su Ben Feder'den Yapay Zeka ve Toy Story Benzetmesi",
+  "bd3": true,
+  "ozet": "Grand Theft Auto 4 ve Red Dead Redemption dönemindeki eski Take-Two CEO'su Ben Feder, Batı oyun sektöründe üretken yapay zekanın kabul görmesinin 'Toy Story anına' bağlı olduğunu belirtti. Feder, Pixar'ın bilgisayar animasyonuna karşı direnci kırdığı gibi oyun sektöründe de benzer bir dönüm noktası yaşanabileceğini ifade etti. Doğu'da yapay zekanın şimdiden kabul edildiğini vurgulayan Feder, yapay zekanın maliyetleri düşürmekten ziyade oynanışı kökten değiştirebileceğini ve geliştiricilere daha önce yapamadıkları şeyleri yapma imkanı tanıdığını savundu.",
+  "link": "https://www.eurogamer.net/gta-4-red-dead-redemption-take-two-ben-feder-ai-toy-story",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/digitalfoundry-2017-kingdom-hearts-3-vs-toy-story-face-off-1500711980973.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.89,
+  "linkler": [
+   "https://www.eurogamer.net/gta-4-red-dead-redemption-take-two-ben-feder-ai-toy-story"
+  ],
+  "basliklar": [
+   "Former GTA 4 and Red Dead boss thinks \"we are one Toy Story moment away\" from people accepting gen-AI in game development in the West"
+  ],
+  "ts": 1794993210.0,
+  "tarih": "18.11.2026 13:06"
+ },
+ {
   "id": "898993ff6bf4e8e399c8deb2210ffa3a",
   "baslik_tr": "Sony'den GTA 6 Çıkışı Öncesi Yeni PS5 Güncellemesi",
   "bd3": true,
   "ozet": "Sony, merakla beklenen GTA 6 çıkışı yaklaşırken PS5 ve PS5 Pro konsolları için zorunlu yeni bir sistem yazılımı güncellemesi yayınladı. 26.07-14.23.00 sürüm numaralı bu yeni yama, her zamanki gibi sistem yazılımında güvenlik düzeltmeleri içeriyor ve çevrim içi oynamak ya da yeni oyunları çalıştırmak için zorunlu tutuluyor. Güncellemelerin yüksek sıklığı, GTA 6'nın yaklaşan çıkışıyla bağlantılı olarak güvenlik açıklarını en aza indirmeyi amaçlıyor. GTA 6, 19 Kasım'da PS5 ve Xbox Series X/S için piyasaya çıkacak.",
   "link": "https://www.eurogamer.net/ps5-firmware-update-gta-6",
   "kaynak": "Eurogamer",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "IGN",
+    "link": "https://www.ign.com/articles/sony-issues-official-ps5-firmware-update-warning-confirms-gta-6-requirement"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/GTA6_5nov-(32).jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 3.85,
   "linkler": [
-   "https://www.eurogamer.net/ps5-firmware-update-gta-6"
+   "https://www.eurogamer.net/ps5-firmware-update-gta-6",
+   "https://www.ign.com/articles/sony-issues-official-ps5-firmware-update-warning-confirms-gta-6-requirement"
   ],
   "basliklar": [
-   "Sony squeezes out a PlayStation 5 firmware update before the release of GTA 6"
+   "Sony squeezes out a PlayStation 5 firmware update before the release of GTA 6",
+   "Sony Issues Official PS5 Firmware Update Warning, Confirms GTA 6 Requirement"
   ],
   "ts": 1794912710.0,
   "tarih": "18.11.2026 07:06"
@@ -1323,6 +1368,10 @@
    {
     "ad": "IGN",
     "link": "https://www.ign.com/articles/the-game-awards-2026-nominations-revealed-gta-6-dominates"
+   },
+   {
+    "ad": "GamesIndustry.biz",
+    "link": "https://www.gamesindustry.biz/gta-6-leads-the-game-awards-2026-with-eight-nominations"
    }
   ],
   "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2025/11/tga_key_art_side.jpg",
@@ -1337,7 +1386,8 @@
    "https://www.polygon.com/game-awards-2026-nominees-snubs/",
    "https://www.ign.com/articles/the-game-awards-2026-nominations-revealed-gta-6-dominates",
    "https://www.polygon.com/game-awards-2026-how-to-watch-when-date-time/",
-   "https://www.polygon.com/2026-game-awards-nominations-goty-gta-analysis/"
+   "https://www.polygon.com/2026-game-awards-nominations-goty-gta-analysis/",
+   "https://www.gamesindustry.biz/gta-6-leads-the-game-awards-2026-with-eight-nominations"
   ],
   "basliklar": [
    "The Game Awards 2026 Nominees Reveal: Here's How to Watch",
@@ -1349,7 +1399,8 @@
    "8 Biggest Snubs in the 2026 Game Awards Nominations",
    "The Game Awards 2026 Nominations Revealed, GTA 6 Dominates",
    "When Are The Game Awards 2026: Date, Time, and How to Watch",
-   "5 Big Takeaways From the 2026 Game Awards Nominations"
+   "5 Big Takeaways From the 2026 Game Awards Nominations",
+   "GTA 6 leads The Game Awards 2026 with eight nominations"
   ],
   "ts": 1794924312.0,
   "tarih": "17.11.2026 17:05"
@@ -4430,63 +4481,6 @@
   ],
   "ts": 1794786815.0,
   "tarih": "16.11.2026 11:07",
-  "bd3": true
- },
- {
-  "id": "3567770ec6cf4c704107e78ff620d1d2",
-  "baslik_tr": "Project Helix Kişisel Bilgisayar Oyunlarını Çalıştırabilen Bir Konsol Olarak Tasarlandı",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Xbox, 25. yıl kutlamaları kapsamında çıkacak yeni nesil Project Helix hakkında önemli detaylar paylaştı. Microsoft yöneticileri, cihazın bir bilgisayar oyunlarını çalıştırabilen bir konsol olacağını vurguladı. Project Helix, dört nesil Xbox kütüphanesini ve ilerlemeyi oyunculara sunmayı hedefliyor. Konsol ve PC oyunları arasındaki sınırları kaldırmayı amaçlayan cihaz, aynı zamanda derinlemesine özelleştirme seçenekleri de sunacak. Donanım maliyetleri ve bileşen krizine rağmen ekip, yapay sinirsel render gibi yeni teknolojilerle erişilebilirliği ve yeniliği sürdürmeyi planlıyor.",
-  "link": "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [
-   {
-    "ad": "GamesRadar",
-    "link": "https://www.gamesradar.com/hardware/xbox-project-helix-is-a-console-that-is-also-capable-of-playing-games-from-your-pc-lead-dev-says-its-really-designed-to-be-the-ultimate-gaming-machine/"
-   },
-   {
-    "ad": "GameSpot",
-    "link": "https://www.gamespot.com/articles/xbox-project-helix-is-a-console-that-plays-pc-games-not-the-other-way-around/"
-   }
-  ],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/05/06/screenshot-2026-05-06-162907-1778081413883.png",
-  "puan": 4.78,
-  "linkler": [
-   "https://www.ign.com/articles/xbox-confirms-project-helix-is-a-console-capable-of-playing-games-from-your-pc",
-   "https://www.gamesradar.com/hardware/xbox-project-helix-is-a-console-that-is-also-capable-of-playing-games-from-your-pc-lead-dev-says-its-really-designed-to-be-the-ultimate-gaming-machine/",
-   "https://www.gamespot.com/articles/xbox-project-helix-is-a-console-that-plays-pc-games-not-the-other-way-around/",
-   "https://www.ign.com/articles/xbox-project-helix-isnt-a-pc-after-all"
-  ],
-  "basliklar": [
-   "Xbox Confirms Project Helix Is 'a Console Capable of Playing Games From Your PC'",
-   "Xbox Project Helix is \"a console that is also capable of playing games from your PC,\" says lead dev",
-   "Xbox Project Helix Is A Console That Plays PC Games, Not The Other Way Around",
-   "Xbox Project Helix Isn't a PC After All"
-  ],
-  "ts": 1794781137.0,
-  "tarih": "16.11.2026 11:07",
-  "bd3": true
- },
- {
-  "id": "043b0cd5ac3df581868d587aceb14040",
-  "baslik_tr": "Fortnite Treasure Hunters Korsan Sandığı Ödülleri ve Oranları Açıklandı",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Treasure Hunters mini sezonuyla birlikte Fortnite oyunundaki sandıklardan değerli eşyalar ve özel kozmetikler çıkmaya başladı. Bazı ödüller her hafta değişiyor. İlk üç hafta boyunca sandıklardan çıkabilecek ödüller arasında kıyafetler, kazmalar, jam track'ler, yükleme ekranları, araçlar ve jetonlar yer alıyor. Ücretsiz eşya dükkanı kozmetikleri kazandıran Pirate Shop Access jetonları ise oldukça nadir bulunuyor. Oyuncular henüz erişim jetonunu bulamadıysa Power Hours etkinliklerinden yararlanabiliyor. Üçüncü ve dördüncü haftadaki sandık ödülleri hakkında ise ilerleyen günlerde daha fazla bilgi bekleniyor.",
-  "link": "https://www.destructoid.com/all-pirate-chest-loot-and-rewards-in-fortnite-treasure-hunters/",
-  "kaynak": "Destructoid",
-  "diger_kaynaklar": [],
-  "gorsel": "https://www.destructoid.com/wp-content/uploads/2026/10/fortnite-treasure-chest.jpg",
-  "puan": 5.89,
-  "linkler": [
-   "https://www.destructoid.com/all-pirate-chest-loot-and-rewards-in-fortnite-treasure-hunters/"
-  ],
-  "basliklar": [
-   "All Pirate Chest loot and rewards in Fortnite Treasure Hunters"
-  ],
-  "ts": 1794781856.0,
-  "tarih": "16.11.2026 02:22",
   "bd3": true
  }
 ]
