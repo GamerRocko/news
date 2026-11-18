@@ -1,5 +1,43 @@
 [
  {
+  "id": "898993ff6bf4e8e399c8deb2210ffa3a",
+  "baslik_tr": "Sony'den GTA 6 Çıkışı Öncesi Yeni PS5 Güncellemesi",
+  "bd3": true,
+  "ozet": "Sony, merakla beklenen GTA 6 çıkışı yaklaşırken PS5 ve PS5 Pro konsolları için zorunlu yeni bir sistem yazılımı güncellemesi yayınladı. 26.07-14.23.00 sürüm numaralı bu yeni yama, her zamanki gibi sistem yazılımında güvenlik düzeltmeleri içeriyor ve çevrim içi oynamak ya da yeni oyunları çalıştırmak için zorunlu tutuluyor. Güncellemelerin yüksek sıklığı, GTA 6'nın yaklaşan çıkışıyla bağlantılı olarak güvenlik açıklarını en aza indirmeyi amaçlıyor. GTA 6, 19 Kasım'da PS5 ve Xbox Series X/S için piyasaya çıkacak.",
+  "link": "https://www.eurogamer.net/ps5-firmware-update-gta-6",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/GTA6_5nov-(32).jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.85,
+  "linkler": [
+   "https://www.eurogamer.net/ps5-firmware-update-gta-6"
+  ],
+  "basliklar": [
+   "Sony squeezes out a PlayStation 5 firmware update before the release of GTA 6"
+  ],
+  "ts": 1794912710.0,
+  "tarih": "18.11.2026 07:06"
+ },
+ {
+  "id": "0898d2ee5fb341cdd1ee6ad38fb24e8a",
+  "baslik_tr": "Microsoft SideWinder Strategic Commander'ın Hikayesi",
+  "bd3": true,
+  "ozet": "2000 yılında piyasaya sürülen Microsoft SideWinder Strategic Commander, gerçek zamanlı strateji oyunları için klavye ve fare ikilisine alternatif olarak tasarlandı. Sol el ile kullanılmak üzere üretilen bu sıra dışı kontrol cihazı, fare, joystick ve gamepad özelliklerini birleştiriyordu. Dönemin eleştirmenlerinden yenilikçi notlar almasına rağmen standart donanımların yerini alamayan cihaz, düşük satışlar nedeniyle 2003 yılında rafa kaldırıldı. Buna rağmen, sadık bir oyuncu kitlesi ve geliştirilen topluluk yamaları sayesinde günümüzde bile kullanılmaya devam ediyor.",
+  "link": "https://www.rockpapershotgun.com/microsofts-sidewinder-strategic-commander-was-a-failed-attempt-to-reimagine-rts-controls-23-years-later-why-are-some-players-still-using-it",
+  "kaynak": "RockPaperShotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/Microsoft-SideWinder-Strategic-Commander-header.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.68,
+  "linkler": [
+   "https://www.rockpapershotgun.com/microsofts-sidewinder-strategic-commander-was-a-failed-attempt-to-reimagine-rts-controls-23-years-later-why-are-some-players-still-using-it"
+  ],
+  "basliklar": [
+   "Microsoft's SideWinder Strategic Commander was a failed attempt to reimagine RTS controls. 23 years later, why are some players still using it?"
+  ],
+  "ts": 1794907880.0,
+  "tarih": "18.11.2026 07:06"
+ },
+ {
   "id": "cca646237e496a3af2f2712a5ff12271",
   "baslik_tr": "Kasım 2026 Xbox Game Pass İkinci Dalga Oyunları Açıklandı",
   "bd3": true,
@@ -255,14 +293,21 @@
   "ozet": "NBA ekibi Miami Heat, Milwaukee Bucks ile Kaseya Center'da oynayacakları iç saha maçında kullanılacak özel Vice City parkesini duyurdu. Takımın X hesabından yapılan paylaşımda, sahanın orta çizgisinde GTA 6'nın 'VI' logosu ile 'Vice City' yazısının ve dış çizgilerde 'I love Vice City' ibaresinin yer aldığı açıklandı. Tamamen Grand Theft Auto 6'nın pembe ve mavi renk paletiyle tasarlanan bu özel sahada takım, tek gecelik Vice City formalarıyla sahne alacak.",
   "link": "https://www.ign.com/articles/gta-6-vice-city-nba-court-revealed-by-miami-heat",
   "kaynak": "IGN",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Kotaku",
+    "link": "https://kotaku.com/miami-heat-players-flaunt-neat-looking-gta-6-themed-ps5-pros-2000757883"
+   }
+  ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/17/lucia-caminos-14-1794958825605.jpg",
   "puan": 5.72,
   "linkler": [
-   "https://www.ign.com/articles/gta-6-vice-city-nba-court-revealed-by-miami-heat"
+   "https://www.ign.com/articles/gta-6-vice-city-nba-court-revealed-by-miami-heat",
+   "https://kotaku.com/miami-heat-players-flaunt-neat-looking-gta-6-themed-ps5-pros-2000757883"
   ],
   "basliklar": [
-   "GTA 6 Vice City NBA Court Revealed by Miami Heat"
+   "GTA 6 Vice City NBA Court Revealed by Miami Heat",
+   "Miami Heat Players Flaunt Neat-Looking GTA 6-Themed PS5 Pros"
   ],
   "ts": 1794959469.0,
   "tarih": "18.11.2026 05:06"
@@ -4435,48 +4480,6 @@
    "All Pirate Chest loot and rewards in Fortnite Treasure Hunters"
   ],
   "ts": 1794781856.0,
-  "tarih": "16.11.2026 02:22",
-  "bd3": true
- },
- {
-  "id": "9421b10b2e30147e1b2007e244cd250f",
-  "baslik_tr": "Universal Paperclips Geliştiricisinden Kelime ve Strateji Oyunu Towers of Babble Duyuruldu",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Universal Paperclips'in yaratıcısı Frank Lantz, Scrabble, kule savunması ve roguelike türlerini harmanlayan yeni bağımsız oyunu Towers of Babble'ı tanıttı. Harf karolarıyla isimler yazarak birimler inşa ettiğiniz ve fiillerle güçlendirmeler yarattığınız oyunda amaç, düşman dalgalarına karşı hayatta kalarak devasa kuleyi inşa etmek. Yaklaşık 120.000 seviye ve 200.000 kelime birimi barındıran yapım, oyunculara kelime dağarcıklarıyla strateji kurma imkanı sunuyor.",
-  "link": "https://kotaku.com/universal-paperclips-creator-blends-scrabble-and-strategy-in-towers-of-babble-2000757126",
-  "kaynak": "Kotaku",
-  "diger_kaynaklar": [],
-  "gorsel": "https://kotaku.com/app/uploads/2026/11/towersofbable.jpg",
-  "puan": 5.85,
-  "linkler": [
-   "https://kotaku.com/universal-paperclips-creator-blends-scrabble-and-strategy-in-towers-of-babble-2000757126"
-  ],
-  "basliklar": [
-   "Universal Paperclips Creator Blends Scrabble And Strategy In Towers Of Babble"
-  ],
-  "ts": 1794780593.0,
-  "tarih": "16.11.2026 02:22",
-  "bd3": true
- },
- {
-  "id": "4e0f5bccbacb9abd98cec2943046b7ca",
-  "baslik_tr": "Halifaxlı Aile Dokuz Yaşındaki Çocuklarının Roblox Faturasını Geri Almaya Çalışıyor",
-  "bd": true,
-  "bd2": true,
-  "ozet": "Kanadalı bir aile, dokuz yaşındaki çocuklarının yaz boyunca ortak Apple Pay hesapları üzerinden oyun içi harcamalar yaparak 20.000 dolara yakın borç yaptığını fark etti. Diğer oyun şirketleri ücretleri iade ederken, Roblox ödemeyi geri yapmaya yanaşmadı. Aile parayı geri alabilmek için mücadele ediyor.",
-  "link": "https://kotaku.com/halifax-parents-hoping-to-reverse-nine-year-olds-20000-roblox-bill-2000757111",
-  "kaynak": "Kotaku",
-  "diger_kaynaklar": [],
-  "gorsel": "https://kotaku.com/app/uploads/2021/04/fy9ihubagxwnsksltxtb.jpg",
-  "puan": 5.74,
-  "linkler": [
-   "https://kotaku.com/halifax-parents-hoping-to-reverse-nine-year-olds-20000-roblox-bill-2000757111"
-  ],
-  "basliklar": [
-   "Halifax Parents Hoping To Reverse Nine-Year-Old’s $20,000 Roblox Bill"
-  ],
-  "ts": 1794777346.0,
   "tarih": "16.11.2026 02:22",
   "bd3": true
  }
