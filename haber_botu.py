@@ -44,9 +44,11 @@ ADIM = 10                 # "Daha fazla" düğmesine her basışta açılacak ha
 TR = dt.timezone(dt.timedelta(hours=3))   # Türkiye saati (UTC+3)
 GORSEL_ZORUNLU = set()    # Buraya yazılan kaynaklardan görseli bulunamayan haberler yayınlanmaz. Ad, FEEDS'teki adla BİREBİR aynı olmalı
 KALDIRILAN_KAYNAKLAR = {"Gameguru Mania", "GGMania"}   # Çıkarılan kaynaklar: bunlardan gelen görselsiz eski haberler sayfadan silinir
-SURUM = "2026-11-17-c"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
+SURUM = "2026-11-18-a"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
 MAKS_ISTEK = 20           # her çalışmada yapay zekaya en fazla kaç istek gönderilsin (kota koruması)
 SON_LISTE = 40            # yapay zekaya, "aynı haber mi?" kontrolü için gösterilecek son haber sayısı
+ONAR_LIMIT = 30           # her çalışmada eski haberlerden en fazla kaçının başlığı cümle düzenine çevrilsin (sayfa okunur, istek harcamaz)
+ASCII_ONAR_LIMIT = 5      # her çalışmada Türkçe karakteri eksik en fazla kaç eski haber yapay zekayla düzeltilsin
 SON_KONTROL_SAAT = 72     # yeni haber, son kaç saatteki haberlerle konu benzerliği için karşılaştırılsın
 
 # Başlıkta HER ZAMAN bu yazımla görünecek isimler ve kısaltmalar (GTA, PS5, PlayStation gibi).
@@ -64,6 +66,7 @@ SABIT_OZEL_ISIMLER = [
 # ------------------------------
 
 DATA = pathlib.Path("data/haberler.json")
+OGRENILEN = pathlib.Path("data/ozel_isimler.json")     # başlıklarda görülüp öğrenilen özel isimler
 REDDEDILEN = pathlib.Path("data/reddedilen.json")   # oyun dışı / görselsiz diye elenen haberler (tekrar sorulmaz)
 SITE = pathlib.Path("site/index.html")
 
@@ -150,14 +153,155 @@ def sayfa_cek(link):
 
 
 _KUCUK_KELIME = {"ve", "ile", "için", "de", "da", "mi", "mı", "mu", "mü", "veya", "ya", "ki",
-                 "of", "the", "and", "for", "to", "in", "on", "at", "vs", "a", "an"}   # başlık ortasında küçük kalan kelimeler
-_SABIT = {i.lower(): i for i in SABIT_OZEL_ISIMLER}
+                 "of", "the", "and", "for", "to", "in", "on", "at", "vs", "a", "an"}
+_BAGLAC = {"of", "the", "and", "for", "to", "in", "on", "at", "vs", "de", "la"}
+_RUN_BAGLAC = _BAGLAC - {"and"}      # "and" iki ayrı ismi birleştirmez (OpenAI and Anthropic)
+_BASLATAN = {"The", "A", "An", "In", "On", "At", "It", "This", "That", "These", "Those", "After", "Before", "While",
+             "When", "As", "For", "And", "But", "With", "From", "According", "However", "Also", "If", "We", "They",
+             "He", "She", "Its", "His", "Her", "There", "Here", "What", "How", "Why", "Who", "One", "Some", "Many",
+             "Most", "During", "Since", "Following", "You", "Your", "Our", "Their", "Now", "Today", "Meanwhile",
+             "Still", "Of", "To", "By", "Not", "No", "Yes", "Just", "So", "Or", "Is", "Are", "Was", "Were", "Be",
+             "Will", "Can", "Has", "Have", "Had", "Do", "Does", "Did", "Over", "Under", "More", "Less", "New",
+             "All", "Both", "I"}
+_KISALTMA_DISI = {"ON", "IN", "AT", "OR", "IF", "IS", "IT", "AS", "BY", "TO", "OF", "SO", "NO", "AN", "BE", "DO",
+                  "GO", "UP", "US", "WE", "ME", "MY", "HE", "AM"}
+_TOKEN = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:['’\-][A-Za-zÀ-ÿ0-9]+)*|[.!?:\n]")
+_TR_HARFLER = set("çğıöşüÇĞİÖŞÜ")
+
+
+def _tr_kucuk(s):
+    return s.replace("İ", "i").lower()
 
 
 def _tr_buyuk_ilk(s):
     if not s:
         return s
     return {"i": "İ", "ı": "I"}.get(s[0], s[0].upper()) + s[1:]
+
+
+def _buyuk(t):
+    return t[:1].isupper()
+
+
+def _tokenleri_birlestir(tokenler):
+    s = ""
+    for t in tokenler:
+        s += t if t == ":" else ((" " + t) if s else t)
+    return s
+
+
+def _baglac_kucult(isim):
+    t = isim.split(" ")
+    for k in range(1, len(t)):
+        if t[k].lower() in _BAGLAC and not t[k - 1].endswith(":"):
+            t[k] = t[k].lower()
+    return " ".join(t)
+
+
+def _adaylar(metin, baslik_mi=False):
+    """İngilizce metindeki özel isimleri bulur: büyük harfle başlayan kelime dizileri (Call of Duty, Grand Theft Auto 6).
+    Döner: (çok kelimeli isimler, cümle ortasında büyük harfle geçen tek kelimeli isimler)."""
+    tokenler = _TOKEN.findall(metin)
+    n = len(tokenler)
+    basta, onceki_sinir = [], True
+    for t in tokenler:
+        basta.append(onceki_sinir)
+        onceki_sinir = t in (".", "!", "?", "\n")
+    if baslik_mi:
+        basta = [i == 0 for i in range(n)]
+    coklu, ortada = set(), set()
+    i = 0
+    while i < n:
+        if not _buyuk(tokenler[i]):
+            i += 1; continue
+        j = i + 1
+        while j < n:
+            u = tokenler[j]
+            if _buyuk(u) or u[:1].isdigit():
+                j += 1
+            elif u.lower() in _RUN_BAGLAC and j + 1 < n and _buyuk(tokenler[j + 1]):
+                j += 2
+            elif u == ":" and j + 1 < n and _buyuk(tokenler[j + 1]):
+                j += 2
+            else:
+                break
+        run, bastan = tokenler[i:j], basta[i]
+        i = j
+        if bastan:                                       # cümle başındaki "The", "In" gibi kelimeleri at
+            while run and run[0] in _BASLATAN:
+                run = run[1:]
+        while run and not _buyuk(run[0]):
+            run = run[1:]
+        if not run:
+            continue
+        run[-1] = re.sub(r"['’]s$", "", run[-1])           # Nintendo's -> Nintendo
+        anlamli = [t for t in run if t != ":" and t.lower() not in _BAGLAC]
+        if len(anlamli) >= 2:
+            coklu.add(_tokenleri_birlestir(run))
+            seg, segmentler = [], []
+            for t in run + [":"]:
+                if t == ":":
+                    segmentler.append(seg); seg = []
+                else:
+                    seg.append(t)
+            for sg in segmentler:                        # alt ifadeler de aday (Grand Theft Auto 6 -> Grand Theft Auto)
+                for x in range(len(sg)):
+                    for y in range(x + 2, min(len(sg), x + 5) + 1):
+                        alt = sg[x:y]
+                        if _buyuk(alt[0]) and alt[0].lower() not in _BAGLAC and \
+                           (_buyuk(alt[-1]) or alt[-1][:1].isdigit()) and alt[-1].lower() not in _BAGLAC:
+                            coklu.add(_tokenleri_birlestir(alt))
+        elif len(anlamli) == 1:
+            tek = anlamli[0]
+            if not bastan and not baslik_mi and tek not in _BASLATAN and len(tek) >= 2 and not tek.isdigit():
+                ortada.add(tek)
+    return coklu, ortada
+
+
+def _kisaltmalar(metin):
+    """GTA, PS5, DLSS gibi kısaltmalar ve PlayStation, OpenAI, iPhone gibi iç büyük harfli yazımlar."""
+    k = set(re.findall(r"\b[A-Za-z]*[a-z][A-Z][A-Za-z0-9]*\b", metin))
+    k |= {x for x in re.findall(r"\b(?=[A-Z0-9]*[A-Z])[A-Z0-9]{2,}\b", metin) if x not in _KISALTMA_DISI}
+    return k
+
+
+def isim_sozlugu(basliklar, metin, model_isimleri=(), ogrenilen=()):
+    """Bir haber için {küçük harfli isim: doğru yazımı} sözlüğü. Kaynaklar (öncelik sırasıyla):
+    elle yazılan liste, daha önce öğrenilenler, haber metni, modelin bildirdikleri, İngilizce başlık."""
+    sozluk = {}
+
+    def ekle(isim):
+        isim = " ".join(str(isim).split())
+        if len(isim) >= 2:
+            sozluk.setdefault(isim.lower(), _baglac_kucult(isim))
+
+    for i in SABIT_OZEL_ISIMLER:
+        ekle(i)
+    for i in ogrenilen:
+        ekle(i)
+    g_coklu, g_ortada = _adaylar(metin or "")
+    for i in sorted(g_coklu):
+        ekle(i)
+    for i in sorted(g_ortada):
+        ekle(i)
+    for i in sorted(_kisaltmalar(metin or "")):
+        ekle(i)
+    for b in basliklar:                                  # başlık çoğunlukla büyük harfliyse kısaltma sayma
+        harfler = [c for c in b if c.isalpha()]
+        if harfler and sum(c.isupper() for c in harfler) / len(harfler) <= 0.6:
+            for i in sorted(_kisaltmalar(b)):
+                ekle(i)
+    kaynak_kucuk = ((metin or "") + " " + " ".join(basliklar)).lower()
+    for x in model_isimleri:                             # modelin uydurduğu isimleri ele: metinde geçmeli
+        x = " ".join(str(x).split())
+        if x and any(c.isupper() for c in x) and len(x.split()) <= 6 and x.lower() in kaynak_kucuk:
+            ekle(x)
+    if len(metin or "") < 300:                           # metin alınamadıysa İngilizce başlıktaki isimleri yedek kullan
+        for b in basliklar:
+            t_coklu, _ = _adaylar(b, baslik_mi=True)
+            for i in sorted(t_coklu):
+                ekle(i)
+    return sozluk
 
 
 def _kalip(isim):
@@ -167,27 +311,56 @@ def _kalip(isim):
     return re.compile(r"(?<!\w)" + p + r"(?!\w)", re.IGNORECASE)
 
 
-def baslik_duzelt(baslik):
-    """Her kelimenin ilk harfi büyük (Title Case). Mevcut harflere dokunmaz: GTA, OpenAI, PlayStation aynen kalır.
-    Küçük harfe çevirme yapılmadığı için büyük/küçük harf tahmini hatası olmaz."""
+def _isimleri_uygula(metin, sozluk):
+    for anahtar in sorted(sozluk, key=len, reverse=True):
+        metin = _kalip(anahtar).sub(lambda m, v=sozluk[anahtar]: v, metin)
+    return metin
+
+
+def _ilk_harf(sonuc, sozluk):
+    if any(v[:1].islower() and sonuc.startswith(v) for v in sozluk.values()):   # "iPhone ..." gibi markalar
+        return sonuc
+    return _tr_buyuk_ilk(sonuc)
+
+
+def _her_kelime_buyuk_mu(baslik):
+    """Başlık "Her Kelime Büyük" biçiminde mi? (ilk kelime, ekler ve küçük bağlaçlar sayılmaz)"""
+    kelimeler = [(m.start(), m.group(0)) for m in re.finditer(r"\w+", baslik)][1:]
+    sayilan = [k for p, k in kelimeler if not baslik[p - 1] in "'’" and k.lower() not in _KUCUK_KELIME and k.isalpha()]
+    return len(sayilan) >= 3 and sum(k[0].isupper() for k in sayilan) / len(sayilan) >= 0.75
+
+
+def baslik_duzelt(baslik, sozluk):
+    """Cümle düzeni: ilk harf ve özel isimler büyük, geri kalan kelimeler küçük.
+    Özel isimler haber metninden ve listelerden gelir. Model başlığı zaten cümle düzeninde yazdıysa,
+    onun büyük harfle yazdığı kelimelere de güvenilir. "Her Kelime Büyük" yazdıysa güvenilmez."""
     baslik = " ".join(str(baslik).split())
+    yerel = dict(sozluk)
+    if not _her_kelime_buyuk_mu(baslik):
+        for m in re.finditer(r"\w+", baslik):
+            k, p = m.group(0), m.start()
+            onceki = baslik[:p].rstrip()
+            if (p and baslik[p - 1] in "'’") or not onceki or onceki.endswith(":"):
+                continue
+            if k[0].isupper() and k.lower() not in _KUCUK_KELIME:
+                yerel.setdefault(k.lower(), k)
+    return _ilk_harf(_isimleri_uygula(_tr_kucuk(baslik), yerel), yerel)
 
-    def duzelt(m):
-        kelime, bas = m.group(0), m.start()
-        if bas and baslik[bas - 1] in "'’":                  # Nintendo'nun, Majora's -> ek, büyütme
-            return kelime
-        if kelime[0].islower() and any(c.isupper() for c in kelime[1:]):   # iPhone, eFootball gibi markalar
-            return kelime
-        onceki = baslik[:bas].rstrip()
-        basta = not onceki or onceki.endswith(":")
-        if not basta and kelime.lower() in _KUCUK_KELIME and not (kelime.isupper() and len(kelime) > 1):
-            return kelime.lower()
-        return _tr_buyuk_ilk(kelime)
 
-    sonuc = re.sub(r"\w+", duzelt, baslik)
-    for k in sorted(_SABIT, key=len, reverse=True):          # Gta -> GTA, Ps5 -> PS5, Playstation -> PlayStation
-        sonuc = _kalip(k).sub(lambda m, v=_SABIT[k]: v, sonuc)
-    return sonuc
+def ascii_supheli(baslik, ozet=""):
+    """Türkçe metin, Türkçe karakterler olmadan (ı yerine i, ş yerine s...) yazılmış gibi mi?"""
+    harf = lambda t: sum(c.isalpha() for c in t)
+    tum = f"{baslik} {ozet}"
+    if harf(tum) >= 60 and not any(c in _TR_HARFLER for c in tum):
+        return True
+    return harf(baslik) >= 35 and not any(c in _TR_HARFLER for c in baslik)
+
+
+FIX_PROMPT = """Aşağıdaki Türkçe başlık ve özet, Türkçe karakterler (ç, ğ, ı, İ, ö, ş, ü) eksik, yani ASCII harflerle yazılmış olabilir
+(örn. "ı" yerine "i", "ş" yerine "s"). Anlamı, kelimeleri ve cümle yapısını DEĞİŞTİRMEDEN yalnızca eksik Türkçe karakterleri düzelt.
+Zaten doğruysa aynen döndür. Sadece geçerli JSON döndür: {"baslik": "...", "ozet": "..."}
+Başlık: {baslik}
+Özet: {ozet}"""
 
 
 PROMPT = """Sen bir Türk oyun haberleri editörüsün. Aşağıdaki İngilizce haber metnine DAYANARAK
@@ -195,10 +368,12 @@ PROMPT = """Sen bir Türk oyun haberleri editörüsün. Aşağıdaki İngilizce 
 - Metinde olmayan hiçbir bilgiyi ekleme, tahmin yürütme.
 - Cümleleri çevirme; olayı kendi cümlelerinle anlat (en fazla 120 kelime).
 - Oyun, şirket ve kişi adlarını orijinal yaz.
-- Başlıktaki her kelimenin ilk harfi büyük olsun (örn. "Eski Halo Geliştiricisi Matt Booty'den 25. Yıl Açıklaması"). Kısaltmaları (GTA, PS5, DLC) tamamen büyük harfle yaz.
+- Başlık normal Türkçe cümle yazımıyla olsun: yalnızca ilk kelimenin ilk harfi büyük; özel isimler (oyun, şirket, kişi, platform adları ve kısaltmalar; ör. Nintendo, Zelda, Breath of the Wild, GTA 6) orijinal büyük/küçük harfleriyle yazılsın; diğer tüm kelimeler küçük harfle başlasın. "Başlıktaki Her Kelime Büyük" biçimini KULLANMA.
+- "ozel_isimler" alanına başlıkta geçen özel isimleri ve kısaltmaları, başlıktaki yazımlarıyla listele.
+- Türkçe karakterleri (ç, ğ, ı, İ, ö, ş, ü) eksiksiz ve doğru kullan; asla ASCII'ye çevirme (ı yerine i, ş yerine s yazma).
 - Haber video oyunları, oyun şirketleri veya oyun donanımıyla ilgili değilse (film, dizi, LEGO, genel teknoloji vb.) sadece {"uygun": false} döndür.
 - Aşağıda "Son yayınlanan haberler" listesi varsa ve bu haber onlardan biriyle AYNI olayı ya da duyuruyu anlatıyorsa (aynı oyun veya şirketle ilgili FARKLI bir gelişme aynı sayılmaz), başka hiçbir şey yazmadan {"uygun": true, "ayni_haber": N} döndür (N: listedeki numara).
-- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozet": "..."}
+- Aksi halde sadece geçerli JSON döndür: {"uygun": true, "baslik": "...", "ozel_isimler": ["...", "..."], "ozet": "..."}
 {son_haberler}Başlık: {baslik}
 Metin:
 {metin}"""
@@ -211,6 +386,10 @@ YEDEK_MODELLER = [m for m in os.getenv("LLM_YEDEK_MODELLER", "gemini-3.1-flash-l
 def yapay_zeka(baslik, metin, son_liste=()):
     liste = ("Son yayınlanan haberler:\n" + "\n".join(f"{i + 1}) {h['baslik_tr']}" for i, h in enumerate(son_liste)) + "\n\n") if son_liste else ""
     istek = PROMPT.replace("{son_haberler}", liste).replace("{baslik}", baslik).replace("{metin}", metin[:4500])
+    return _llm_json(istek)
+
+
+def _llm_json(istek):
     for model in [MODEL] + [m for m in YEDEK_MODELLER if m != MODEL]:
         for deneme in range(3):
             try:
@@ -234,6 +413,12 @@ def yapay_zeka(baslik, metin, son_liste=()):
             t = t.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
             return json.loads(t)
     raise RuntimeError("Hiçbir model yanıt veremedi")
+
+
+def turkce_karakter_duzelt(baslik, ozet):
+    """Türkçe karakteri eksik başlık/özeti yapay zekaya düzelttirir."""
+    out = _llm_json(FIX_PROMPT.replace("{baslik}", baslik).replace("{ozet}", ozet))
+    return str(out.get("baslik") or baslik), str(out.get("ozet") or ozet)
 
 
 GRADYANLAR = [("#3a4bff", "#12163a"), ("#14a38b", "#07302c"), ("#7b4bd6", "#1d0f3d"),
@@ -265,12 +450,11 @@ h1{margin:0;font:800 30px/1.1 Georgia,"Times New Roman",serif;letter-spacing:-.5
 .g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .lead .g{border-radius:0;min-height:250px}
 p{margin:0 0 8px;max-width:64ch}
-[hidden]{display:none!important}
-#daha{display:block;margin:28px auto 0;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:10px 26px;font:600 15px "Segoe UI",system-ui,sans-serif;cursor:pointer}
-.tags span{display:inline-block;background:var(--tag);color:var(--accent);border-radius:99px;padding:1px 10px;font-size:13px;margin:0 6px 4px 0}
 .pop{display:inline-block;background:var(--accent);color:#fff;border-radius:4px;padding:0 8px;font-size:12px;margin-bottom:8px}
 small{color:var(--muted)}
 a{color:var(--accent)}
+[hidden]{display:none!important}
+#daha{display:block;margin:28px auto 0;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:10px 26px;font:600 15px "Segoe UI",system-ui,sans-serif;cursor:pointer}
 @media(max-width:640px){.lead{grid-template-columns:1fr}.liste article{grid-template-columns:1fr}.g{min-height:170px}}
 </style>
 <noscript><style>.liste article[hidden]{display:grid!important}#daha{display:none}</style></noscript>
@@ -296,7 +480,7 @@ def _kart(h, lead=False, gizli=False):
     rozet = f'<span class="pop">{1 + len(diger)} kaynak</span>' if diger else ""
     kaynaklar = f'<a href="{e(h["link"])}" rel="nofollow noopener">{e(h["kaynak"])}</a>' + "".join(
         f', <a href="{e(d["link"])}" rel="nofollow noopener">{e(d["ad"])}</a>' for d in diger)
-    govde = (f'{rozet}<{"h2" if lead else "h3"}>{e(baslik_duzelt(h["baslik_tr"]))}</{"h2" if lead else "h3"}>'
+    govde = (f'{rozet}<{"h2" if lead else "h3"}>{e(h["baslik_tr"])}</{"h2" if lead else "h3"}>'
              f'<p>{e(h["ozet"])}</p>'
              f'<small>Kaynak: {kaynaklar} · {h["tarih"]}</small>')
     if lead:
@@ -314,8 +498,8 @@ def site_uret(haberler):
             icerik += '<button id="daha" type="button">Daha fazla haber göster</button>'
     else:
         icerik = "<p>Henüz haber yok.</p>"
-    sayfa = SAYFA.replace("__TARIH__", dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M")).replace("__ICERIK__", icerik).replace("__ADIM__", str(ADIM))
-    SITE.write_text(sayfa, encoding="utf-8")
+    SITE.write_text(SAYFA.replace("__TARIH__", dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M"))
+                    .replace("__ICERIK__", icerik).replace("__ADIM__", str(ADIM)), encoding="utf-8")
 
 
 def modelleri_listele():
@@ -367,8 +551,20 @@ def main():
     arsiv = kalan
     if once != len(arsiv):
         print(f"{once - len(arsiv)} haber, çıkarılan kaynak (Gameguru Mania) yüzünden silindi.", flush=True)
-    for h in arsiv:                                  # kayıtlı başlıkları her çalışmada tutarlı hâle getir (işlem tekrarlansa da değişmez)
-        h["baslik_tr"] = baslik_duzelt(h["baslik_tr"])
+    ogrenilen = set(json.loads(OGRENILEN.read_text("utf-8"))) if OGRENILEN.exists() else set()
+    ascii_say = 0
+    for h in [x for x in arsiv if not x.get("bd4")][:ONAR_LIMIT]:   # eski başlıkları sayfa metnine bakarak bir kez cümle düzenine çevir
+        try:
+            metin, _ = sayfa_cek(h["link"])
+        except Exception:
+            metin = None
+        if ascii_say < ASCII_ONAR_LIMIT and ascii_supheli(h["baslik_tr"], h["ozet"]):
+            try:
+                h["baslik_tr"], h["ozet"] = turkce_karakter_duzelt(h["baslik_tr"], h["ozet"]); ascii_say += 1
+            except Exception as ex:
+                print("Türkçe karakter düzeltmesi yapılamadı:", ex)
+        h["baslik_tr"] = baslik_duzelt(h["baslik_tr"], isim_sozlugu(h["basliklar"], metin or "", (), ogrenilen))
+        h["bd4"] = True
     reddedilen = set(json.loads(REDDEDILEN.read_text("utf-8"))) if REDDEDILEN.exists() else set()
     idle = lambda l: hashlib.md5(l.encode()).hexdigest()
 
@@ -423,8 +619,14 @@ def main():
                 birlestir(son_liste[n - 1], a["uyeler"]); say["model_birlesen"] += 1
                 print(f"Aynı haber, kaynak olarak eklendi: {a['baslik']} -> {son_liste[n - 1]['baslik_tr']}")
                 time.sleep(7); continue
-            baslik_tr = baslik_duzelt(out["baslik"])
-            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd3=True, ozet=out["ozet"], link=a["link"],
+            if ascii_supheli(out["baslik"], out["ozet"]):   # model Türkçe karakterleri atlamışsa bir kez düzelttir
+                istek += 1
+                out["baslik"], out["ozet"] = turkce_karakter_duzelt(out["baslik"], out["ozet"])
+            sozluk = isim_sozlugu([m["baslik"] for m in a["uyeler"]], metin, out.get("ozel_isimler", []), ogrenilen)
+            baslik_tr = baslik_duzelt(out["baslik"], sozluk)
+            kullanilan = {v for v in sozluk.values() if v in baslik_tr and v not in SABIT_OZEL_ISIMLER}
+            ogrenilen.update(v for v in kullanilan if not any(v != w and v in w for w in kullanilan))   # alt parçaları değil, tam ismi öğren
+            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd4=True, ozet=out["ozet"], link=a["link"],
                              kaynak=a["kaynak"], diger_kaynaklar=a["diger_kaynaklar"], gorsel=gorsel, puan=a["puan"],
                              linkler=linkler, basliklar=[m["baslik"] for m in a["uyeler"]], ts=a["ts"],
                              tarih=dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M"))
@@ -437,6 +639,7 @@ def main():
     arsiv = (yeni + arsiv)[:SAKLANAN]
     DATA.write_text(json.dumps(arsiv, ensure_ascii=False, indent=1), "utf-8")
     REDDEDILEN.write_text(json.dumps(list(reddedilen)[-5000:]), "utf-8")
+    OGRENILEN.write_text(json.dumps(sorted(ogrenilen)[:3000], ensure_ascii=False), "utf-8")
     site_uret(arsiv)
     print(f"{len(yeni)} yeni haber eklendi. | oyun dışı: {say['oyun_disi']} | metni alınamayan/kısa: {say['kisa']} | "
           f"modelin birleştirdiği: {say['model_birlesen']} | görselsiz: {say['gorselsiz']} | hata: {say['hata']} | sıra bekleyen: {len(adaylar) - islenen}")
