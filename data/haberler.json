@@ -1,5 +1,177 @@
 [
  {
+  "id": "2d0e0b25fd9c1c8926b370b0d08f06d4",
+  "baslik_tr": "Pure Xbox ekibi bu hafta sonu hangi oyunları oynayacağını paylaşıyor",
+  "bd4": true,
+  "ozet": "Pure Xbox ekibinden Craig Reid ve Fraser Gilbert, bu hafta sonu oynayacakları oyunları açıkladı. Craig Reid, GTA 6 oynamayı planladığını, ayrıca The Legend of Zelda: Ocarina of Time, It Takes Two ve SONIC PICO PARK ile vakit geçirdiğini belirtti. Fraser Gilbert ise oyunu inceleme amacıyla erken bitirmesine rağmen tekrar oynamaya başladığını ve en az yüz saat hedeflediğini söyledi. Ayrıca Gilbert, Steam indirimlerinden ROG Xbox Ally X cihazı için GTA 4 Complete Edition satın aldığını ifade etti.",
+  "link": "https://www.purexbox.com/features/talking-point-what-are-you-playing-this-weekend-november-21-22",
+  "kaynak": "Pure Xbox",
+  "diger_kaynaklar": [
+   {
+    "ad": "Nintendo Life",
+    "link": "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-21st-november"
+   },
+   {
+    "ad": "Push Square",
+    "link": "https://www.pushsquare.com/news/2026/11/talking-point-what-are-you-playing-this-weekend-issue-659"
+   }
+  ],
+  "gorsel": "https://images.purexbox.com/c2531ee509346/large.jpg",
+  "puan": 10.56,
+  "linkler": [
+   "https://www.purexbox.com/features/talking-point-what-are-you-playing-this-weekend-november-21-22",
+   "https://www.nintendolife.com/features/talking-point-what-are-you-playing-this-weekend-21st-november",
+   "https://www.pushsquare.com/news/2026/11/talking-point-what-are-you-playing-this-weekend-issue-659"
+  ],
+  "basliklar": [
+   "Talking Point: What Are You Playing This Weekend? (November 21-22)",
+   "Talking Point: What Are You Playing This Weekend? (21st November)",
+   "Talking Point: What Are You Playing This Weekend? - Issue 659"
+  ],
+  "ts": 1795262400.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "c63f998a14ecd16cd1d4051c699eb1e4",
+  "baslik_tr": "Önümüzdeki hafta Xbox için çıkış yapacak oyunlar duyuruldu",
+  "bd4": true,
+  "ozet": "Önümüzdeki hafta Xbox platformu için çıkış yapacak yeni bağımsız oyunlar ve Game Pass yapımları açıklandı. 23-27 Kasım tarihleri arasında oyuncularla buluşacak liste; Gothic 3 Classic, Storage Hunter Simulator, The Spectrum Retreat: Redux ve Jaden Industries gibi çeşitli bulmaca, nişancı ve parti türündeki yapımları içeriyor.",
+  "link": "https://www.purexbox.com/news/2026/11/these-20plus-games-are-coming-to-xbox-next-week-november-23-27",
+  "kaynak": "Pure Xbox",
+  "diger_kaynaklar": [
+   {
+    "ad": "Push Square",
+    "link": "https://www.pushsquare.com/guides/these-11plus-ps5-and-ps-plus-games-are-coming-out-next-week-23rd-29th-november"
+   }
+  ],
+  "gorsel": "https://images.purexbox.com/5b1096fc4d828/large.jpg",
+  "puan": 7.69,
+  "linkler": [
+   "https://www.purexbox.com/news/2026/11/these-20plus-games-are-coming-to-xbox-next-week-november-23-27",
+   "https://www.pushsquare.com/guides/these-11plus-ps5-and-ps-plus-games-are-coming-out-next-week-23rd-29th-november"
+  ],
+  "basliklar": [
+   "These 20+ Games Are Coming To Xbox Next Week (November 23-27)",
+   "Guide: These 11+ PS5 and PS Plus Games Are Coming Out Next Week (23rd-29th November)"
+  ],
+  "ts": 1795266000.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "d125e1859310d49dcc0af21a3c9b4a7d",
+  "baslik_tr": "Letimci simülasyonu tarzı Alt Video duyuruldu",
+  "bd4": true,
+  "ozet": "Letterboxd ve Plex gibi platformlardaki içerikleri dijital bir video dükkanına aktarmanıza olanak tanıyan Alt Video duyuruldu. Oyun içinde kendi sahte Blockbuster dükkanınızı doldurabilir, raflara DVD'ler yerleştirebilir ve hatta arkadaşlarınızla sinema odasında film izleyebilirsiniz. VR desteği de sunan yapım, 24 Kasım'da erken erişim olarak çıkış yapacak.",
+  "link": "https://www.rockpapershotgun.com/alt-video-is-a-digital-faux-blockbuster-video-store-that-you-can-fill-with-movies-from-your-letterboxd-watchlist-and-plex-server",
+  "kaynak": "Rock Paper Shotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/alt-video.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.92,
+  "linkler": [
+   "https://www.rockpapershotgun.com/alt-video-is-a-digital-faux-blockbuster-video-store-that-you-can-fill-with-movies-from-your-letterboxd-watchlist-and-plex-server"
+  ],
+  "basliklar": [
+   "Alt Video is a digital, faux Blockbuster video store that you can fill with movies from your Letterboxd watchlist and Plex server"
+  ],
+  "ts": 1795301430.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "7641aed64fd59b5f49e4fdb4564821d1",
+  "baslik_tr": "Comcast şirketine göre GTA 6 çıkışı internet trafiğini rekor seviyeye taşıdı",
+  "bd4": true,
+  "ozet": "Comcast, Grand Theft Auto 6 oyununun piyasaya çıkışının şirket tarihinin en yüksek internet trafiği yaşanan günü oluşturduğunu açıkladı. Şirket tarafından paylaşılan bilgilere göre, 19 Kasım tarihinde ağ trafiği normal bir güne kıyasla yüzde 31 oranında arttı ve en yoğun anlarda bu miktar toplam ağ trafiğinin neredeyse dörtte birine ulaştı.",
+  "link": "https://www.pcgamer.com/games/grand-theft-auto/comcast-at-peak-gta6-accounted-for-nearly-a-quarter-of-all-internet-traffic/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/e3fPzBmapimeiWj59SBAiQ-1920-80.jpg",
+  "puan": 5.78,
+  "linkler": [
+   "https://www.pcgamer.com/games/grand-theft-auto/comcast-at-peak-gta6-accounted-for-nearly-a-quarter-of-all-internet-traffic/"
+  ],
+  "basliklar": [
+   "Comcast: 'At peak, GTA 6 accounted for nearly a quarter of all internet traffic'"
+  ],
+  "ts": 1795297349.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "25118fee6b5f26276ed1ce09d3bff750",
+  "baslik_tr": "NIGHT EYE TV duyuruldu",
+  "bd4": true,
+  "ozet": "Halka açık televizyon yayıncılığından ilham alan dijital bir platform olan NIGHT EYE TV duyuruldu. Unity motoruyla hazırlanan ve tuhaf oyun yapımlarını bir araya getiren projede, Nathalie Lawhead, Jeremy Couillard ve Taylor McCue gibi isimlerin oyunlarına ait klip ve oynanış kesitleri yer alıyor. İlerleyen süreçte oyunların satın alınabileceği küratörlü bir platform haline gelmesi planlanan proje için bir Indiegogo kampanyası yürütülüyor.",
+  "link": "https://www.rockpapershotgun.com/public-access-television-is-born-anew-in-night-eye-tv-a-digital-goggle-box-filled-with-art-game-curios",
+  "kaynak": "Rock Paper Shotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/nighteye-tv.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.74,
+  "linkler": [
+   "https://www.rockpapershotgun.com/public-access-television-is-born-anew-in-night-eye-tv-a-digital-goggle-box-filled-with-art-game-curios"
+  ],
+  "basliklar": [
+   "Public-access television is born anew in NIGHT EYE TV, a digital goggle box filled with art game curios"
+  ],
+  "ts": 1795296440.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "4a896216c8a93721c7b569e8cd5364a5",
+  "baslik_tr": "Ubisoft yapay zeka odaklı araştırma geliştirme ekibini Motherbrain adlı ayrı bir yan kuruluşa dönüştürdü",
+  "bd4": true,
+  "ozet": "Ubisoft, yapay zeka odaklı AR-GE projesinin arkasındaki ekibi Motherbrain adlı bağımsız bir yan kuruluş haline getirdi. Şirket, bu hamleyle oynanış yenilikleri için yapay zeka geliştirmeyi, hafızaya sahip akıllı NPC'ler ve büyük ölçekli dünyaları yöneten yapay zeka oyun yöneticileri tasarlamayı amaçlıyor. Bu gelişme, Ubisoft'un çalışan sayısında kısıtlamaya gittiği ve bazı projelerini iptal ettiği çalkantılı bir döneme denk geldi. Ekibin daha önceki çalışmaları arasında, oyuncuların mikrofon kullanarak yapay zeka destekli takım arkadaşlarına komut vermesini sağlayan Teammates projesi yer alıyor.",
+  "link": "https://www.pcgamer.com/gaming-industry/the-team-behind-ubisofts-first-playable-ai-based-r-and-d-project-has-been-established-as-its-own-subsidiary-called-motherbrain/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/V6aMPiSGDvVuMNgnYf3iAa-1920-80.jpg",
+  "puan": 5.72,
+  "linkler": [
+   "https://www.pcgamer.com/gaming-industry/the-team-behind-ubisofts-first-playable-ai-based-r-and-d-project-has-been-established-as-its-own-subsidiary-called-motherbrain/"
+  ],
+  "basliklar": [
+   "The team behind Ubisoft's 'first playable AI-based R&D project' has been established as its own subsidiary called Motherbrain"
+  ],
+  "ts": 1795295776.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "3140af9a7205b249621fc8de2ea69033",
+  "baslik_tr": "Skyrim baş geliştiricisi Bruce Nesmith, Bethesda'nın Fallout lisansını aldığı dönemdeki tepkileri değerlendirdi",
+  "bd4": true,
+  "ozet": "Skyrim oyununun baş geliştiricisi Bruce Nesmith, Bethesda'nın 2004 yılında Fallout lisansını satın almasının ardından serinin eski hayranlarından gelen yoğun tepkileri andı. Nesmith, ekibin bu eleştirileri haksız çıkarmak zorunda kaldığını ve Fallout 3 ile bunu başardıklarını belirtti. Sert eleştirilerin geliştiricileri kişisel olarak etkilediğini ancak bunun onlara doğru iş yaptıklarını kanıtlama hırsı verdiğini ifade etti.",
+  "link": "https://www.pcgamer.com/games/fallout/skyrim-lead-chats-about-the-fallout-diehards-who-hated-that-bethesda-got-the-series-we-had-to-prove-them-wrong-and-fortunately-we-did/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/Sz4SXMccvrs3ehk26Yrm5-1920-80.jpg",
+  "puan": 5.31,
+  "linkler": [
+   "https://www.pcgamer.com/games/fallout/skyrim-lead-chats-about-the-fallout-diehards-who-hated-that-bethesda-got-the-series-we-had-to-prove-them-wrong-and-fortunately-we-did/"
+  ],
+  "basliklar": [
+   "Skyrim lead chats about the Fallout diehards who hated that Bethesda got the series: 'We had to prove them wrong, and fortunately we did'"
+  ],
+  "ts": 1795284000.0,
+  "tarih": "22.11.2026 02:30"
+ },
+ {
+  "id": "25793611df347e97dd80092b8d6b1a1b",
+  "baslik_tr": "Shanghai polis baskını sahte FINAL FANTASY figürlerini ortaya çıkardı",
+  "bd4": true,
+  "ozet": "Shanghai polis yetkilileri, internet üzerinden sahte figür ve model kitleri satan bir şebekeye operasyon düzenledi. Final Fantasy serisinden Tifa Lockhart figürünün şüpheli bulunmasıyla başlayan soruşturmada 13 kişi gözaltına alındı ve çok sayıda yetkisiz ürün ele geçirildi. Şüphelilerin Guangzhou'daki bir fabrikaya sahte ürünler ürettirdiği ve müşterilere orijinal ürün gibi sattığı belirlendi.",
+  "link": "https://www.pcgamer.com/games/final-fantasy/fake-figures-seized-from-dishonest-dealer-in-shanghai-sting-spurred-by-tacky-tifa-tchotchke/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/sQNDu82xunDjdg7dpg7EmD-1920-80.jpg",
+  "puan": 5.2,
+  "linkler": [
+   "https://www.pcgamer.com/games/final-fantasy/fake-figures-seized-from-dishonest-dealer-in-shanghai-sting-spurred-by-tacky-tifa-tchotchke/"
+  ],
+  "basliklar": [
+   "Fake figures seized from dishonest dealer in Shanghai sting spurred by tacky Tifa tchotchke"
+  ],
+  "ts": 1795280886.0,
+  "tarih": "22.11.2026 02:31"
+ },
+ {
   "id": "019ac5d0dae0572e6bb91d4a3df7c615",
   "baslik_tr": "Bir radyo kulesi uzmanı, GTA 6 oyunundaki kulelerin gerçekçiliğine şaşkınlığını gizleyemiyor",
   "bd4": true,
@@ -171,7 +343,12 @@
   "ozet": "Eldritch Empathy, oyuncuların kozmik korku yaratıklarını teşhis edip akıl sağlığını korumaya çalıştığı yeni bir bulmaca roguelite oyunu olarak duyuruldu. İsviçre'deki küçük bir köyün yakınındaki ormanlarda garip rüyalar gören Eike adlı genç bir kadını yönlendirdiğiniz yapımda, yaratıkları incelemek için bir kitap kullanıyor ve kurallara göre analiz yapıyorsunuz. Yaratıkların iç kısımlarında yollar oluşturmak için sembolleri dönüştürüp kullanarak bozulmuş duyguları arındırıyor veya zarar vermeyi seçebiliyorsunuz. Ormanda aldığınız kararlar evinizi ve topluluğunuzu etkiliyor. Piksel sanatına sahip oyunun henüz kesin bir çıkış tarihi bulunmuyor.",
   "link": "https://www.rockpapershotgun.com/eldritch-empathy-is-a-papers-please-esque-roguelite-about-diagnosing-cosmic-horror-creatures-and-trying-not-to-lose-your-marbles-as-you-do",
   "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/eldritch-empathy-is-a-papers-please-esque-roguelite-about-diagnosing-cosmic-horror-creatures-and-trying-not-to-lose-your-marbles-as-you-do"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/eldritch-empathy.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.86,
   "linkler": [
@@ -247,7 +424,12 @@
   "ozet": "Deltarune geliştiricisi Toby Fox, oyunun sonunun nasıl biteceğini kendi ekibiyle bile paylaşmıyor. Yayınlanan son bülten güncellemelerine göre, oyunun altıncı bölümünün taslağı tamamlanırken yedinci bölüm için çalışmalar sürüyor. Fox, yedinci bölümün kritik bir anında anlatmayı bırakarak ekibinin oyun üzerinde daha fazla ilerleme kaydetmesi gerektiğini belirtti. Ekiptekiler de bu durumun daha eğlenceli olduğu konusunda hemfikir.",
   "link": "https://www.rockpapershotgun.com/everyone-agrees-its-more-fun-this-way-toby-fox-wont-tell-his-team-how-deltarune-ends-until-theyve-built-enough-of-it",
   "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/everyone-agrees-its-more-fun-this-way-toby-fox-wont-tell-his-team-how-deltarune-ends-until-theyve-built-enough-of-it"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/deltarune-toby-fox.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.73,
   "linkler": [
@@ -385,6 +567,10 @@
    {
     "ad": "Polygon",
     "link": "https://www.polygon.com/darkest-dungeon-2-the-butchers-asylum/"
+   },
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/darkest-dungeon-2s-next-bit-of-dlc-is-a-short-run-combat-focused-gauntlet-where-you-must-do-everything-in-your-power-to-please-the-audience"
    }
   ],
   "gorsel": "https://assetsio.gnwcdn.com/darkest-dungeon-2-butchers-asylum.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -523,14 +709,27 @@
   "ozet": "Bazı oyuncular PS5 ve Xbox Series X konsollarında GTA 6 oynarken oyunun sürekli çöktüğünü ve CE-108255-1 hatası verdiğini belirtiyor. Bu sorun bazı kullanıcıların hikayede ilerlemesini engelliyor. Oyuncular önbellek temizleme ve yeniden yükleme gibi yöntemleri denese de şimdilik kalıcı bir çözüm bulunmuyor. Rockstar Games henüz konuyla ilgili bir açıklama yapmazken, Sony destek sayfaları oyunun güncellenmesini ve lisansların yenilenmesini öneriyor.",
   "link": "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
   "kaynak": "Eurogamer",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "IGN",
+    "link": "https://www.ign.com/articles/gta-6-players-report-crashes-on-ps5-with-error-ce-108255-1"
+   },
+   {
+    "ad": "GameSpot",
+    "link": "https://www.gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code/"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/Screenshot-2026-11-21-at-14.55.00.png?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.87,
   "linkler": [
-   "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix"
+   "https://www.eurogamer.net/gta-6-ps5-crashing-ce-108255-1-error-fix",
+   "https://www.ign.com/articles/gta-6-players-report-crashes-on-ps5-with-error-ce-108255-1",
+   "https://www.gamespot.com/articles/gta-6-is-crashing-on-some-ps5s-with-ce-108255-1-error-code/"
   ],
   "basliklar": [
-   "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try"
+   "GTA 6 is crashing on some PS5s with error CE-108255-1 - here's what you can try",
+   "GTA 6 Players Report Crashes on PS5 With Error CE-108255-1",
+   "GTA 6 Is Crashing On Some PS5s With CE-108255-1 Error Code"
   ],
   "ts": 1795273430.0,
   "tarih": "21.11.2026 19:07"
@@ -736,6 +935,10 @@
    {
     "ad": "PCGamesN",
     "link": "https://www.pcgamesn.com/nvidia/geforce-driver-hotfix-excessive-ssd-writes"
+   },
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting"
    }
   ],
   "gorsel": "https://assetsio.gnwcdn.com/nvidia-dlss-4-5-ray-reconstruction-announced-01.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -1511,6 +1714,10 @@
    {
     "ad": "GamesIndustry.biz",
     "link": "https://www.gamesindustry.biz/gta-6-hits-379-billion-in-its-first-day-on-sale-becoming-the-biggest-entertainment-launch-in-history"
+   },
+   {
+    "ad": "VGC",
+    "link": "https://www.videogameschronicle.com/news/gta-6-earns-3-79-billion-in-one-day-as-the-biggest-entertainment-launch-in-history/"
    }
   ],
   "gorsel": "https://assetsio.gnwcdn.com/gta-6-headline-launch-gallery-4.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -1525,7 +1732,8 @@
    "https://gameinformer.com/2026/11/20/grand-theft-auto-6-shatters-records-making-379-billion-in-24-hours-as-the-biggest",
    "https://www.gamesradar.com/games/grand-theft-auto/lets-put-gta-6s-usd3-79-billion-launch-into-perspective-gta-5-made-usd800-million-at-launch-and-red-dead-redemption-2-made-usd725-million/",
    "https://www.gamesindustry.biz/gta-6-hits-379-billion-in-its-first-day-on-sale-becoming-the-biggest-entertainment-launch-in-history",
-   "https://gameinformer.com/2026/11/20/grand-theft-auto-vi-shatters-records-making-379-billion-in-24-hours-as-the-biggest"
+   "https://gameinformer.com/2026/11/20/grand-theft-auto-vi-shatters-records-making-379-billion-in-24-hours-as-the-biggest",
+   "https://www.videogameschronicle.com/news/gta-6-earns-3-79-billion-in-one-day-as-the-biggest-entertainment-launch-in-history/"
   ],
   "basliklar": [
    "GTA 6 is officially the biggest entertainment launch of all time, selling 32.5 million pre-sale copies and a bonkers $3.79 billion in its first day",
@@ -1537,7 +1745,8 @@
    "Grand Theft Auto 6 Shatters Records, Making $3.79 Billion In 24 Hours As The Biggest Entertainment Launch Ever",
    "Let's put GTA 6's $3.79 billion launch into perspective: GTA 5 made $800 million at launch",
    "GTA 6 hits $3.79 billion in its first day on sale, becoming \"the biggest entertainment launch in history\"",
-   "Grand Theft Auto VI Shatters Records, Making $3.79 Billion In 24 Hours As The Biggest Entertainment Launch Ever"
+   "Grand Theft Auto VI Shatters Records, Making $3.79 Billion In 24 Hours As The Biggest Entertainment Launch Ever",
+   "GTA 6 earns $3.79 billion in one day as ‘the biggest entertainment launch in history’"
   ],
   "ts": 1795204840.0,
   "tarih": "20.11.2026 23:06"
@@ -1969,7 +2178,12 @@
   "ozet": "RPS, oyuncuların tüm zamanların en iyi on PC oyununu seçebileceği rps 100 okuyucu sürümü oylamasını başlattı. Oyuncular bir Google Form üzerinden en sevdikleri oyunları sıralayarak oylamaya katılabiliyor. Oylamada 10. sıradaki oy bir puan alırken, 1. sıradakine on puan veriliyor. Geçen yıl olduğu gibi bu yıl da benzer oyun serilerinin puanları birleştirilerek çeşitlilik artırılacak. Katılımcılar isterlerse oyunları neden seçtiklerini de belirtebilecekler. Oylama için son tarih 6 aralık pazar günü saat 17.00 olarak belirlendi.",
   "link": "https://www.rockpapershotgun.com/vote-now-for-2026s-rps-100-reader-edition",
   "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/vote-now-for-2026s-rps-100-reader-edition"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/RPS-100-Readers_Edition_Render_AW.png?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.71,
   "linkler": [
@@ -2129,14 +2343,21 @@
   "ozet": "Rockstar'ın seslendirme kadrosunu açıklamasının ardından, GTA 6'da Mandy karakterine ses ve hareket yakalama performansıyla hayat veren Lexie Shoaibi sosyal medya hesabından oyunda yer aldığını duyurdu. Oyuncuların şimdiden oyunda bulduğu Shoaibi, daha önce bazı yapımlarda rol almıştı. Oyunda erken saatlerde Jason ile etkileşime giren Mandy, evindeki çeşitli detaylarla dikkat çekiyor.",
   "link": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mandy-actor-bravely-raises-her-hand-if-you-play-the-game-let-me-know-if-you-find-me/",
   "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "PC Gamer",
+    "link": "https://www.pcgamer.com/games/grand-theft-auto/the-actress-who-plays-mandy-in-gta-6-has-revealed-herself-if-you-play-the-game-let-me-know-if-you-find-me/"
+   }
+  ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/diWRaBHmDVEmgxEnW5xRpe-1920-80.jpg",
   "puan": 5.93,
   "linkler": [
-   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mandy-actor-bravely-raises-her-hand-if-you-play-the-game-let-me-know-if-you-find-me/"
+   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mandy-actor-bravely-raises-her-hand-if-you-play-the-game-let-me-know-if-you-find-me/",
+   "https://www.pcgamer.com/games/grand-theft-auto/the-actress-who-plays-mandy-in-gta-6-has-revealed-herself-if-you-play-the-game-let-me-know-if-you-find-me/"
   ],
   "basliklar": [
-   "GTA 6 Mandy actor bravely raises her hand: \"If you play the game, let me know if you find me\""
+   "GTA 6 Mandy actor bravely raises her hand: \"If you play the game, let me know if you find me\"",
+   "The actress who plays Mandy in GTA 6 has revealed herself: 'If you play the game, let me know if you find me'"
   ],
   "ts": 1795188847.0,
   "tarih": "20.11.2026 19:08",
@@ -2373,6 +2594,10 @@
    {
     "ad": "GamesIndustry.biz",
     "link": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation"
+   },
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/amid-a-year-of-layoffs-ubisoft-yank-the-cover-off-motherbrain-their-new-studio-focused-on-ai-for-gameplay-innovation"
    }
   ],
   "gorsel": "https://assetsio.gnwcdn.com/assassins-creed-black-flag-resynced-05.jpg?width=690&quality=85&format=jpg&auto=webp",
@@ -2416,14 +2641,21 @@
   "ozet": "Toby Fox, Deltarune oyununun Chapter 6 aşamasının yapısal olarak tamamlandığını ve baştan sona oynanabilir durumda olduğunu duyurdu. Kısa bir bölüm olmasına rağmen kalitesini artırmak için acele edilmeyeceğini belirten Fox, bazı sahnelerin henüz tamamlanmadığını ifade etti. Chapter 6 üzerindeki görevlerini bitiren geliştiriciler ise serinin son bölümü olan Chapter 7'nin yapımına geçti.",
   "link": "https://www.gamesradar.com/games/rpg/deltarune-chapter-6-is-now-structurally-complete-and-as-work-on-chapter-7-begins-toby-fox-says-i-actually-feel-like-i-know-what-im-doing-this-time/",
   "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "PC Gamer",
+    "link": "https://www.pcgamer.com/games/rpg/deltarune-chapter-6-is-structurally-complete-while-development-has-begun-on-chapter-7-according-to-toby-fox/"
+   }
+  ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/R8HMZ2cUFSmiYK3eD5N3EZ-1920-80.jpg",
   "puan": 5.87,
   "linkler": [
-   "https://www.gamesradar.com/games/rpg/deltarune-chapter-6-is-now-structurally-complete-and-as-work-on-chapter-7-begins-toby-fox-says-i-actually-feel-like-i-know-what-im-doing-this-time/"
+   "https://www.gamesradar.com/games/rpg/deltarune-chapter-6-is-now-structurally-complete-and-as-work-on-chapter-7-begins-toby-fox-says-i-actually-feel-like-i-know-what-im-doing-this-time/",
+   "https://www.pcgamer.com/games/rpg/deltarune-chapter-6-is-structurally-complete-while-development-has-begun-on-chapter-7-according-to-toby-fox/"
   ],
   "basliklar": [
-   "Deltarune Chapter 6 is now \"structurally complete\" as work on Chapter 7 begins"
+   "Deltarune Chapter 6 is now \"structurally complete\" as work on Chapter 7 begins",
+   "Deltarune chapter 6 is 'structurally complete' while development has begun on chapter 7, according to Toby Fox"
   ],
   "ts": 1795179688.0,
   "tarih": "20.11.2026 17:06",
@@ -2436,7 +2668,12 @@
   "ozet": "Arika yöneticisi ve kıdemli geliştirici Akira Kurabayashi, geçirdiği kalp yetmezliği sonucu yaşamını yitirdi. Kariyeri boyunca Taito ve Arika bünyesinde çalışan Kurabayashi; Street Fighter EX serisi, Fighting EX Layer, Tetris 99 ve PAC-MAN 99 gibi önemli yapımların geliştirilmesinde önemli roller üstlenmişti.",
   "link": "https://www.rockpapershotgun.com/akira-kurabayashi-company-director-at-arika-and-developer-on-street-fighter-ex-tetris-99-fighting-ex-layer-and-more-has-sadly-passed-away-due-to-heart-failure",
   "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Rock Paper Shotgun",
+    "link": "https://www.rockpapershotgun.com/akira-kurabayashi-company-director-at-arika-and-developer-on-street-fighter-ex-tetris-99-fighting-ex-layer-and-more-has-sadly-passed-away-due-to-heart-failure"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/Kurabayashi.png?width=690&quality=85&format=jpg&auto=webp",
   "puan": 5.86,
   "linkler": [
@@ -4168,173 +4405,6 @@
   ],
   "ts": 1795100450.0,
   "tarih": "19.11.2026 19:25",
-  "bd4": true
- },
- {
-  "id": "2bb3e9b7d6a048dfa532e4c2b0785764",
-  "baslik_tr": "Total War: Warhammer 40,000 kampanya yayını detayları paylaşıldı",
-  "bd3": true,
-  "ozet": "Creative Assembly, Total War: Warhammer 40,000 için bir saatten uzun süren yeni bir kampanya yayını gerçekleştirdi. Praevoss sistemindeki Ultramarines kampanyasının gösterildiği yayında, galaksinin büyüklüğünü yansıtmak amacıyla haritanın yıldız sistemlerine bölündüğü açıklandı. Oyuncuların uzay gemileriyle filo yönetimi yapacağı ancak gemi savaşlarının bulunmadığı belirtildi. Ayrıca Space Marine ordularını kaybetmenin yavaş ve zorlu iyileşme süreçleri nedeniyle oldukça yıkıcı bir etki yaratacağı vurgulandı.",
-  "link": "https://www.rockpapershotgun.com/hour-long-total-war-warhammer-40000-campaign-stream-shows-off-ship-battle-less-fleet-management-makes-clear-how-not-ideal-getting-space-marine-armies-killed-is",
-  "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assetsio.gnwcdn.com/total-war-warhammer-40k-stream-space-marines-fleet-mechanics-01.jpg?width=690&quality=85&format=jpg&auto=webp",
-  "puan": 5.71,
-  "linkler": [
-   "https://www.rockpapershotgun.com/hour-long-total-war-warhammer-40000-campaign-stream-shows-off-ship-battle-less-fleet-management-makes-clear-how-not-ideal-getting-space-marine-armies-killed-is"
-  ],
-  "basliklar": [
-   "Hour-long Total War: Warhammer 40,000 campaign stream shows off ship battle-less fleet management, makes clear how not ideal getting Space Marine armies killed is"
-  ],
-  "ts": 1795090940.0,
-  "tarih": "19.11.2026 17:40",
-  "bd4": true
- },
- {
-  "id": "73ac4614860ea9cf40c59bccd4f7700c",
-  "baslik_tr": "GTA 6'nın çıkış haftası gelirinin dev filmleri geride bırakabileceği tahmin ediliyor",
-  "bd3": true,
-  "ozet": "Piyasa analist firması Newzoo'nun tahminine göre, GTA 6'nın çıkış haftasında Star Wars, Yüzüklerin Efendisi ve Harry Potter serilerinin en başarılı filmlerinin toplam gişe gelirini geçebileceği öngörülüyor. Gearbox yöneticisi Randy Pitchford, temmuz ayındaki bu tahminleri sosyal medyada paylaştı. Tahminler, oyunun çıkış haftasında milyarlarca dolarlık satış elde edebileceğine işaret ediyor.",
-  "link": "https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-finally-releases-borderlands-4-boss-reminds-everyone-that-rockstars-launch-week-revenue-is-predicted-to-top-the-biggest-star-wars-lord-of-the-rings-and-harry-potter-movies-combined/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/sxWdBUBimAc5dB53dcoBxh-1920-80.jpg",
-  "puan": 5.69,
-  "linkler": [
-   "https://www.gamesradar.com/games/grand-theft-auto/as-gta-6-finally-releases-borderlands-4-boss-reminds-everyone-that-rockstars-launch-week-revenue-is-predicted-to-top-the-biggest-star-wars-lord-of-the-rings-and-harry-potter-movies-combined/"
-  ],
-  "basliklar": [
-   "GTA 6 launch week revenue predicted to top the biggest movies from Star Wars, Harry Potter, and LOTR"
-  ],
-  "ts": 1795090197.0,
-  "tarih": "19.11.2026 17:40",
-  "bd4": true
- },
- {
-  "id": "ad0f5a57276041ce5836a4f1c2efc931",
-  "baslik_tr": "Dota 2 7.42 güncellemesi oyuna önemli yenilikler getiriyor",
-  "bd3": true,
-  "ozet": "Valve, Dota 2 için yayınladığı 7.42 güncellemesiyle maçların uzamasına ve kilitlenmesine neden olan sorunları çözmeyi hedefliyor. Yama; temel kahraman sağlığı, altın ve deneyim dengelerini yeniden şekillendirirken, oyun sonu savaşlarını hızlandırmak için çeşitli sistem değişiklikleri sunuyor. Güncellemeyle birlikte haritada Twin Gates'in yeri değiştirildi, altı yeni eşya oyuna eklendi ve taraflara özel yeni creep türleri getirildi. Ayrıca eşya gücü adı verilen yeni bir özellik de sisteme dahil edildi.",
-  "link": "https://www.pcgamesn.com/dota-2/7-42-patch-notes",
-  "kaynak": "PCGamesN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/11/dota-2-7-42-patch-notes-valve-moba-new-update-steam.jpg",
-  "puan": 5.69,
-  "linkler": [
-   "https://www.pcgamesn.com/dota-2/7-42-patch-notes"
-  ],
-  "basliklar": [
-   "Dota 2 patch 7.42 hauls Valve's MOBA out of the late-game sludge"
-  ],
-  "ts": 1795090090.0,
-  "tarih": "19.11.2026 17:40",
-  "bd4": true
- },
- {
-  "id": "bceb383005ab5f460c1109b2f2a349ca",
-  "baslik_tr": "Fortnite'ta Pirate Shop token için yeni bir yöntem eklendi",
-  "bd3": true,
-  "ozet": "Fortnite'ın en çok aranan eşyası olan Pirate Shop Token, düşük çıkma oranları nedeniyle oyuncuları zorluyordu. Sezonun bitimine yaklaşılırken, hazinenin Respawn Rumble moduna eklenmesiyle bu eşyayı bulmak kolaylaştı. Bu modda oyuncuların yeniden doğabilmesi, takım arkadaşlarının bulunması ve maç başına daha az oyuncu olması yağma sürecini avantajlı kılıyor. Eşyanın bu moda kasıtlı olarak mı eklendiği bilinmiyor, bu nedenle oyuncuların bu durumu düzeltilmeden değerlendirmesi tavsiye ediliyor.",
-  "link": "https://www.polygon.com/fortnite-pirate-shop-access-token-respawn-rumble/",
-  "kaynak": "Polygon",
-  "diger_kaynaklar": [],
-  "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/10/fortnite-one-piece-characters.jpg",
-  "puan": 5.68,
-  "linkler": [
-   "https://www.polygon.com/fortnite-pirate-shop-access-token-respawn-rumble/"
-  ],
-  "basliklar": [
-   "Fortnite Adds New Way to Get the Pirate Shop Token"
-  ],
-  "ts": 1795090060.0,
-  "tarih": "19.11.2026 17:41",
-  "bd4": true
- },
- {
-  "id": "1d4468dc1dc47a87f72ca625dcf3a098",
-  "baslik_tr": "GTA 6'da Mount Chiliad gizemine benzer yeni sırlar keşfedildi",
-  "bd3": true,
-  "ozet": "GTA 6 oyuncuları, Port Gellhorn'un kuzeyindeki Monument of Leonidan Supremacy bölgesinde gizemli işaretler ve heykeller keşfetti. Heykellerin üzerindeki metal yapıların uzay haritalarına benzediği belirtilirken, bazılarında ise Glasgow'daki ünlü bir anıta gönderme yapan trafik konisi yer alıyor. Taş kaide üzerindeki yıldızlar ve geometrik şekillerin yeni bir büyük oyun gizeminin başlangıcı olabileceği düşünülüyor.",
-  "link": "https://www.ign.com/articles/gta-6-mount-chiliad-mystery",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [
-   {
-    "ad": "Polygon",
-    "link": "https://www.polygon.com/gta-6-easter-egg-bigfoot-sightings/"
-   }
-  ],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/gtavi-41-1795089755226.jpg",
-  "puan": 5.67,
-  "linkler": [
-   "https://www.ign.com/articles/gta-6-mount-chiliad-mystery",
-   "https://www.polygon.com/gta-6-easter-egg-bigfoot-sightings/"
-  ],
-  "basliklar": [
-   "Could This Be the Start of GTA 6's Version of the Mount Chiliad Mystery?",
-   "GTA 6 Brings Back a Legendary Rockstar Easter Egg"
-  ],
-  "ts": 1795089763.0,
-  "tarih": "19.11.2026 17:41",
-  "bd4": true
- },
- {
-  "id": "302f901c473ae4f5201340e3328f9337",
-  "baslik_tr": "GTA 6'nın ön sipariş rakamları analistler tarafından tahmin edildi",
-  "bd3": true,
-  "ozet": "Analistlerin paylaştığı verilere göre GTA 6, çıkışını gerçekleştirmeden önce yaklaşık 20 milyon ön sipariş satışına ulaştı. Sensor Tower verileri, oyunun çıkışından birkaç gün önce günlük bir milyondan fazla ön sipariş sattığını ve 1.6 milyar dolar geliri aştığını gösteriyor. Satışların yüzde 75'i PS5, yüzde 25'i ise Xbox Series X/S platformlarında gerçekleşti. Rockstar henüz resmi rakamları açıklamazken, bu durum çatı şirket Take-Two'nun hisse fiyatlarının artmasını sağladı.",
-  "link": "https://www.ign.com/articles/gta-6-estimated-to-have-reached-20-million-preorders-ahead-of-launch",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/vintage-vice-city-weapon-pattern-01-1795088290717.jpg",
-  "puan": 5.62,
-  "linkler": [
-   "https://www.ign.com/articles/gta-6-estimated-to-have-reached-20-million-preorders-ahead-of-launch"
-  ],
-  "basliklar": [
-   "GTA 6 Estimated to Have Reached 20 Million Preorders Ahead of Launch"
-  ],
-  "ts": 1795088340.0,
-  "tarih": "19.11.2026 17:41",
-  "bd4": true
- },
- {
-  "id": "91927a5ec14edccf36e791ede309ae4f",
-  "baslik_tr": "Yayıncı PS5'i kapatınca GTA 6'da 11 saatlik ilerlemeyi kaybetti ve swat baskınına uğradı",
-  "bd3": true,
-  "ozet": "YouTuber JasonTheWeen, GTA 6 yayını sırasında PS5'ini yanlışlıkla kapatınca 11 saatlik ilerlemesini ve bir bölümü kaybetti. Kayıt dosyasının bozulmasıyla gözyaşlarına boğulan yayıncı, Rockstar'dan yardım istemeye çalıştı. Bu talihsiz olayın hemen ardından evine polis baskını (swat) düzenlenen yayıncı, aynı yayında PS5 giriş QR kodunu da sızdırmıştı. Olay sonrası Sony ve Rockstar'a sosyal medyadan ulaşmaya çalışan yayıncıya henüz bir yanıt verilmedi.",
-  "link": "https://www.ign.com/articles/streamer-loses-11-hours-of-gta-6-progress-gets-swatted-immediately-afterwards",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/screenshot-2026-11-19-111623-1795086992822.png",
-  "puan": 5.58,
-  "linkler": [
-   "https://www.ign.com/articles/streamer-loses-11-hours-of-gta-6-progress-gets-swatted-immediately-afterwards"
-  ],
-  "basliklar": [
-   "Streamer Loses 11 Hours of GTA 6 Progress After Accidentally Turning Off Their PS5, Gets Swatted Immediately Afterwards"
-  ],
-  "ts": 1795087126.0,
-  "tarih": "19.11.2026 17:44",
-  "bd4": true
- },
- {
-  "id": "fd135f73b307a88ad887e5861113862b",
-  "baslik_tr": "Microsoft GTA 6 arka planları nedeniyle oyuncuların geri bildirimini istiyor",
-  "bd3": true,
-  "ozet": "Microsoft, Xbox konsollarında kullanıcıların özel masaüstü temalarını GTA 6 görselleriyle değiştiren tartışmalı Etkinlik Arka Planları özelliği için geri bildirim toplamaya başladı. Varsayılan olarak açık gelen bu özellik, oyuncular tarafından zorlama bir reklam olarak değerlendirilerek tepki çekti. Kullanıcılar ayarlar üzerinden bu özelliği kapatabilirken, Microsoft oyunculara anket düzenleyerek konuyla ilgili olumlu ve olumsuz görüşleri sormaya başladı.",
-  "link": "https://www.ign.com/articles/microsoft-polls-users-after-plastering-gta-6-artwork-over-xbox-custom-dashboard-backgrounds",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/untitled-1-1795085988612.jpg",
-  "puan": 5.54,
-  "linkler": [
-   "https://www.ign.com/articles/microsoft-polls-users-after-plastering-gta-6-artwork-over-xbox-custom-dashboard-backgrounds"
-  ],
-  "basliklar": [
-   "Microsoft Polls Users After Plastering GTA 6 Artwork Over Xbox Custom Dashboard Backgrounds"
-  ],
-  "ts": 1795086009.0,
-  "tarih": "19.11.2026 17:46",
   "bd4": true
  }
 ]
