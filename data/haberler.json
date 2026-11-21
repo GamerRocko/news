@@ -1,5 +1,24 @@
 [
  {
+  "id": "309a4b112075bd9597a8ccaae4e8180c",
+  "baslik_tr": "Bethesda seriden ilham alan kedi temalı yeni bir oyun duyurdu",
+  "bd4": true,
+  "ozet": "Bethesda, Devcat Games ve Dallas Pets Alive ortaklığıyla Fallout serisinden esinlenen, kedi temalı yeni bir gizli nesne oyunu geleceğini onayladı. A Wasteland Full of Cats adlı yapımda oyuncular, radyasyonlu çorak topraklara kaçan kedileri bulmaya çalışacak. 14 mekan ve 33 oda barındıracak oyunun henüz çıkış tarihi veya fragmanı bulunmuyor.",
+  "link": "https://www.gamesradar.com/games/fallout/bethesda-confirm-a-new-cat-themed-fallout-inspired-adventure-is-on-the-way-after-leaks-from-the-australian-classifications-board/",
+  "kaynak": "GamesRadar",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/9dLEHyZNEYh9bDUVCjw4pT-1920-80.jpg",
+  "puan": 5.97,
+  "linkler": [
+   "https://www.gamesradar.com/games/fallout/bethesda-confirm-a-new-cat-themed-fallout-inspired-adventure-is-on-the-way-after-leaks-from-the-australian-classifications-board/"
+  ],
+  "basliklar": [
+   "Bethesda confirm a new cat-themed \"Fallout-inspired adventure\" is on the way"
+  ],
+  "ts": 1795269193.0,
+  "tarih": "21.11.2026 17:06"
+ },
+ {
   "id": "db32a7f19acd5049a1786259de9be1f7",
   "baslik_tr": "Clair Obscur: Expedition 33 oyuncusu Rich Keeble, oyunun ödül rekoruna hala inanamıyor",
   "bd4": true,
@@ -4427,26 +4446,6 @@
    "In GTA 6, Doomscrolling Is a Necessity If You Want to See Everything"
   ],
   "ts": 1795012630.0,
-  "tarih": "19.11.2026 07:07",
-  "bd4": true
- },
- {
-  "id": "cc973203d7c0b8523bcc8968817c48e2",
-  "baslik_tr": "Infinity Nikki fragmaninda Maye Musk sürprizi tepki çekti",
-  "bd3": true,
-  "ozet": "Infinity Nikki oyununun yeni fragmanını Elon Musk'ın annesi Maye Musk'ın seslendirmesi bazı hayranların tepkisini çekti ve boykot tehditlerine yol açtı. Cicia güncellemesi için hazırlanan ve geleceğe ait uçan arabaların tanıtıldığı videoda Maye Musk'ın yer alması oyuncuları endişelendirdi. Ancak Maye Musk'ın Çin'de tanınan bir model ve reklam yüzü olması, bu tercihin Çinli oyuncu kitlesine yönelik stratejik bir hamle olabileceğini gösteriyor.",
-  "link": "https://www.eurogamer.net/infinity-nikki-elon-musk-maye-mother-fan-reaction",
-  "kaynak": "Eurogamer",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assetsio.gnwcdn.com/infinity-nikki-posing-with-du-yubai-after-white-jade-performance.jpg?width=690&quality=85&format=jpg&auto=webp",
-  "puan": 4.27,
-  "linkler": [
-   "https://www.eurogamer.net/infinity-nikki-elon-musk-maye-mother-fan-reaction"
-  ],
-  "basliklar": [
-   "Infinity Nikki fans threaten to boycott game after promotion by Elon Musk's mother, but there may be a genuine reason for her involvement"
-  ],
-  "ts": 1795011290.0,
   "tarih": "19.11.2026 07:07",
   "bd4": true
  }
