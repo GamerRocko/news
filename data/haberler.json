@@ -25,14 +25,21 @@
   "ozet": "Nvidia firmasının yeni 621.24 ekran kartı sürücüsünün, bilgisayar SSD'lerine saatte 30 GB'a varan gereksiz veri yazdığı rapor edildi. Çeşitli forumlarda ve Reddit platformunda dile getirilen bu hata üzerine kullanıcıların önceki sürüme dönmesi tavsiye ediliyor. Sorunu kontrol etmek için görev yöneticisinden I/O yazma baytları sütununun açılması ve NVDisplay.Container.exe dosyasının incelenmesi gerekiyor. Sürücü henüz yayından kaldırılmış değil.",
   "link": "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting",
   "kaynak": "RockPaperShotgun",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "PCGamesN",
+    "link": "https://www.pcgamesn.com/nvidia/geforce-driver-hotfix-excessive-ssd-writes"
+   }
+  ],
   "gorsel": "https://assetsio.gnwcdn.com/nvidia-dlss-4-5-ray-reconstruction-announced-01.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 4.48,
   "linkler": [
-   "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting"
+   "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting",
+   "https://www.pcgamesn.com/nvidia/geforce-driver-hotfix-excessive-ssd-writes"
   ],
   "basliklar": [
-   "Nvidia's latest graphics card driver appears to be unnecessarily writing to PC SSDs, something that's dumb, annoying and definitely warrants reverting"
+   "Nvidia's latest graphics card driver appears to be unnecessarily writing to PC SSDs, something that's dumb, annoying and definitely warrants reverting",
+   "Nvidia pushes new GeForce driver hotfix amid fears of SSD burnout"
   ],
   "ts": 1795190650.0,
   "tarih": "21.11.2026 07:13"
