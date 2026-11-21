@@ -1,5 +1,100 @@
 [
  {
+  "id": "d3a6db8b2cd145d22500f70196d7e8c3",
+  "baslik_tr": "GTA 6 oyuncuları polis sisteminden korktukları için suç işlemekten kaçınıyor",
+  "bd4": true,
+  "ozet": "GTA 6 oyuncuları, oyundaki polislerin yapay zekası ve agresif tutumları nedeniyle suç işlemekten korktuklarını belirtiyor. Artık kırmızı ışıkta durmak ve sinyal vermek gibi kurallara uyan oyuncular, polisten kaçmanın ve aranma seviyesinden kurtulmanın eskisinden çok daha zor olduğunu ifade ediyor.",
+  "link": "https://www.ign.com/articles/gta-6-new-wanted-system-difficulty",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/18/gtavi-missions-1794996224895.jpg",
+  "puan": 4.5,
+  "linkler": [
+   "https://www.ign.com/articles/gta-6-new-wanted-system-difficulty"
+  ],
+  "basliklar": [
+   "GTA 6's No-Nonsense Cops Are Scaring Players Into Actually Following the Law"
+  ],
+  "ts": 1795191254.0,
+  "tarih": "21.11.2026 07:13"
+ },
+ {
+  "id": "70f0c8309adc7ac3ccf7f2f20d3803e0",
+  "baslik_tr": "Nvidia 621.24 ekran kartı sürücüsü bilgisayar SSD lerine gereksiz veri yazıyor",
+  "bd4": true,
+  "ozet": "Nvidia firmasının yeni 621.24 ekran kartı sürücüsünün, bilgisayar SSD'lerine saatte 30 GB'a varan gereksiz veri yazdığı rapor edildi. Çeşitli forumlarda ve Reddit platformunda dile getirilen bu hata üzerine kullanıcıların önceki sürüme dönmesi tavsiye ediliyor. Sorunu kontrol etmek için görev yöneticisinden I/O yazma baytları sütununun açılması ve NVDisplay.Container.exe dosyasının incelenmesi gerekiyor. Sürücü henüz yayından kaldırılmış değil.",
+  "link": "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting",
+  "kaynak": "RockPaperShotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/nvidia-dlss-4-5-ray-reconstruction-announced-01.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 4.48,
+  "linkler": [
+   "https://www.rockpapershotgun.com/nvidias-latest-graphics-card-driver-appears-to-be-unnecessarily-writing-to-pc-ssds-something-thats-dumb-annoying-and-definitely-warrants-reverting"
+  ],
+  "basliklar": [
+   "Nvidia's latest graphics card driver appears to be unnecessarily writing to PC SSDs, something that's dumb, annoying and definitely warrants reverting"
+  ],
+  "ts": 1795190650.0,
+  "tarih": "21.11.2026 07:13"
+ },
+ {
+  "id": "2dfd9b8642ca8bbd3d3fa24dba01d498",
+  "baslik_tr": "Bazı GTA 6 oyuncuları Jason ve Lucia karakterlerinin maksimum kilosunu yetersiz buluyor",
+  "bd4": true,
+  "ozet": "GTA 6 oyununda karakterlerin fiziksel değişim geçirmesini sağlayan vücut sistemi geri döndü. Oyuncular, beslenme ve egzersiz alışkanlıklarına göre Jason ve Lucia'nın kilo alıp verebileceğini fark etti. Ancak ana karakterlerin ulaşabildiği maksimum kilo sınırı bazı oyuncuları hayal kırıklığına uğrattı. Özellikle Lucia'nın yeterince kilolu olamaması sosyal medyada eleştiri toplarken, oyuncular karakterlerin Red Dead Redemption 2'deki Arthur Morgan veya GTA: San Andreas'taki CJ kadar iri yapıya sahip olmamasından yakındı.",
+  "link": "https://www.ign.com/articles/some-gta-6-players-think-max-weight-jason-and-lucia-arent-big-enough",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/20/jason-eating-in-gta-6-1795170764925.jpg",
+  "puan": 4.13,
+  "linkler": [
+   "https://www.ign.com/articles/some-gta-6-players-think-max-weight-jason-and-lucia-arent-big-enough"
+  ],
+  "basliklar": [
+   "Some GTA 6 Players Think Max Weight Jason and Lucia Aren't Big Enough"
+  ],
+  "ts": 1795180419.0,
+  "tarih": "21.11.2026 07:13"
+ },
+ {
+  "id": "dbaa0c0c08263d50a436c9cd7ac9acdb",
+  "baslik_tr": "Valve, tedarik sorunları nedeniyle Steam Machine 2TB siparişlerini durdurdu",
+  "bd4": true,
+  "ozet": "Valve, donanım parçası sıkıntıları sebebiyle Steam Machine cihazının 2TB kapasiteli modelinin yeni siparişlerini geçici olarak askıya aldı. Daha önce rezervasyon yaptıranlar cihazlarını alabilecek ancak yeni siparişler şimdilik durduruldu. Buna karşın, 512GB'lık daha ucuz model artık bekleme listesi olmadan doğrudan satın alınabiliyor. Ancak şirket, artan bellek ve depolama maliyetleri nedeniyle ilerleyen dönemde donanım fiyatlarının yeniden artabileceği konusunda uyardı.",
+  "link": "https://www.rockpapershotgun.com/valve-are-pausing-steam-machine-2tb-orders-over-supply-constraints-though-the-512gb-model-is-free-of-its-waitlist",
+  "kaynak": "RockPaperShotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/Steam-Machine-review-header.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.73,
+  "linkler": [
+   "https://www.rockpapershotgun.com/valve-are-pausing-steam-machine-2tb-orders-over-supply-constraints-though-the-512gb-model-is-free-of-its-waitlist"
+  ],
+  "basliklar": [
+   "Valve are pausing Steam Machine 2TB orders over \"supply constraints,\" though the 512GB model is free of its waitlist"
+  ],
+  "ts": 1795169100.0,
+  "tarih": "21.11.2026 07:13"
+ },
+ {
+  "id": "f9d0d6aa5017ba9a88513035a3b61904",
+  "baslik_tr": "World of Warcraft: Forever, son 15 yılın en yüksek haftalık oyuncu sayısına ulaştı",
+  "bd4": true,
+  "ozet": "Blizzard, World of Warcraft: Forever yapımının son 15 yılda World of Warcraft genelinde görülen en yüksek haftalık oyuncu sayısını aştığını açıkladı. Yapımcı Holly Longdale, 4 Kasım'daki çıkışından bu yana milyonlarca karakterin oluşturulduğunu, devasa miktarda görev tamamlandığını ve düşmanın alt edildiğini belirtti. Oyuncuların milyonlarca parti kurduğu, PvP çatışmaları gerçekleştirdiği ve Shadowfang Keep son bossu Archmage Arugal'a karşı sıkça hayatını kaybettiği paylaşılan istatistikler arasında yer aldı.",
+  "link": "https://www.eurogamer.net/wow-forever-weekly-players-15-years",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/WoW_Forever_Cinematic_Still_12.jpeg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.0,
+  "linkler": [
+   "https://www.eurogamer.net/wow-forever-weekly-players-15-years"
+  ],
+  "basliklar": [
+   "World of Warcraft: Forever has more weekly players than WoW has seen in 15 years, says Blizzard"
+  ],
+  "ts": 1795114370.0,
+  "tarih": "21.11.2026 07:14"
+ },
+ {
   "id": "ac12f50f97441c895b9b3ffaf84f14e2",
   "baslik_tr": "STAR WARS: Fate of the Old Republic yönetmeni Casey Hudson, serinin geçmişi sayesinde baskı hissetmediğini belirtti",
   "bd4": true,
@@ -139,14 +234,21 @@
   "ozet": "GTA 6, resmi olarak tam bir birinci şahıs moduyla çıkış yapmamış olsa da oyuncular ayarlarla oynayarak bu açıyı zorla etkinleştirmenin bir yolunu keşfetti. PS5 ve Xbox Series X/S üzerinde çalışan bu yöntem, belirli tuş kombinasyonlarını ve araç içi kamera geçişlerini kullanarak oyuncuların oyunu birinci şahıs gözünden oynamasına olanak tanıyor. Hatalı ve kusurlu çalışabilen bu geçici çözüm, karakterlerin ölümünden etkilenmiyor ancak kayıt dosyası yeniden yüklendiğinde sıfırlanıyor.",
   "link": "https://www.ign.com/articles/gta-6-doesnt-officially-have-first-person-but-you-can-force-it-to-heres-how-to-do-it",
   "kaynak": "IGN",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "GamesRadar",
+    "link": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-glitch-adds-the-first-person-mode-that-rockstar-skipped/"
+   }
+  ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/20/screenshot-2026-11-20-163743-1795192684888.png",
   "puan": 4.57,
   "linkler": [
-   "https://www.ign.com/articles/gta-6-doesnt-officially-have-first-person-but-you-can-force-it-to-heres-how-to-do-it"
+   "https://www.ign.com/articles/gta-6-doesnt-officially-have-first-person-but-you-can-force-it-to-heres-how-to-do-it",
+   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-glitch-adds-the-first-person-mode-that-rockstar-skipped/"
   ],
   "basliklar": [
-   "GTA 6 Doesn't Officially Have First-Person, but You Can Force It to — Here's How to Do It"
+   "GTA 6 Doesn't Officially Have First-Person, but You Can Force It to — Here's How to Do It",
+   "GTA 6 glitch adds the first-person mode that Rockstar skipped"
   ],
   "ts": 1795192698.0,
   "tarih": "21.11.2026 07:07"
@@ -500,11 +602,13 @@
   "puan": 5.99,
   "linkler": [
    "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
-   "https://kotaku.com/how-to-solve-all-main-puzzles-in-gta-6s-tenebrae-lux-2000758940"
+   "https://kotaku.com/how-to-solve-all-main-puzzles-in-gta-6s-tenebrae-lux-2000758940",
+   "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837"
   ],
   "basliklar": [
    "Who is Johannes Zuch supposed to be in GTA 6?",
-   "How To Solve All Main Puzzles In GTA 6′s Tenebrae Lux"
+   "How To Solve All Main Puzzles In GTA 6′s Tenebrae Lux",
+   "GTA 6′s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion"
   ],
   "ts": 1795212017.0,
   "tarih": "21.11.2026 01:06"
@@ -4353,128 +4457,6 @@
   ],
   "ts": 1795044613.0,
   "tarih": "19.11.2026 05:07",
-  "bd4": true
- },
- {
-  "id": "108a6073ba9f8cf91d9abce0871f190f",
-  "baslik_tr": "GTA 6'da fahişe alma özelliğinin neden kaldırıldığı açıklandı",
-  "bd3": true,
-  "ozet": "Rockstar Games, GTA 6'da fahişe alma mekaniğinin neden yer almadığını duyurdu. Şirket, oyunun hikayesinin Jason ve Lucia adlı bir çiftin ilişkisine odaklandığını ve karakterlerin birbirine olan bağlılığı nedeniyle bu özelliğin hikaye yapısına uygun olmadığını belirtti. Önceki serilerde yer alan bu tartışmalı özellik kaldırılmış olsa da, oyunda striptiz kulüpleri bulunuyor ve çift olarak buralar ziyaret edilebiliyor.",
-  "link": "https://www.ign.com/articles/gta-6-doesnt-let-players-pick-up-prostitutes-but-rockstar-has-a-logical-reason-for-it",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [
-   {
-    "ad": "Kotaku",
-    "link": "https://kotaku.com/rockstar-explains-why-gta-6-has-no-prostitutes-in-it-a-hallmark-of-the-series-since-2001-2000758174"
-   },
-   {
-    "ad": "GamesRadar",
-    "link": "https://www.gamesradar.com/games/grand-theft-auto/rockstar-says-gta-6-doesnt-let-you-hire-prostitutes-for-the-first-time-in-25-years-as-it-doesnt-support-the-spirit-of-the-story-we-wanted-to-tell/"
-   }
-  ],
-  "gorsel": "https://assets-prd.ignimgs.com/2023/12/07/gta6-trailer-4k-00-00-38-29-still001-1701962524689.png",
-  "puan": 5.63,
-  "linkler": [
-   "https://www.ign.com/articles/gta-6-doesnt-let-players-pick-up-prostitutes-but-rockstar-has-a-logical-reason-for-it",
-   "https://kotaku.com/rockstar-explains-why-gta-6-has-no-prostitutes-in-it-a-hallmark-of-the-series-since-2001-2000758174",
-   "https://www.gamesradar.com/games/grand-theft-auto/rockstar-says-gta-6-doesnt-let-you-hire-prostitutes-for-the-first-time-in-25-years-as-it-doesnt-support-the-spirit-of-the-story-we-wanted-to-tell/"
-  ],
-  "basliklar": [
-   "GTA 6 Doesn't Let Players Pick Up Prostitutes, But Rockstar Has a Logical Reason for It",
-   "Rockstar Explains Why GTA 6 Has No Prostitutes In It, A Hallmark Of The Series Since 2001",
-   "GTA 6 Doesn't Let Players Pick Up Prostitutes, but Rockstar Has a Logical Reason for It",
-   "Rockstar says GTA 6 doesn't let you hire prostitutes as it doesn't \"support the spirit of the story we wanted to tell\""
-  ],
-  "ts": 1795043243.0,
-  "tarih": "19.11.2026 05:08",
-  "bd4": true
- },
- {
-  "id": "3ed2dfbe1446e966b6fa8239818f8e9a",
-  "baslik_tr": "World of Warcraft: Forever 15 yıllık rekoru geride bıraktı",
-  "bd3": true,
-  "ozet": "World of Warcraft VP yöneticisi Holly Longdale, World of Warcraft: Forever'ın son 15 yılda haftalık bazda en yüksek oyuncu sayısına ulaştığını duyurdu. Henüz iki hafta önce çıkış yapan oyun, vanilla temeli üzerine kurulan yeni içerikleriyle eski oyuncuların ve yeni kullanıcıların büyük ilgisini çekmeyi başardı.",
-  "link": "https://kotaku.com/world-of-warcraft-forever-just-broke-15-year-old-record-2000758182",
-  "kaynak": "Kotaku",
-  "diger_kaynaklar": [],
-  "gorsel": "https://kotaku.com/app/uploads/2026/11/hillsbrad-1280x720.jpg",
-  "puan": 5.61,
-  "linkler": [
-   "https://kotaku.com/world-of-warcraft-forever-just-broke-15-year-old-record-2000758182"
-  ],
-  "basliklar": [
-   "World Of Warcraft: Forever Just Broke A 15-Year-Old Record"
-  ],
-  "ts": 1795042839.0,
-  "tarih": "19.11.2026 05:08",
-  "bd4": true
- },
- {
-  "id": "5354d26c69efe3462d8cdf04ddc716ba",
-  "baslik_tr": "Mass Effect serisi için Jennifer Hale'den Kickstarter önerisi",
-  "bd3": true,
-  "ozet": "BioWare'in kapanmasının ardından Mass Effect serisinin geleceği belirsizliğe sürüklenirken, Commander Shepard'ı seslendiren Jennifer Hale'den dikkat çekici bir öneri geldi. Hale, EA'in Mass Effect markasının haklarını topluluğa devretmesi gerektiğini savundu. Oyuncuların bir araya gelerek büyük bir Kickstarter kampanyası başlatabileceğini belirten ünlü seslendirme sanatçısı, hakları yönetecek topluluk odaklı bir kolektif kurulmasını hayal ediyor. Hale, bu hamlenin EA'e büyük bir toplumsal itibar ve reklam kazandırabileceğini ifade etti.",
-  "link": "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/vuVdC3v4yZuFejXoCUvyeE-1920-80.jpg",
-  "puan": 5.59,
-  "linkler": [
-   "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/"
-  ],
-  "basliklar": [
-   "EA should sell the Mass Effect IP straight to the community, Shepard actor Jennifer Hale says"
-  ],
-  "ts": 1795042211.0,
-  "tarih": "19.11.2026 05:08",
-  "bd4": true
- },
- {
-  "id": "b0af6770cb6ad57f95cf8f4045d798f7",
-  "baslik_tr": "Rockstar'ın 2021 yılında paylaştığı GTA 6 sırrı ortaya çıktı",
-  "bd3": true,
-  "ozet": "Rockstar Games'in 2021 yılında çıkardığı remastered oyun koleksiyonunda yer alan gizemli bir evin, aslında GTA 6'ya ait bir ipucu olduğu doğrulandı. Belville banliyölerinde bulunan bu evde, bir video oyununda yaşadığını fark eden bir komplo teorisyenine ait notlar yer alıyor. Duvardaki yazılarda NPC'lerin tuhaflıkları, haritanın dışına çıkılamaması ve 'J' ile 'L' adlı iki karakterin dokunulmazlığı gibi detaylara dikkat çekiliyor. Eğlenceli bu gönderme, oyun topluluğunun teorilerine esprili bir yaklaşım sunuyor.",
-  "link": "https://www.ign.com/articles/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in-2021-and-whats-inside-was-worth-the-wait",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [
-   {
-    "ad": "Kotaku",
-    "link": "https://kotaku.com/grand-theft-auto-6-gta6-jason-lucia-tomas-kid-baby-non-lethal-ending-2000758396"
-   }
-  ],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/18/gta-6-jason-house-1795034681860.jpg",
-  "puan": 5.36,
-  "linkler": [
-   "https://www.ign.com/articles/a-gta-6-location-was-teased-by-rockstar-all-the-way-back-in-2021-and-whats-inside-was-worth-the-wait",
-   "https://kotaku.com/grand-theft-auto-6-gta6-jason-lucia-tomas-kid-baby-non-lethal-ending-2000758396"
-  ],
-  "basliklar": [
-   "A GTA 6 Location Was Teased by Rockstar All the Way Back in 2021 — And What's Inside Was Worth the Wait",
-   "Rockstar Kept One Of GTA 6’s Biggest Early Secrets Under Wraps For Years",
-   "Rockstar Kept One Of GTA 6’s Biggest Early Spoilers Under Wraps For Years"
-  ],
-  "ts": 1795035391.0,
-  "tarih": "19.11.2026 05:09",
-  "bd4": true
- },
- {
-  "id": "63c010a57eaa5f0a421502c40c8f8463",
-  "baslik_tr": "Weird Al Yankovic GTA 6'daki bir radyo istasyonunun sunucusu oldu",
-  "bd3": true,
-  "ozet": "Rockstar tarafından doğrulanan bilgilere göre komik müzisyen Weird Al Yankovic, GTA 6'da radyo DJ'liği yapıyor. Vice City FM adlı 1980'ler hit şarkılarının çaldığı istasyonun iki sunucusundan biri olan sanatçı, oyunda fiziksel olarak yer almıyor ve istasyonda kendi şarkılarına veya parodilerine yer verilmiyor.",
-  "link": "https://kotaku.com/yes-thats-weird-al-hosting-a-radio-station-in-gta-6-2000758140",
-  "kaynak": "Kotaku",
-  "diger_kaynaklar": [],
-  "gorsel": "https://kotaku.com/app/uploads/2026/11/GTA-6-weird-al-1280x720.jpg",
-  "puan": 5.99,
-  "linkler": [
-   "https://kotaku.com/yes-thats-weird-al-hosting-a-radio-station-in-gta-6-2000758140"
-  ],
-  "basliklar": [
-   "Yes, That’s Weird Al Hosting A Radio Station In GTA 6"
-  ],
-  "ts": 1795039201.0,
-  "tarih": "19.11.2026 01:05",
   "bd4": true
  }
 ]
