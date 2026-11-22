@@ -1,5 +1,24 @@
 [
  {
+  "id": "d75b3416fbb1caf6325eb01a41671260",
+  "baslik_tr": "GTA 6 oyuncuları para çalmak için yeni ve ilginç yollar bulmaya devam ediyor",
+  "bd4": true,
+  "ozet": "Grand Theft Auto 6 oyuncuları, oyun dünyasında para kazanmak için yaratıcı yöntemler keşfediyor. Bir Reddit kullanıcısı, görevlerin dışında da çekici kancasını kullanarak bir ATM'yi duvardan sökebileceğinizi fark etti. Oyuncular bu ATM'yi güvenli bir yere sürükleyip parçalayarak içindeki parayı alabiliyor. Bu detaylı etkileşimler, Vice City ve Leonida dünyasının dinamikliğini gözler önüne seriyor.",
+  "link": "https://www.polygon.com/gta-6-players-ridiculous-ways-to-steal-money/",
+  "kaynak": "Polygon",
+  "diger_kaynaklar": [],
+  "gorsel": "https://static0.polygonimages.com/wordpress/wp-content/uploads/2026/11/raul_bautista_landscape.jpg",
+  "puan": 5.81,
+  "linkler": [
+   "https://www.polygon.com/gta-6-players-ridiculous-ways-to-steal-money/"
+  ],
+  "basliklar": [
+   "GTA 6 Players Keep Discovering Ridiculous New Ways To Steal Money"
+  ],
+  "ts": 1795358190.0,
+  "tarih": "22.11.2026 19:06"
+ },
+ {
   "id": "78ca82101a976398cb9b9aff129b06f5",
   "baslik_tr": "Zelda: Ocarina of Time yapımcısı, oyunun FINAL sahnesi üzerinde çok fazla tartıştıklarını açıkladı",
   "bd4": true,
@@ -714,17 +733,29 @@
    {
     "ad": "Eurogamer",
     "link": "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed"
+   },
+   {
+    "ad": "GamesRadar",
+    "link": "https://www.gamesradar.com/games/roguelike/the-binding-of-isaac-removes-ai-generated-music-from-new-update-and-designer-edmund-mcmillen-is-looking-into-how-that-happened/"
+   },
+   {
+    "ad": "Polygon",
+    "link": "https://www.polygon.com/gta-6-parody-binding-of-isaac-ai-use/"
    }
   ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/21/the-binding-of-isaac-repentance-ai-1795303836559.png",
   "puan": 5.77,
   "linkler": [
    "https://www.ign.com/articles/the-binding-of-isaac-dev-removes-undisclosed-ai-generated-music-from-repentance-following-creator-response-review-bombing",
-   "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed"
+   "https://www.eurogamer.net/binding-of-isaac-repentance-plus-ai-music-removed",
+   "https://www.gamesradar.com/games/roguelike/the-binding-of-isaac-removes-ai-generated-music-from-new-update-and-designer-edmund-mcmillen-is-looking-into-how-that-happened/",
+   "https://www.polygon.com/gta-6-parody-binding-of-isaac-ai-use/"
   ],
   "basliklar": [
    "The Binding of Isaac Dev Removes Undisclosed AI-Generated Music From Repentance+ Following Creator Response, Review-Bombing",
-   "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it"
+   "Binding of Isaac dev pulls AI-generated music from Repentance+ after players expose it",
+   "The Binding of Isaac removes AI-generated music from new update",
+   "GTA 6 Parody In Binding of Isaac Used AI Without Creator's Knowledge"
   ],
   "ts": 1795304525.0,
   "tarih": "22.11.2026 04:31"
@@ -4264,33 +4295,6 @@
    "Major Esports Tournament Replaced Caster Commentary With AI Voices And It Went Over Very Poorly"
   ],
   "ts": 1795129210.0,
-  "tarih": "20.11.2026 05:07",
-  "bd4": true
- },
- {
-  "id": "49e9ccf0db97a99cd083763395307a45",
-  "baslik_tr": "GTA 6'daki Mandy karakterinin karanlık sırrı",
-  "bd3": true,
-  "ozet": "GTA 6'da sosyal medyada popüler olan Mandy adlı kiracı karakterinin karanlık bir sırra sahip olduğu ortaya çıktı. Brian'ın yönlendirmesiyle Mandy'nin evine giden Jason, onun bakım acil durumu uydurduğunu ve kendisine karşı saplantılı olduğunu fark ediyor. Oyuncular evin arka bahçesinde ceset boyutunda yeni kapatılmış bir çukur ile asit bidonları bulabiliyor. Ayrıca aracının bagajında da benzer malzemeler yer alırken, lavabodan aldığı nesnenin kesik bir parmak olduğu görülüyor. Bu bulgular Mandy'nin bir katil olabileceğine işaret ediyor.",
-  "link": "https://www.ign.com/articles/gta-6-mandy-serial-killer",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [
-   {
-    "ad": "GamesRadar",
-    "link": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mandy-thirst-levels-reach-heights-that-even-former-nintendo-boss-reggie-fils-aime-cant-help-but-notice/"
-   }
-  ],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/gta-6-mandy-1795125785845.jpg",
-  "puan": 5.57,
-  "linkler": [
-   "https://www.ign.com/articles/gta-6-mandy-serial-killer",
-   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mandy-thirst-levels-reach-heights-that-even-former-nintendo-boss-reggie-fils-aime-cant-help-but-notice/"
-  ],
-  "basliklar": [
-   "GTA 6's Viral NPC May Actually Have a Dark Secret",
-   "GTA 6 Mandy thirst levels reach heights that even former Nintendo boss Reggie Fils-Aimé can't help but notice"
-  ],
-  "ts": 1795127914.0,
   "tarih": "20.11.2026 05:07",
   "bd4": true
  }
