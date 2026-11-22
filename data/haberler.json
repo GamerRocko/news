@@ -253,14 +253,21 @@
   "ozet": "Circana analisti Mat Piscatella, Amerika Birleşik Devletleri'ndeki PS5 sahiplerinin yüzde 61'inin Rockstar oyununun çıkış gününde oynadığını açıkladı. 19 Kasım tarihinde gerçekleşen bu süreçte oyuncuların ortalama 8,5 saat boyunca oyun başında vakit geçirdiği belirtildi. Öte yandan Sony, devasa oyuncu trafiğine rağmen konsol çevrim içi altyapısının sorunsuz bir şekilde çalıştığını ve herhangi bir kesinti yaşanmadığını gösterdi.",
   "link": "https://www.pushsquare.com/news/2026/11/61percent-of-all-us-ps5-owners-played-gta-6-on-launch-day-averaging-8-hours",
   "kaynak": "Push Square",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Eurogamer",
+    "link": "https://www.eurogamer.net/gta-6-launch-day-engagement-circana"
+   }
+  ],
   "gorsel": "https://images.pushsquare.com/23ef489ee8fb3/large.jpg",
   "puan": 3.0,
   "linkler": [
-   "https://www.pushsquare.com/news/2026/11/61percent-of-all-us-ps5-owners-played-gta-6-on-launch-day-averaging-8-hours"
+   "https://www.pushsquare.com/news/2026/11/61percent-of-all-us-ps5-owners-played-gta-6-on-launch-day-averaging-8-hours",
+   "https://www.eurogamer.net/gta-6-launch-day-engagement-circana"
   ],
   "basliklar": [
-   "61% of All US PS5 Owners Played GTA 6 on Launch Day, Averaging 8 Hours"
+   "61% of All US PS5 Owners Played GTA 6 on Launch Day, Averaging 8 Hours",
+   "Over half of all console players active on GTA 6's launch day played it, says Circana"
   ],
   "ts": 1795226400.0,
   "tarih": "22.11.2026 07:06"
