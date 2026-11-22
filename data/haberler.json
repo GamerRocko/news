@@ -1,5 +1,43 @@
 [
  {
+  "id": "c52aa4b8dfb8be0539f321ab8b31d099",
+  "baslik_tr": "Rockstar, GTA 6 oyunundan dart mini oyununun neden çıkarıldığını açıkladı",
+  "bd4": true,
+  "ozet": "Rockstar North eş stüdyo yöneticisi Rob Nelson, GTA 6 geliştirme sürecinde sınırsız bütçe ve zamana sahip olmadıkları için dart gibi bazı sevilen mini oyunların oyundan çıkarıldığını belirtti. Ekip, mini oyunları sıradan birer eğlence olmaktan çıkarıp gerçek dünyadaki hissi verecek şekilde tasarlamayı hedefliyor; ancak dart için yeterli kaynağın bulunamadığı ifade edildi.",
+  "link": "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/20/ultimate-edition-wyman-car-collection-01-1795168394633.jpg",
+  "puan": 5.82,
+  "linkler": [
+   "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper"
+  ],
+  "basliklar": [
+   "Rockstar Says Darts Were Cut From GTA 6 Because It Didn't Have 'Unlimited Money or Time' to Make It 'Feel Proper'"
+  ],
+  "ts": 1795379879.0,
+  "tarih": "23.11.2026 01:05"
+ },
+ {
+  "id": "313ad80814fa5f5632721f4dda442d3d",
+  "baslik_tr": "Unreal Engine 6, yapay zeka kodlama lehine Blueprints sisteminden vazgeçiyor",
+  "bd4": true,
+  "ozet": "Epic Games, Unreal Engine 6 sürümünde Blueprints ve Actor Gameplay Framework özelliklerine yer vermeyeceğini duyurdu. Şirket, yapay zekadaki gelişmeler sayesinde Unreal Engine 5 projelerinin yeni sürüme geçişinin otomatikleşeceğini ve oyunların Verse diliyle geliştirileceğini belirtti. Bu karar, geliştiriciler arasında tartışmalara yol açtı.",
+  "link": "https://www.pcgamer.com/gaming-industry/unreal-engine-6-to-jettison-key-scripting-feature-earlier-than-planned-in-favor-of-ai-coding/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/ZoNnbwEE9xr6vSMNfPbQVN-1920-80.jpg",
+  "puan": 5.81,
+  "linkler": [
+   "https://www.pcgamer.com/gaming-industry/unreal-engine-6-to-jettison-key-scripting-feature-earlier-than-planned-in-favor-of-ai-coding/"
+  ],
+  "basliklar": [
+   "Unreal Engine 6 to jettison key scripting feature earlier than planned in favor of AI coding"
+  ],
+  "ts": 1795379637.0,
+  "tarih": "23.11.2026 01:06"
+ },
+ {
   "id": "6eeafdae11f50d7dcf825cf3b3ea3325",
   "baslik_tr": "Rockstar ekibi, GTA 6 oyunundaki farklı vücut tiplerinin animasyonlarını paylaşabilmesi için özel bir ekip kurdu",
   "bd4": true,
