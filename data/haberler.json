@@ -1,5 +1,24 @@
 [
  {
+  "id": "3b5fdf979ce6d41b1c6076f334038aee",
+  "baslik_tr": "Katsuhiro Harada, Pokken Tournament oyununa eklemek istediği Pokémon karakterini açıkladı",
+  "bd4": true,
+  "ozet": "Tekken serisiyle tanınan Bandai Namco yapımcısı Katsuhiro Harada, Pokken Tournament oyununa eklemek istediği ancak kadroya dahil edemediği Pokémon karakterini açıkladı. Harada, tasarımı nedeniyle Altıncı Nesil dövüş ve karanlık tip Pokémon türü olan Pangoro'yu kadroda görmek istediğini belirtti. Karakter seçimlerinin oyun mekanikleri, sistemler ve The Pokémon Company şirketinin talepleri doğrultusunda yapıldığını ifade eden Harada, nihai kadroda Pikachu ve Gengar gibi isimlerin yer almasından mutluluk duyduğunu da sözlerine ekledi.",
+  "link": "https://www.nintendolife.com/news/2026/11/katsuhiro-harada-reveals-the-pokemon-he-wanted-to-add-to-pokken-tournament",
+  "kaynak": "Nintendo Life",
+  "diger_kaynaklar": [],
+  "gorsel": "https://images.nintendolife.com/8eedb914f197b/large.jpg",
+  "puan": 5.86,
+  "linkler": [
+   "https://www.nintendolife.com/news/2026/11/katsuhiro-harada-reveals-the-pokemon-he-wanted-to-add-to-pokken-tournament"
+  ],
+  "basliklar": [
+   "Katsuhiro Harada Reveals The Pokémon He Wanted To Add To Pokken Tournament"
+  ],
+  "ts": 1795330800.0,
+  "tarih": "22.11.2026 11:05"
+ },
+ {
   "id": "37a8b1f815177f5976f0356be9e0625b",
   "baslik_tr": "Ugly Within oyunu Serafini Productions tarafından duyuruldu",
   "bd4": true,
@@ -4276,26 +4295,6 @@
   ],
   "ts": 1795113324.0,
   "tarih": "20.11.2026 01:46",
-  "bd4": true
- },
- {
-  "id": "570d4215f35f993c4378ac8b88b9cdd6",
-  "baslik_tr": "GTA 6'nın iki radyo istasyonundaki şarkı sayısı Vice City'yi geride bırakıyor",
-  "bd3": true,
-  "ozet": "PS5 ve Xbox platformlarında oyuncularla buluşan GTA 6, devasa müzik arşiviyle dikkat çekiyor. Oyunun pop müzik istasyonu FLASH FM ve klasik rock istasyonu V-ROCK, toplamda 150 şarkıya ev sahipliği yapıyor. Sadece bu iki istasyondaki şarkı sayısı, orijinal GTA: Vice City'nin tüm radyo istasyonlarındaki toplam şarkı sayısını geride bırakıyor.",
-  "link": "https://kotaku.com/gta-6s-pop-and-classic-rock-radio-stations-contain-150-songs-more-than-all-of-vice-citys-radio-stations-combined-2000758551",
-  "kaynak": "Kotaku",
-  "diger_kaynaklar": [],
-  "gorsel": "https://kotaku.com/app/uploads/2026/11/GTa-666-1280x720.jpg",
-  "puan": 5.99,
-  "linkler": [
-   "https://kotaku.com/gta-6s-pop-and-classic-rock-radio-stations-contain-150-songs-more-than-all-of-vice-citys-radio-stations-combined-2000758551"
-  ],
-  "basliklar": [
-   "GTA 6′s Pop And Classic Rock Radio Stations Contain 150 Songs, More Than All Of Vice City’s Radio Stations Combined"
-  ],
-  "ts": 1795125745.0,
-  "tarih": "20.11.2026 01:06",
   "bd4": true
  }
 ]
