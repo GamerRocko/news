@@ -1,5 +1,24 @@
 [
  {
+  "id": "b509552c7b5262a263eccd84f5c4f24e",
+  "baslik_tr": "Mario & Luigi: Superstar Saga oyununun kapak tasarımı ankete konuk oluyor",
+  "bd4": true,
+  "ozet": "Box Art Brawl serisinin bu haftaki konuğu 2003 yılında Game Boy Advance için çıkan Mario & Luigi: Superstar Saga oyunu oldu. Kuzey Amerika ve Avrupa ortak kapak tasarımıyla Japonya'nın kapak tasarımı okuyucu oylamasında karşılıklı olarak yarışıyor.",
+  "link": "https://www.nintendolife.com/features/poll-which-mario-and-luigi-superstar-saga-box-art-is-the-best",
+  "kaynak": "Nintendo Life",
+  "diger_kaynaklar": [],
+  "gorsel": "https://images.nintendolife.com/4446d81a931d1/large.jpg",
+  "puan": 5.99,
+  "linkler": [
+   "https://www.nintendolife.com/features/poll-which-mario-and-luigi-superstar-saga-box-art-is-the-best"
+  ],
+  "basliklar": [
+   "Poll: Which Mario & Luigi: Superstar Saga Box Art Is The Best?"
+  ],
+  "ts": 1795341600.0,
+  "tarih": "22.11.2026 13:06"
+ },
+ {
   "id": "3b5fdf979ce6d41b1c6076f334038aee",
   "baslik_tr": "Katsuhiro Harada, Pokken Tournament oyununa eklemek istediği Pokémon karakterini açıkladı",
   "bd4": true,
@@ -4274,26 +4293,6 @@
    "Players Are Surprised at How Well the Xbox Series S Handles GTA 6"
   ],
   "ts": 1795113566.0,
-  "tarih": "20.11.2026 01:46",
-  "bd4": true
- },
- {
-  "id": "dc97f7a7d8febe3198ead8749062f4de",
-  "baslik_tr": "GTA 6'da Dexter dizisine ait gizli detaylar ortaya çıktı",
-  "bd3": true,
-  "ozet": "Rockstar'ın açık dünyasında hayranlar tarafından ünlü dizi Dexter'a göndermeler içeren çeşitli Easter egg'ler keşfedildi. Vice City'deki Washington Island bölgesinde yer alan Trinity Apartments adlı komplekste Dexter'ın dairesi, klimalı saklanma alanı ve çatısında şırınga ile bıçak gibi ekipmanlar yer alıyor. Ayrıca kompleksin yakınında dizideki teknenin benzeri olan bir deniz aracı da bulunuyor.",
-  "link": "https://www.ign.com/articles/gta-6-features-a-few-cheeky-dexter-easter-eggs",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/19/gta-6-dexter-1795102962512.jpg",
-  "puan": 5.48,
-  "linkler": [
-   "https://www.ign.com/articles/gta-6-features-a-few-cheeky-dexter-easter-eggs"
-  ],
-  "basliklar": [
-   "GTA 6 Features a Few Cheeky Dexter Easter Eggs"
-  ],
-  "ts": 1795113324.0,
   "tarih": "20.11.2026 01:46",
   "bd4": true
  }
