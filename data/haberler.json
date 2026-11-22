@@ -1,5 +1,24 @@
 [
  {
+  "id": "44bb5ba00a93e42242ba122eca42f8ae",
+  "baslik_tr": "Circana verilerine göre konsol oyuncularının yarısından fazlası çıkış gününde GTA 6 oynadı",
+  "bd4": true,
+  "ozet": "Circana analisti Mat Piscatella tarafından paylaşılan verilere göre, 19 kasım çıkış gününde ABD'deki aktif PlayStation 5 oyuncularının yüzde 61'i ve küresel Xbox oyuncularının yüzde 56'sı GTA 6 oynadı. Bu günde PS5 oyuncuları ortalama 513 dakika, Xbox oyuncuları ise 494 dakika oyunda vakit geçirdi. İkinci sırada ise yüzde 10 oranla Fortnite yer aldı. Rockstar, oyunun ilk gününde 32,5 milyon kopya satarak ve 3,79 milyar dolar gelir elde ederek tüm zamanların en büyük eğlence lansmanına imza attığını doğruladı.",
+  "link": "https://www.eurogamer.net/gta-6-launch-day-engagement-circana",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/GTA6_5nov-(12).jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.18,
+  "linkler": [
+   "https://www.eurogamer.net/gta-6-launch-day-engagement-circana"
+  ],
+  "basliklar": [
+   "Over half of all console players active on GTA 6's launch day played it, says Circana"
+  ],
+  "ts": 1795348950.0,
+  "tarih": "22.11.2026 21:38"
+ },
+ {
   "id": "6a0fa476d2ff4c1e0b4c60b6735de27e",
   "baslik_tr": "Below the Stone erken erişimden çıkarak 1.0 sürümüne ulaştı",
   "bd4": true,
@@ -253,7 +272,7 @@
   "ts": 1795344849.0,
   "tarih": "22.11.2026 14:29"
  },
-  {
+ {
   "id": "b6bebdfd1933e3d4bd0d1edc4d0f8e99",
   "baslik_tr": "Rockstar çalışanlarının yüzde 21'i şirkette on yıldan uzun süredir çalışıyor",
   "bd4": true,
@@ -272,7 +291,6 @@
   "ts": 1795207294.0,
   "tarih": "22.11.2026 09:06"
  },
- 
  {
   "id": "4d7ec7b981ec5184264ac6e9b3bd6aa8",
   "baslik_tr": "GTA 6 oyunundaki gizli oynatma listelerini açmanın yolları açıklandı",
@@ -311,7 +329,6 @@
   "ts": 1795214065.0,
   "tarih": "22.11.2026 07:06"
  },
- 
  {
   "id": "bbd03e6c0b314689310099686e33f611",
   "baslik_tr": "Florida Joker, Grand Theft Auto 6 oyununda özel seslendirmen olarak yer alıyor",
@@ -331,8 +348,6 @@
   "ts": 1795212168.0,
   "tarih": "22.11.2026 07:06"
  },
- 
- 
  {
   "id": "798b4a0d55e1a0f93c389bbf0a218b75",
   "baslik_tr": "Clair Obscur: Expedition 33 baş yazarı Jennifer Svedberg-Yen, Grand Theft Auto 6 geliştiricilerinin işten çıkarma endişelerini değerlendirdi",
@@ -352,7 +367,6 @@
   "ts": 1795261861.0,
   "tarih": "22.11.2026 05:06"
  },
- 
  {
   "id": "acbb6ea5a96036a0335eb7410f75da0b",
   "baslik_tr": "The Binding of Isaac geliştiricisi, Repentance+ güncellemesindeki yapay zeka müziklerini kaldırdı",
@@ -410,7 +424,6 @@
   "ts": 1795304442.0,
   "tarih": "22.11.2026 04:31"
  },
- 
  {
   "id": "f70d30074e09107dc9d34cd97c88769e",
   "baslik_tr": "Atlus, Persona 6 sonrasındaki oyunlar için oyuncuların eskisi kadar uzun süre beklemeyeceğini belirtti",
@@ -430,7 +443,6 @@
   "ts": 1795271467.0,
   "tarih": "22.11.2026 04:32"
  },
- 
  {
   "id": "d125e1859310d49dcc0af21a3c9b4a7d",
   "baslik_tr": "Letimci simülasyonu tarzı Alt Video duyuruldu",
@@ -1755,7 +1767,6 @@
   "ts": 1795206622.0,
   "tarih": "21.11.2026 01:20"
  },
- 
  {
   "id": "4ebf4be4e884ae0b3d79257c93dfc60f",
   "baslik_tr": "Grand Theft Auto VI: The Album dinleyicilerle buluştu",
