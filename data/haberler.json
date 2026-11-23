@@ -1,5 +1,62 @@
 [
  {
+  "id": "e6b179ae789213f4c3725733eb34aff3",
+  "baslik_tr": "Legend of Zelda Switch 2 stokları bu hafta yenilenebilir",
+  "bd4": true,
+  "ozet": "Black Friday yaklaşırken, Legend of Zelda Switch 2 konsolu için yeni stok yenilmelerinin bu hafta içinde gerçekleşmesi bekleniyor. Amazon, Walmart, Target, Best Buy, Nintendo, GameStop, Amazon UK, EE, Smyths Toys, Very, Argos ve Currys gibi perakendecilerin Black Friday döneminde ellerindeki ürünleri satışa çıkarması öngörülüyor. Uzmanlar, oyuncuların ödeme ve adres bilgilerini önceden kaydederek bu mağazaları yakından takip etmesini öneriyor.",
+  "link": "https://www.gamesradar.com/live/news/legend-of-zelda-switch-2-restocks-black-friday-week-26/",
+  "kaynak": "GamesRadar",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/qTBYc8FoUU7zNfNskWbVUL-1920-80.jpg",
+  "puan": 5.98,
+  "linkler": [
+   "https://www.gamesradar.com/live/news/legend-of-zelda-switch-2-restocks-black-friday-week-26/"
+  ],
+  "basliklar": [
+   "Legend of Zelda Switch 2 restocks expected this week, here's all the latest updates live as they happen"
+  ],
+  "ts": 1795427824.0,
+  "tarih": "23.11.2026 13:05"
+ },
+ {
+  "id": "8af15064c71c757fa6beed464fff6b1c",
+  "baslik_tr": "Activision, oyuncu sohbetlerinden öğrenen yapay zeka ses sistemi için patent başvurusunda bulundu",
+  "bd4": true,
+  "ozet": "Call of Duty yayımcısı Activision, oyun içi sesli sohbetleri dinleyerek oyuncu tepkilerini analiz eden ve yapay zeka destekli NPC'ler oluşturan yeni bir sistemin patentini aldı. Bu sistem, oyuncuların heyecanlı anlardaki seslerini kaydedip eşleştirerek yapay zekanın benzer sesleri yeniden üretmesini hedefliyor. Küfür filtresi barındıran teknoloji, Discord gibi harici uygulamalardan da ses iletişimi alabilecek.",
+  "link": "https://www.eurogamer.net/activision-ai-voice-chat-npc-patent",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/modern-warfare-4-beta-shot-crop-2.jpeg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 5.92,
+  "linkler": [
+   "https://www.eurogamer.net/activision-ai-voice-chat-npc-patent"
+  ],
+  "basliklar": [
+   "Activision patents AI voice system that learns from in-game chat and creates audio for NPCs who can even speak in place of you"
+  ],
+  "ts": 1795426070.0,
+  "tarih": "23.11.2026 13:06"
+ },
+ {
+  "id": "77d75d4e248490428eb13b4782cf9df9",
+  "baslik_tr": "Naughty Dog geliştiricisi Michael Barclay, GTA 6 oyununun teknik başarısını değerlendirdi",
+  "bd4": true,
+  "ozet": "Naughty Dog dünya tasarımı direktörü Michael Barclay, GTA 6 oyununun teknik olarak son derece gelişmiş ve etkileyici olduğunu belirterek, oyunun 19 yıllık kariyerinde gördüğü en büyük teknik başarılardan biri olduğunu ifade etti. Payday 2 oyun direktörü David Goldfarb ve karakter sanatçısı Del Walker gibi farklı stüdyolardan deneyimli geliştiriciler de oyunun sunduğu görsel ve teknik kalite karşısında büyük şaşkınlık yaşadıklarını sosyal medyada paylaştı.",
+  "link": "https://www.ign.com/articles/naughty-dog-dev-gta-6-appears-to-him-as-as-a-bugatti-veyron-would-to-a-nervous-victorian-child",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/18/g-blog-6-1795002008156.jpg",
+  "puan": 5.74,
+  "linkler": [
+   "https://www.ign.com/articles/naughty-dog-dev-gta-6-appears-to-him-as-as-a-bugatti-veyron-would-to-a-nervous-victorian-child"
+  ],
+  "basliklar": [
+   "Naughty Dog Dev: GTA 6 Appears to Him as ‘as a Bugatti Veyron Would to a Nervous Victorian Child’"
+  ],
+  "ts": 1795420722.0,
+  "tarih": "23.11.2026 13:06"
+ },
+ {
   "id": "569226c082bffc11be7064b02dd28af8",
   "baslik_tr": "Clair Obscur: Expedition 33 konser serisi 2027 yılında küresel turla geri dönüyor",
   "bd4": true,
@@ -120,14 +177,21 @@
   "ozet": "Rockstar North eş stüdyo yöneticisi Rob Nelson, GTA 6 geliştirme sürecinde sınırsız bütçe ve zamana sahip olmadıkları için dart gibi bazı sevilen mini oyunların oyundan çıkarıldığını belirtti. Ekip, mini oyunları sıradan birer eğlence olmaktan çıkarıp gerçek dünyadaki hissi verecek şekilde tasarlamayı hedefliyor; ancak dart için yeterli kaynağın bulunamadığı ifade edildi.",
   "link": "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper",
   "kaynak": "IGN",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Eurogamer",
+    "link": "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources"
+   }
+  ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/20/ultimate-edition-wyman-car-collection-01-1795168394633.jpg",
   "puan": 5.82,
   "linkler": [
-   "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper"
+   "https://www.ign.com/articles/rockstar-says-darts-were-cut-from-gta-6-because-it-didnt-have-unlimited-money-or-time-to-make-it-feel-proper",
+   "https://www.eurogamer.net/grand-theft-auto-6-no-darts-didnt-have-resources"
   ],
   "basliklar": [
-   "Rockstar Says Darts Were Cut From GTA 6 Because It Didn't Have 'Unlimited Money or Time' to Make It 'Feel Proper'"
+   "Rockstar Says Darts Were Cut From GTA 6 Because It Didn't Have 'Unlimited Money or Time' to Make It 'Feel Proper'",
+   "Why can't you play darts in GTA 6 when you could in previous games? Because Rockstar \"didn't have the resources\" to do it to a standard it'd be happy with"
   ],
   "ts": 1795379879.0,
   "tarih": "23.11.2026 01:05"
