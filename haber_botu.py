@@ -7,6 +7,7 @@ Kurulum:   pip install feedparser trafilatura requests
 """
 import os, re, sys, json, time, html, hashlib, difflib, datetime as dt, pathlib
 import socket
+from urllib.parse import urljoin
 import feedparser, requests, trafilatura
 
 socket.setdefaulttimeout(20)  # yanıt vermeyen siteler en fazla 20 sn bekletsin
@@ -48,7 +49,7 @@ ADIM = 10                 # "Daha fazla" düğmesine her basışta açılacak ha
 TR = dt.timezone(dt.timedelta(hours=3))   # Türkiye saati (UTC+3)
 GORSEL_ZORUNLU = set()    # Buraya yazılan kaynaklardan görseli bulunamayan haberler yayınlanmaz. Ad, FEEDS'teki adla BİREBİR aynı olmalı
 KALDIRILAN_KAYNAKLAR = {"Gameguru Mania", "GGMania"}   # Çıkarılan kaynaklar: bunlardan gelen görselsiz eski haberler sayfadan silinir
-SURUM = "2026-11-18-a"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
+SURUM = "2026-11-24-a"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
 MAKS_ISTEK = 20           # her çalışmada yapay zekaya en fazla kaç istek gönderilsin (kota koruması)
 SON_LISTE = 40            # yapay zekaya, "aynı haber mi?" kontrolü için gösterilecek son haber sayısı
 ONAR_LIMIT = 30           # her çalışmada eski haberlerden en fazla kaçının başlığı cümle düzenine çevrilsin (sayfa okunur, istek harcamaz)
@@ -75,7 +76,23 @@ REDDEDILEN = pathlib.Path("data/reddedilen.json")   # oyun dışı / görselsiz 
 SITE = pathlib.Path("site/index.html")
 
 
+_IMG_RE = re.compile(r"""<img[^>]+?src=["']([^"']+)["']""", re.I)
+_REKLAM_IMG = ("pixel", "1x1", "spacer", "emoji", "gravatar", "feedburner", "doubleclick", "tracking")
+_META_GORSEL = [re.compile(k, re.I) for k in (
+    r"""<meta[^>]+(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["'][^>]*?content=["']([^"']+)""",
+    r"""<meta[^>]+content=["']([^"']+)["'][^>]*?(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image(?::src)?)["']""",
+    r"""<link[^>]+rel=["']image_src["'][^>]*?href=["']([^"']+)""")]
+
+
+def _html_gorsel(metin):
+    for u in _IMG_RE.findall(metin or ""):
+        if u.startswith(("http://", "https://")) and not any(k in u.lower() for k in _REKLAM_IMG):
+            return html.unescape(u)
+    return None
+
+
 def gorsel_bul(e):
+    """Feed girdisindeki görseli bulur: media etiketleri, ek dosyalar, sonra içerikteki <img>."""
     for key in ("media_content", "media_thumbnail"):
         for m in e.get(key, []) or []:
             if m.get("url"):
@@ -83,7 +100,12 @@ def gorsel_bul(e):
     for l in e.get("links", []):
         if l.get("type", "").startswith("image/"):
             return l.get("href")
-    return None
+    for c in e.get("content", []) or []:
+        u = _html_gorsel(c.get("value", ""))
+        if u:
+            return u
+    return _html_gorsel(e.get("summary", ""))
+
 
 
 def kaynaklari_oku():
@@ -148,12 +170,20 @@ def grupla_ve_puanla(liste):
 
 
 def sayfa_cek(link):
+    """Haber sayfasından metni ve görseli alır. Görsel: trafilatura, olmazsa og:image / twitter:image / image_src."""
     ham = trafilatura.fetch_url(link)
     if not ham:
         return None, None
     metin = trafilatura.extract(ham, include_comments=False)
     meta = trafilatura.extract_metadata(ham)
-    return metin, (meta.image if meta else None)
+    gorsel = meta.image if meta and meta.image else None
+    if not gorsel:
+        for kalip in _META_GORSEL:
+            m = kalip.search(ham)
+            if m:
+                gorsel = html.unescape(m.group(1)); break
+    return metin, (urljoin(link, gorsel) if gorsel else None)
+
 
 
 _KUCUK_KELIME = {"ve", "ile", "için", "de", "da", "mi", "mı", "mu", "mü", "veya", "ya", "ki",
@@ -171,6 +201,19 @@ _KISALTMA_DISI = {"ON", "IN", "AT", "OR", "IF", "IS", "IT", "AS", "BY", "TO", "O
                   "GO", "UP", "US", "WE", "ME", "MY", "HE", "AM"}
 _TOKEN = re.compile(r"[A-Za-zÀ-ÿ0-9]+(?:['’\-][A-Za-zÀ-ÿ0-9]+)*|[.!?:\n]")
 _TR_HARFLER = set("çğıöşüÇĞİÖŞÜ")
+_TR_STOP = {"ve", "de", "da", "bir", "bu", "su", "şu", "o", "ya", "ki", "mi", "mı", "mu", "mü", "ama", "ise", "en", "daha",
+            "gibi", "kadar", "her", "hem", "ne", "göre", "gore", "ancak", "fakat", "veya", "yani", "ayrıca", "ayrica",
+            "sonra", "önce", "once", "yeni", "eski", "iki", "üç", "uc", "ilk", "son", "oyun", "için", "icin", "ile",
+            "çok", "cok", "olan", "olarak"}
+_IKI_HARFLI = {"PC", "VR", "AI", "TV", "UI", "XP", "HP"}   # 2 harfli isimlerde yalnızca bunlar kabul edilir
+
+
+def _isim_gecerli(isim):
+    """Tek kelimelik 'isim' sıradan bir Türkçe kelime (ve, de, bir...) ya da rastgele 2 harfli kısaltma olamaz."""
+    isim = isim.strip()
+    if " " in isim:
+        return len(isim) >= 2
+    return len(isim) >= 2 and isim.lower() not in _TR_STOP and (len(isim) > 2 or isim in _IKI_HARFLI)
 
 
 def _tr_kucuk(s):
@@ -276,7 +319,7 @@ def isim_sozlugu(basliklar, metin, model_isimleri=(), ogrenilen=()):
 
     def ekle(isim):
         isim = " ".join(str(isim).split())
-        if len(isim) >= 2:
+        if len(isim) >= 2 and _isim_gecerli(isim):
             sozluk.setdefault(isim.lower(), _baglac_kucult(isim))
 
     for i in SABIT_OZEL_ISIMLER:
@@ -351,6 +394,42 @@ def baslik_duzelt(baslik, sozluk):
     return _ilk_harf(_isimleri_uygula(_tr_kucuk(baslik), yerel), yerel)
 
 
+_NOKTALI_KISALTMA = {"vb", "vs", "örn", "yak", "dr", "bkz", "sn", "no", "mr", "mrs", "ms"}
+
+
+def ozet_duzelt(ozet, sozluk):
+    """Özet: cümle başlarını büyütür ve bilinen özel isimlerin yazımını düzeltir. Hiçbir şeyi küçültmez."""
+    ozet = _isimleri_uygula(" ".join(str(ozet).split()), sozluk)
+
+    def cumle_basi(m):
+        onceki = re.search(r"(\w+)$", m.string[:m.start()])
+        if onceki and onceki.group(1).lower() in _NOKTALI_KISALTMA:
+            return m.group(0)
+        return m.group(1) + m.group(2) + _tr_buyuk_ilk(m.group(3))
+
+    ozet = re.sub(r"([.!?…])(\s+)([a-zçğıöşü])", cumle_basi, ozet)
+    birimler = {"hz": "Hz", "ghz": "GHz", "mhz": "MHz", "gb": "GB", "tb": "TB", "mb": "MB", "kb": "KB", "mah": "mAh"}
+    ozet = re.sub(r"(?<=\d)(\s?)(hz|ghz|mhz|gb|tb|mb|kb|mah)\b", lambda m: m.group(1) + birimler[m.group(2).lower()], ozet, flags=re.I)
+    return _tr_buyuk_ilk(ozet)
+
+
+_ING_STOP = {"the", "and", "of", "to", "in", "is", "that", "for", "with", "on", "as", "are", "was", "this", "it", "by",
+             "from", "has", "have", "will", "be", "at", "an", "or", "their", "its", "which", "who", "said"}
+
+
+def ingilizce_supheli(metin):
+    """Metin Türkçeye çevrilmemiş, İngilizce kalmış gibi mi? (Türkçe karakter yok + sık İngilizce kelimeler var)"""
+    metin = str(metin)
+    kel = re.findall(r"[a-zA-Z']+", metin.lower())
+    if len(kel) < 8 or any(c in _TR_HARFLER for c in metin):
+        return False
+    return sum(k in _ING_STOP for k in kel) / len(kel) >= 0.15
+
+
+def dil_sorunlu(baslik, ozet=""):
+    return ascii_supheli(baslik, ozet) or ingilizce_supheli(ozet)
+
+
 def ascii_supheli(baslik, ozet=""):
     """Türkçe metin, Türkçe karakterler olmadan (ı yerine i, ş yerine s...) yazılmış gibi mi?"""
     harf = lambda t: sum(c.isalpha() for c in t)
@@ -360,9 +439,11 @@ def ascii_supheli(baslik, ozet=""):
     return harf(baslik) >= 35 and not any(c in _TR_HARFLER for c in baslik)
 
 
-FIX_PROMPT = """Aşağıdaki Türkçe başlık ve özet, Türkçe karakterler (ç, ğ, ı, İ, ö, ş, ü) eksik, yani ASCII harflerle yazılmış olabilir
-(örn. "ı" yerine "i", "ş" yerine "s"). Anlamı, kelimeleri ve cümle yapısını DEĞİŞTİRMEDEN yalnızca eksik Türkçe karakterleri düzelt.
-Zaten doğruysa aynen döndür. Sadece geçerli JSON döndür: {"baslik": "...", "ozet": "..."}
+FIX_PROMPT = """Aşağıdaki başlık ve özet Türkçe olmalı, ama şu sorunlardan biri olabilir: (1) Türkçe karakterler (ç, ğ, ı, İ, ö, ş, ü) eksik,
+yani ASCII harflerle yazılmış (örn. "ı" yerine "i", "ş" yerine "s"); (2) metin İngilizce kalmış.
+Eksik karakterleri düzelt, İngilizce kalan kısmı doğal ve doğru bir Türkçeyle çevir. Anlamı DEĞİŞTİRME, bilgi ekleme, bilgi çıkarma.
+Özel isimleri (oyun, şirket, kişi, ürün) orijinal yaz; özet cümleleri büyük harfle başlasın. Zaten doğruysa aynen döndür.
+Sadece geçerli JSON döndür: {"baslik": "...", "ozet": "..."}
 Başlık: {baslik}
 Özet: {ozet}"""
 
@@ -373,6 +454,7 @@ PROMPT = """Sen bir Türk oyun haberleri editörüsün. Aşağıdaki İngilizce 
 - Cümleleri çevirme; olayı kendi cümlelerinle anlat (en fazla 120 kelime).
 - Oyun, şirket ve kişi adlarını orijinal yaz.
 - Başlık normal Türkçe cümle yazımıyla olsun: yalnızca ilk kelimenin ilk harfi büyük; özel isimler (oyun, şirket, kişi, platform adları ve kısaltmalar; ör. Nintendo, Zelda, Breath of the Wild, GTA 6) orijinal büyük/küçük harfleriyle yazılsın; diğer tüm kelimeler küçük harfle başlasın. "Başlıktaki Her Kelime Büyük" biçimini KULLANMA.
+- Özet normal Türkçe yazımıyla olsun: her cümle büyük harfle başlasın; özel isimler (oyun, şirket, ürün, kişi adları) ve kısaltmalar (RTX, OLED, GB, PS5) orijinal büyük/küçük harfleriyle yazılsın. Küçük harf kuralı SADECE başlık içindir, özette her şeyi küçük harfle yazma.
 - "ozel_isimler" alanına başlıkta geçen özel isimleri ve kısaltmaları, başlıktaki yazımlarıyla listele.
 - Türkçe karakterleri (ç, ğ, ı, İ, ö, ş, ü) eksiksiz ve doğru kullan; asla ASCII'ye çevirme (ı yerine i, ş yerine s yazma).
 - Haber video oyunları, oyun şirketleri veya oyun donanımıyla ilgili değilse (film, dizi, LEGO, genel teknoloji vb.) sadece {"uygun": false} döndür.
@@ -556,19 +638,26 @@ def main():
     if once != len(arsiv):
         print(f"{once - len(arsiv)} haber, çıkarılan kaynak (Gameguru Mania) yüzünden silindi.", flush=True)
     ogrenilen = set(json.loads(OGRENILEN.read_text("utf-8"))) if OGRENILEN.exists() else set()
+    ogrenilen = {x for x in ogrenilen if _isim_gecerli(x)}      # önceki hatalı öğrenmeleri (ör. "VE") temizle
     ascii_say = 0
-    for h in [x for x in arsiv if not x.get("bd4")][:ONAR_LIMIT]:   # eski başlıkları sayfa metnine bakarak bir kez cümle düzenine çevir
+    for h in [x for x in arsiv if not x.get("bd5")][:ONAR_LIMIT]:   # eski kayıtları sayfa metnine bakarak onar (başlık, özet, dil, eksik görsel)
         try:
-            metin, _ = sayfa_cek(h["link"])
+            metin, og = sayfa_cek(h["link"])
         except Exception:
-            metin = None
-        if ascii_say < ASCII_ONAR_LIMIT and ascii_supheli(h["baslik_tr"], h["ozet"]):
+            metin, og = None, None
+        if not h.get("gorsel") and og:
+            h["gorsel"] = og
+        if ascii_say < ASCII_ONAR_LIMIT and dil_sorunlu(h["baslik_tr"], h["ozet"]):
             try:
                 h["baslik_tr"], h["ozet"] = turkce_karakter_duzelt(h["baslik_tr"], h["ozet"]); ascii_say += 1
             except Exception as ex:
                 print("Türkçe karakter düzeltmesi yapılamadı:", ex)
-        h["baslik_tr"] = baslik_duzelt(h["baslik_tr"], isim_sozlugu(h["basliklar"], metin or "", (), ogrenilen))
-        h["bd4"] = True
+        sozluk = isim_sozlugu(h["basliklar"], metin or "", (), ogrenilen)
+        h["baslik_tr"] = baslik_duzelt(h["baslik_tr"], sozluk)
+        h["ozet"] = ozet_duzelt(h["ozet"], sozluk)
+        h["onar_deneme"] = h.get("onar_deneme", 0) + 1
+        if not dil_sorunlu(h["baslik_tr"], h["ozet"]) or h["onar_deneme"] >= 3:
+            h["bd5"] = True
     reddedilen = set(json.loads(REDDEDILEN.read_text("utf-8"))) if REDDEDILEN.exists() else set()
     idle = lambda l: hashlib.md5(l.encode()).hexdigest()
 
@@ -595,7 +684,7 @@ def main():
 
     # 2) En yüksek puanlı yeni adayları sırayla işle
     yeni, istek, islenen = [], 0, 0
-    say = dict(oyun_disi=0, kisa=0, gorselsiz=0, hata=0, model_birlesen=0)
+    say = dict(oyun_disi=0, kisa=0, gorselsiz=0, hata=0, model_birlesen=0, ingilizce=0)
     son_liste = [h for h in arsiv[:60] if not h.get("ts") or simdi - h["ts"] < SON_KONTROL_SAAT * 3600][:SON_LISTE]
     for a in adaylar:
         if len(yeni) >= HABER_SAYISI or istek >= MAKS_ISTEK:
@@ -623,14 +712,18 @@ def main():
                 birlestir(son_liste[n - 1], a["uyeler"]); say["model_birlesen"] += 1
                 print(f"Aynı haber, kaynak olarak eklendi: {a['baslik']} -> {son_liste[n - 1]['baslik_tr']}")
                 time.sleep(7); continue
-            if ascii_supheli(out["baslik"], out["ozet"]):   # model Türkçe karakterleri atlamışsa bir kez düzelttir
+            if dil_sorunlu(out["baslik"], out["ozet"]):   # Türkçe karakter eksik ya da metin İngilizce kalmışsa bir kez düzelttir
                 istek += 1
                 out["baslik"], out["ozet"] = turkce_karakter_duzelt(out["baslik"], out["ozet"])
+                if ingilizce_supheli(out["ozet"]):
+                    say["ingilizce"] += 1
+                    print("İngilizce kaldı, bu çalışmada atlandı:", a["baslik"]); continue
             sozluk = isim_sozlugu([m["baslik"] for m in a["uyeler"]], metin, out.get("ozel_isimler", []), ogrenilen)
             baslik_tr = baslik_duzelt(out["baslik"], sozluk)
+            ozet = ozet_duzelt(out["ozet"], sozluk)
             kullanilan = {v for v in sozluk.values() if v in baslik_tr and v not in SABIT_OZEL_ISIMLER}
-            ogrenilen.update(v for v in kullanilan if not any(v != w and v in w for w in kullanilan))   # alt parçaları değil, tam ismi öğren
-            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd4=True, ozet=out["ozet"], link=a["link"],
+            ogrenilen.update(v for v in kullanilan if _isim_gecerli(v) and not any(v != w and v in w for w in kullanilan))   # alt parçaları değil, tam ismi öğren
+            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd5=True, ozet=ozet, link=a["link"],
                              kaynak=a["kaynak"], diger_kaynaklar=a["diger_kaynaklar"], gorsel=gorsel, puan=a["puan"],
                              linkler=linkler, basliklar=[m["baslik"] for m in a["uyeler"]], ts=a["ts"],
                              tarih=dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M"))
@@ -646,7 +739,7 @@ def main():
     OGRENILEN.write_text(json.dumps(sorted(ogrenilen)[:3000], ensure_ascii=False), "utf-8")
     site_uret(arsiv)
     print(f"{len(yeni)} yeni haber eklendi. | oyun dışı: {say['oyun_disi']} | metni alınamayan/kısa: {say['kisa']} | "
-          f"modelin birleştirdiği: {say['model_birlesen']} | görselsiz: {say['gorselsiz']} | hata: {say['hata']} | sıra bekleyen: {len(adaylar) - islenen}")
+          f"modelin birleştirdiği: {say['model_birlesen']} | İngilizce kalan: {say['ingilizce']} | görselsiz: {say['gorselsiz']} | hata: {say['hata']} | sıra bekleyen: {len(adaylar) - islenen}")
 
 
 if __name__ == "__main__":
