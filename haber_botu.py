@@ -49,7 +49,7 @@ ADIM = 10                 # "Daha fazla" düğmesine her basışta açılacak ha
 TR = dt.timezone(dt.timedelta(hours=3))   # Türkiye saati (UTC+3)
 GORSEL_ZORUNLU = set()    # Buraya yazılan kaynaklardan görseli bulunamayan haberler yayınlanmaz. Ad, FEEDS'teki adla BİREBİR aynı olmalı
 KALDIRILAN_KAYNAKLAR = {"Gameguru Mania", "GGMania"}   # Çıkarılan kaynaklar: bunlardan gelen görselsiz eski haberler sayfadan silinir
-SURUM = "2026-11-24-a"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
+SURUM = "2026-11-24-b"   # günlükte görünür; GitHub'daki dosyanın güncel olup olmadığını anlamak için
 MAKS_ISTEK = 20           # her çalışmada yapay zekaya en fazla kaç istek gönderilsin (kota koruması)
 SON_LISTE = 40            # yapay zekaya, "aynı haber mi?" kontrolü için gösterilecek son haber sayısı
 ONAR_LIMIT = 30           # her çalışmada eski haberlerden en fazla kaçının başlığı cümle düzenine çevrilsin (sayfa okunur, istek harcamaz)
@@ -66,7 +66,7 @@ SABIT_OZEL_ISIMLER = [
     "GTA", "PS5", "PS4", "DLC", "PC", "VR", "AI", "RPG", "FPS", "MMO", "IGN", "CEO", "CFO", "OpenAI", "ChatGPT", "iPhone",
     "The Witcher", "Elden Ring", "Call of Duty", "Fortnite", "Minecraft", "Diablo", "Overwatch", "Halo", "Starfield",
     "Cyberpunk 2077", "Hollow Knight", "Silksong", "Half-Life", "Counter-Strike", "Valorant", "League of Legends",
-    "Final Fantasy", "Resident Evil", "Metal Gear", "Persona", "Fallout", "Skyrim", "The Elder Scrolls",
+    "Final Fantasy", "Resident Evil", "The Last of Us", "Slay the Spire", "Metal Gear", "Persona", "Fallout", "Skyrim", "The Elder Scrolls",
 ]
 # ------------------------------
 
@@ -213,7 +213,39 @@ def _isim_gecerli(isim):
     isim = isim.strip()
     if " " in isim:
         return len(isim) >= 2
-    return len(isim) >= 2 and isim.lower() not in _TR_STOP and (len(isim) > 2 or isim in _IKI_HARFLI)
+    return (len(isim) >= 2 and isim.lower() not in _TR_STOP and isim.lower() not in _ING_STOP
+            and isim.lower() not in _BAGLAC and (len(isim) > 2 or isim in _IKI_HARFLI)
+            and not (isim.isupper() and len(isim) >= 4 and isim not in _BILINEN_KISALTMA))   # FINAL, FANTASY: yazı stili, isim değil
+
+
+_BILINEN_KISALTMA = {i for i in SABIT_OZEL_ISIMLER if i.isupper()} | {
+    "OLED", "HDMI", "FIFA", "UEFA", "NASA", "NATO", "ESRB", "PEGI", "NBA", "NFL", "UFC", "SSD", "HDR", "GPU", "CPU", "RAM", "USB",
+    "RTX", "GTX", "RX", "DLSS", "FSR", "VRR", "NPC", "HUD", "API", "SDK", "DRM", "VPN", "LED", "LCD", "UHD", "FHD", "QHD"}
+_ROMEN = re.compile(r"^(?=[IVXLCDM])M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$")
+
+
+def _isim_normalle(isim):
+    """Haber metninde TAMAMI BÜYÜK HARFLE yazılmış isimleri düzeltir: FINAL FANTASY VII -> Final Fantasy VII,
+    SLAY THE SPIRE -> Slay the Spire, THE LAST OF US -> The Last of Us. Gerçek kısaltmalar (GTA, PS5, DLC) ve roma rakamları (VII) korunur."""
+    t = isim.split(" ")
+    alfa = [w.rstrip(":") for w in t if w.rstrip(":").isalpha()]
+    hepsi_buyuk = len(alfa) >= 2 and all(w.isupper() for w in alfa)     # "THE LAST OF US": tüm isim büyük harfle yazılmış, yazı stili
+    for k, w in enumerate(t):
+        govde = w.rstrip(":")
+        ek = w[len(govde):]
+        if not (govde.isalpha() and govde.isupper() and len(govde) >= 2):
+            continue
+        if govde in _BILINEN_KISALTMA or (len(govde) <= 4 and _ROMEN.match(govde)):
+            continue
+        basta = k == 0 or t[k - 1].endswith(":")
+        if govde.lower() in _BAGLAC or govde.lower() in _ING_STOP:     # THE, OF, AND ...: baştaysa "The", ortadaysa "the"
+            yeni = govde.capitalize() if basta else govde.lower()
+        elif hepsi_buyuk or (len(govde) >= 4 and re.search(r"[AEIOU]", govde)):   # FINAL, FANTASY, US, WAR: yazı stili, kısaltma değil
+            yeni = govde.capitalize()
+        else:
+            continue
+        t[k] = yeni + ek
+    return " ".join(t)
 
 
 def _tr_kucuk(s):
@@ -308,7 +340,16 @@ def _adaylar(metin, baslik_mi=False):
 def _kisaltmalar(metin):
     """GTA, PS5, DLSS gibi kısaltmalar ve PlayStation, OpenAI, iPhone gibi iç büyük harfli yazımlar."""
     k = set(re.findall(r"\b[A-Za-z]*[a-z][A-Z][A-Za-z0-9]*\b", metin))
-    k |= {x for x in re.findall(r"\b(?=[A-Z0-9]*[A-Z])[A-Z0-9]{2,}\b", metin) if x not in _KISALTMA_DISI}
+    kelimeler = set(re.findall(r"[A-Za-z]+", metin))
+    for x in re.findall(r"\b(?=[A-Z0-9]*[A-Z])[A-Z0-9]{2,}\b", metin):
+        if x in _KISALTMA_DISI or x.lower() in _ING_STOP or x.lower() in _BAGLAC:
+            continue
+        if x.isalpha() and x not in _BILINEN_KISALTMA:
+            if len(x) >= 4 and re.search(r"[AEIOU]", x):                   # FINAL, FANTASY, DOOM: yazı stili, kısaltma değil
+                continue
+            if x.capitalize() in kelimeler or x.lower() in kelimeler:       # metnin başka yerinde normal yazılmış
+                continue
+        k.add(x)
     return k
 
 
@@ -320,7 +361,7 @@ def isim_sozlugu(basliklar, metin, model_isimleri=(), ogrenilen=()):
     def ekle(isim):
         isim = " ".join(str(isim).split())
         if len(isim) >= 2 and _isim_gecerli(isim):
-            sozluk.setdefault(isim.lower(), _baglac_kucult(isim))
+            sozluk.setdefault(isim.lower(), _baglac_kucult(_isim_normalle(isim)))
 
     for i in SABIT_OZEL_ISIMLER:
         ekle(i)
@@ -359,8 +400,16 @@ def _kalip(isim):
 
 
 def _isimleri_uygula(metin, sozluk):
+    """Özel isimleri doğru yazımlarıyla yerleştirir. Uzun isimler önce işlenir ve yerleştirilen bölgeye
+    sonraki (kısa) kayıtlar dokunamaz: "Slay the Spire" içindeki "the", "THE" kaydıyla bozulmaz."""
+    kaplanan, degisimler = [], []
     for anahtar in sorted(sozluk, key=len, reverse=True):
-        metin = _kalip(anahtar).sub(lambda m, v=sozluk[anahtar]: v, metin)
+        for m in _kalip(anahtar).finditer(metin):
+            if any(m.start() < e and bas < m.end() for bas, e in kaplanan):
+                continue
+            kaplanan.append((m.start(), m.end())); degisimler.append((m.start(), m.end(), sozluk[anahtar]))
+    for bas, e, v in sorted(degisimler, reverse=True):
+        metin = metin[:bas] + v + metin[e:]
     return metin
 
 
@@ -390,7 +439,7 @@ def baslik_duzelt(baslik, sozluk):
             if (p and baslik[p - 1] in "'’") or not onceki or onceki.endswith(":"):
                 continue
             if k[0].isupper() and k.lower() not in _KUCUK_KELIME:
-                yerel.setdefault(k.lower(), k)
+                yerel.setdefault(k.lower(), _isim_normalle(k))
     return _ilk_harf(_isimleri_uygula(_tr_kucuk(baslik), yerel), yerel)
 
 
@@ -638,9 +687,9 @@ def main():
     if once != len(arsiv):
         print(f"{once - len(arsiv)} haber, çıkarılan kaynak (Gameguru Mania) yüzünden silindi.", flush=True)
     ogrenilen = set(json.loads(OGRENILEN.read_text("utf-8"))) if OGRENILEN.exists() else set()
-    ogrenilen = {x for x in ogrenilen if _isim_gecerli(x)}      # önceki hatalı öğrenmeleri (ör. "VE") temizle
+    ogrenilen = {_isim_normalle(x) for x in ogrenilen if _isim_gecerli(x)}      # önceki hatalı öğrenmeleri ("VE", "FINAL FANTASY") düzelt
     ascii_say = 0
-    for h in [x for x in arsiv if not x.get("bd5")][:ONAR_LIMIT]:   # eski kayıtları sayfa metnine bakarak onar (başlık, özet, dil, eksik görsel)
+    for h in [x for x in arsiv if not x.get("bd6")][:ONAR_LIMIT]:   # eski kayıtları sayfa metnine bakarak onar (başlık, özet, dil, eksik görsel)
         try:
             metin, og = sayfa_cek(h["link"])
         except Exception:
@@ -657,7 +706,7 @@ def main():
         h["ozet"] = ozet_duzelt(h["ozet"], sozluk)
         h["onar_deneme"] = h.get("onar_deneme", 0) + 1
         if not dil_sorunlu(h["baslik_tr"], h["ozet"]) or h["onar_deneme"] >= 3:
-            h["bd5"] = True
+            h["bd6"] = True
     reddedilen = set(json.loads(REDDEDILEN.read_text("utf-8"))) if REDDEDILEN.exists() else set()
     idle = lambda l: hashlib.md5(l.encode()).hexdigest()
 
@@ -723,7 +772,7 @@ def main():
             ozet = ozet_duzelt(out["ozet"], sozluk)
             kullanilan = {v for v in sozluk.values() if v in baslik_tr and v not in SABIT_OZEL_ISIMLER}
             ogrenilen.update(v for v in kullanilan if _isim_gecerli(v) and not any(v != w and v in w for w in kullanilan))   # alt parçaları değil, tam ismi öğren
-            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd5=True, ozet=ozet, link=a["link"],
+            haber = dict(id=idle(a["link"]), baslik_tr=baslik_tr, bd6=True, ozet=ozet, link=a["link"],
                              kaynak=a["kaynak"], diger_kaynaklar=a["diger_kaynaklar"], gorsel=gorsel, puan=a["puan"],
                              linkler=linkler, basliklar=[m["baslik"] for m in a["uyeler"]], ts=a["ts"],
                              tarih=dt.datetime.now(TR).strftime("%d.%m.%Y %H:%M"))
