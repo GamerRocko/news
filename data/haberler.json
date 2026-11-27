@@ -1,5 +1,164 @@
 [
  {
+  "id": "a035bb710b42f68cbc0823a3c6031c71",
+  "baslik_tr": "Razer DeathAdder Essential siyah cuma indiriminde on beş dolara düştü",
+  "bd6": true,
+  "ozet": "Razer DeathAdder Essential oyuncu faresi, Amazon üzerinde gerçekleştirilen siyah cuma indirimleri kapsamında bugüne kadarki en düşük fiyatı olan on beş dolara geriledi. Altı bin dört yüz DPI ve kablolu özelliklere sahip olan fare, özellikle avuç içi ve rahat pençe tutuş şekliyle dikkat çekiyor.",
+  "link": "https://www.pcgamer.com/hardware/gaming-mice/the-razer-deathadder-essential-is-going-for-screw-it-why-not-money-this-black-friday-at-a-lowest-ever-price-of-just-usd15/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/x3bybbnoDaLVdibgFzzsDb-1920-80.jpg",
+  "puan": 4.04,
+  "linkler": [
+   "https://www.pcgamer.com/hardware/gaming-mice/the-razer-deathadder-essential-is-going-for-screw-it-why-not-money-this-black-friday-at-a-lowest-ever-price-of-just-usd15/"
+  ],
+  "basliklar": [
+   "The Razer DeathAdder Essential is at its lowest ever price of just $15 at Amazon this Black Friday"
+  ],
+  "ts": 1795710279.0,
+  "tarih": "27.11.2026 11:06"
+ },
+ {
+  "id": "47272794e05a2dcdd37523afe72a25dc",
+  "baslik_tr": "Scuf Valor Pro siyah cuma indiriminde şimdiye kadarki en düşük fiyatına düştü",
+  "bd6": true,
+  "ozet": "Kablosuz bağlantı desteği bulunmayan Scuf Valor Pro kontrolcüsü, siyah cuma indirimleri kapsamında Amazon'da yetmiş yedi dolara gerileyerek şimdiye kadarki en düşük fiyatını gördü. Xbox ve PC platformlarıyla uyumlu olan cihaz, Hall effect çubukları, arka butonları ve değiştirilebilir ön yüzeyi gibi üst düzey özellikler sunuyor.",
+  "link": "https://www.pcgamer.com/hardware/controllers/this-is-the-controller-id-go-for-to-level-up-my-gta-6-experience-this-black-friday-the-best-wired-gamepad-is-at-its-lowest-ever-price/",
+  "kaynak": "PC Gamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/F2AGBD5LEKB7eNGvxUofz3-1920-80.jpg",
+  "puan": 4.02,
+  "linkler": [
+   "https://www.pcgamer.com/hardware/controllers/this-is-the-controller-id-go-for-to-level-up-my-gta-6-experience-this-black-friday-the-best-wired-gamepad-is-at-its-lowest-ever-price/"
+  ],
+  "basliklar": [
+   "This is the controller I'd go for to level up my GTA 6 experience this Black Friday - the best wired gamepad at its lowest ever price"
+  ],
+  "ts": 1795709823.0,
+  "tarih": "27.11.2026 11:06"
+ },
+ {
+  "id": "37841d96fccd5af7ddb36da80848c27d",
+  "baslik_tr": "Ubisoft çalışanları şirket yönetiminin yapay zeka baskısı nedeniyle zor durumda olduğunu söylüyor",
+  "bd6": true,
+  "ozet": "Vertical Slice tarafından yayınlanan yeni bir rapora göre gizli kalmak isteyen Ubisoft çalışanları, şirket yönetiminin yapay zeka kullanımını zorunlu tuttuğunu belirtti. Yves Guillemot'nun bu teknolojiyi desteklediği ve yapay zeka kullanmamak isteyen çalışanların yöneticilerine mazeret sunmak zorunda olduğu ifade edildi.",
+  "link": "https://kotaku.com/ubisoft-ceo-ai-psychosis-slop-tech-yves-guillemot-assassins-creed-2001000601",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [
+   {
+    "ad": "Eurogamer",
+    "link": "https://www.eurogamer.net/ubisoft-reportedly-goes-all-in-on-company-wide-generative-ai-use-and-if-developers-dont-want-to-use-it-they-have-to-explain-why-in-detail"
+   }
+  ],
+  "gorsel": "https://kotaku.com/app/uploads/2025/08/Mirage.jpg",
+  "puan": 3.55,
+  "linkler": [
+   "https://kotaku.com/ubisoft-ceo-ai-psychosis-slop-tech-yves-guillemot-assassins-creed-2001000601",
+   "https://www.eurogamer.net/ubisoft-reportedly-goes-all-in-on-company-wide-generative-ai-use-and-if-developers-dont-want-to-use-it-they-have-to-explain-why-in-detail"
+  ],
+  "basliklar": [
+   "Report: Ubisoft CEO’s ‘AI Psychosis’ Is Demanding That Developers ‘Have To Have A Reason’ Not To Use The Slop Tech",
+   "Ubisoft reportedly goes all in on company-wide generative-AI use, and if developers don't want to use it, they have to explain why in detail"
+  ],
+  "ts": 1795696239.0,
+  "tarih": "27.11.2026 11:06"
+ },
+ {
+  "id": "366e31a4090d3506803ddeeac8c4ecd9",
+  "baslik_tr": "Steam'de yapay zeka kullanılmadan geliştirilen oyunlar için yeni bir etkinlik düzenleniyor",
+  "bd6": true,
+  "ozet": "Dev Land Marketing, All Ages of Geek ve Dark Cocooning gibi üçüncü taraf isimler tarafından Steam üzerinde yapay zeka kullanılmayan bağımsız yapımları öne çıkarmak amacıyla 'Games Without AI' etkinliği başlatıldı. 25 Kasım - 6 Aralık tarihleri arasında gerçekleşen bu etkinlik, geliştirme sürecinde yapay zeka barındırmayan oyunları bir araya getiriyor. Etkinliğe dahil olan katılımcılar, oyunların yapay zeka olmadan geliştirildiğine dair kanıtlar sunmak zorunda kaldı ve seçim süreci topluluk oylamasıyla yürütüldü. Yapay zeka içerikli içeriklerin mağazada artış gösterdiği bu dönemde, insan emeğini ve yaratıcılığını destekleyen bu tür etkinlikler oyuncular ve geliştiriciler tarafından dikkatle takip ediliyor.",
+  "link": "https://www.eurogamer.net/games-without-ai-steam-event",
+  "kaynak": "Eurogamer",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/games-without-AI.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.53,
+  "linkler": [
+   "https://www.eurogamer.net/games-without-ai-steam-event"
+  ],
+  "basliklar": [
+   "Fed up of Steam's lack of action regarding AI slop? Maybe you should take a look at the 'Games Without AI' event, instead"
+  ],
+  "ts": 1795695750.0,
+  "tarih": "27.11.2026 11:06"
+ },
+ {
+  "id": "5a15cfc41f4c7c95bd9e480f2a406415",
+  "baslik_tr": "Fable yapımcısı uzun geliştirme sürecinde her şeyin yolunda gitmediğini kabul etti",
+  "bd6": true,
+  "ozet": "Playground yöneticisi Ralph Fulton, Fable oyununun uzun ve zorlu geliştirme sürecinde her şeyin yolunda gitmediğini belirtti. Ekibin özgün vizyonunun korunduğunu ifade eden Fulton, modern oyuncu beklentilerini karşılamak için yalnızca eski üçlemeden değil, The Witcher 3 ve Assassin's Creed gibi yapımlardan da ilham aldıklarını açıkladı.",
+  "link": "https://www.rockpapershotgun.com/clearly-not-everything-has-gone-well-during-fables-lengthy-creation-says-playground-boss-but-the-original-vision-remains-intact-despite-taking-cues-from-other-rpgs",
+  "kaynak": "Rock Paper Shotgun",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assetsio.gnwcdn.com/fable-lengthy-development-drawing-inspiration-from-other-rpgs-01.jpg?width=690&quality=85&format=jpg&auto=webp",
+  "puan": 3.5,
+  "linkler": [
+   "https://www.rockpapershotgun.com/clearly-not-everything-has-gone-well-during-fables-lengthy-creation-says-playground-boss-but-the-original-vision-remains-intact-despite-taking-cues-from-other-rpgs"
+  ],
+  "basliklar": [
+   "\"Clearly not everything has gone well\" during Fable's lengthy creation, says Playground boss, but the \"original vision\" remains intact despite taking cues from other RPGs"
+  ],
+  "ts": 1795694820.0,
+  "tarih": "27.11.2026 11:07"
+ },
+ {
+  "id": "67390c8a6b3fa5b3ac9da0e3afb7d9bf",
+  "baslik_tr": "Team Ninja yapımcıları yapay zekanın sadece test süreçlerinde kullanılacağını belirtti",
+  "bd6": true,
+  "ozet": "Team Ninja yapımcıları Kohei Shibata ve Masakazu Hirayama, Gcon 2026 etkinliğinde zorluk ve adaletsizlik dengesi ile yapay zeka kullanımı hakkında konuştu. Stüdyonun yapay zekayı yalnızca kalite kontrol ve doğrulama gibi tekrarlayan görevlerde kullandığını belirten yapımcılar, yaratıcı kararların ve eğlence unsurunun insan eliyle şekillenmesi gerektiğini vurguladı.",
+  "link": "https://kotaku.com/team-ninja-ai-qa-difficulty-nioh-wo-long-koei-temco-capcom-2001000539",
+  "kaynak": "Kotaku",
+  "diger_kaynaklar": [],
+  "gorsel": "https://kotaku.com/app/uploads/2026/11/Wo-Long-Danfu-1280x720.jpg",
+  "puan": 3.43,
+  "linkler": [
+   "https://kotaku.com/team-ninja-ai-qa-difficulty-nioh-wo-long-koei-temco-capcom-2001000539"
+  ],
+  "basliklar": [
+   "Team Ninja Is Using AI For Quality Assurance, But Insists Creative Choices ‘Must Be Done By Humans’"
+  ],
+  "ts": 1795692649.0,
+  "tarih": "27.11.2026 11:07"
+ },
+ {
+  "id": "ce09b108445932c200edd123626c9386",
+  "baslik_tr": "GTA 6 oynayan PS5 sahipleri için hava durumu sorununu çözen geçici bir yöntem bulundu",
+  "bd6": true,
+  "ozet": "Rockstar, GTA 6 için hava durumu çeşitliliğini düzelten bir yama yayınlasa da bazı oyuncular bu sorunu yaşamaya devam ediyor. PS5 kullanıcıları, konsolun önbelleğini temizlemenin yamayı doğru çalıştırarak yağmur ve fırtınaların oyuna gelmesini sağladığını belirtiyor. Oyuncular bu yöntemin oyun kayıtlarını veya yüklenen oyunları silmediğini ifade ediyor.",
+  "link": "https://www.ign.com/articles/ps5-workaround-weather-gta-6",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/11/26/gtavi-55-1795692345300.jpg",
+  "puan": 3.42,
+  "linkler": [
+   "https://www.ign.com/articles/ps5-workaround-weather-gta-6"
+  ],
+  "basliklar": [
+   "GTA 6 Weather Still Not Varied Even After the Patch? PS5 Players Are Sharing a Method That May Help Rain and Thunderstorms Kick In"
+  ],
+  "ts": 1795692377.0,
+  "tarih": "27.11.2026 11:07"
+ },
+ {
+  "id": "f07432eedcc14b29ee52ae4ea0fef4e5",
+  "baslik_tr": "The Last of Us Part 2 Remastered için yapay zeka destekli çok oyunculu mod çıktı",
+  "bd6": true,
+  "ozet": "Mod geliştiricisi Kellie, Claude kodları kullanarak The Last of Us Part 2 Remastered için Twelve Weeks adlı ücretsiz ve açık kaynaklı bir çok oyunculu mod geliştirdi. Nexus Mods üzerinden erişilebilen bu mod, 4v4 takım tabanlı çatışmalar, yeni silahlar ve karakter özelleştirmesi gibi özellikler sunuyor. Daha önce benzer bir proje Sony tarafından engellenmiş olsa da, geliştirici kodlar açık kaynak olduğu için şirketin yapabileceği çok fazla şey olmadığını belirtiyor.",
+  "link": "https://www.ign.com/articles/new-multiplayer-mod-for-the-last-of-us-part-2",
+  "kaynak": "IGN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://assets-prd.ignimgs.com/2026/06/22/the-last-of-us-part-2-multiplayer-1782160463542.png",
+  "puan": 3.36,
+  "linkler": [
+   "https://www.ign.com/articles/new-multiplayer-mod-for-the-last-of-us-part-2"
+  ],
+  "basliklar": [
+   "Another Modder Uses AI to Make a Multiplayer Mode for The Last of Us Part 2 — Will Sony Shut This One Down, Too?"
+  ],
+  "ts": 1795690806.0,
+  "tarih": "27.11.2026 11:08"
+ },
+ {
   "id": "cf72de53baf77edea90926a73da5b0a4",
   "baslik_tr": "Citizen Sleeper yapımcısı oyunların insan yapımı olarak pazarlanacağı bir döneme girdiğimizi söylüyor",
   "bd6": true,
@@ -310,14 +469,21 @@
   "ozet": "Fatshark, Warhammer: Vermintide 2 için dahili geliştirici araçlarının halka açık olarak yayınlanacağını duyurdu. Aralık ayının başında gelecek güncellemeyle birlikte, modlu sunucularda oynayan oyuncular kendi yerel ilerlemelerini kaydedebilecekler. Ayrıca oyun Steam üzerinde yüzde doksan oranında indirimli olarak satışa sunulurken deneyim puanları da iki katına çıkarıldı. Öte yandan Versus modu sunucuları yeterince kullanılmadığı için kapatılıyor.",
   "link": "https://www.pcgamer.com/games/fps/vermintide-2-mod-tools-get-a-public-release-and-the-games-90-percent-off-on-steam-too/",
   "kaynak": "PC Gamer",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "PCGamesN",
+    "link": "https://www.pcgamesn.com/warhammer-vermintide-2/mod-tools-modding-realm-progression"
+   }
+  ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/SubVYEY5D6vgzjDNu7QSST-1920-80.jpg",
   "puan": 5.92,
   "linkler": [
-   "https://www.pcgamer.com/games/fps/vermintide-2-mod-tools-get-a-public-release-and-the-games-90-percent-off-on-steam-too/"
+   "https://www.pcgamer.com/games/fps/vermintide-2-mod-tools-get-a-public-release-and-the-games-90-percent-off-on-steam-too/",
+   "https://www.pcgamesn.com/warhammer-vermintide-2/mod-tools-modding-realm-progression"
   ],
   "basliklar": [
-   "Vermintide 2 mod tools get a public release, and the game's 90% off on Steam too"
+   "Vermintide 2 mod tools get a public release, and the game's 90% off on Steam too",
+   "Warhammer Vermintide 2 finally lifts modding restrictions, with new tools to \"build the future\""
   ],
   "ts": 1795742904.0,
   "tarih": "27.11.2026 05:06"
@@ -523,17 +689,23 @@
    {
     "ad": "GamesRadar",
     "link": "https://www.gamesradar.com/games/world-of-warcraft/blizzard-steps-in-as-world-of-warcraft-forever-fans-exploit-alterac-valley-for-reputation-but-pvp-players-think-its-a-little-too-late/"
+   },
+   {
+    "ad": "PCGamesN",
+    "link": "https://www.pcgamesn.com/world-of-warcraft/hotfix-patch-notes-revelation-nerf"
    }
   ],
   "gorsel": "https://cdn.mos.cms.futurecdn.net/DRAvip4buV4DMD7biWSmJ6-1920-80.jpg",
   "puan": 5.62,
   "linkler": [
    "https://www.pcgamer.com/games/world-of-warcraft/wow-forever-min-maxers-are-upset-that-its-40-player-pvp-mode-now-actually-requires-pvp-to-win/",
-   "https://www.gamesradar.com/games/world-of-warcraft/blizzard-steps-in-as-world-of-warcraft-forever-fans-exploit-alterac-valley-for-reputation-but-pvp-players-think-its-a-little-too-late/"
+   "https://www.gamesradar.com/games/world-of-warcraft/blizzard-steps-in-as-world-of-warcraft-forever-fans-exploit-alterac-valley-for-reputation-but-pvp-players-think-its-a-little-too-late/",
+   "https://www.pcgamesn.com/world-of-warcraft/hotfix-patch-notes-revelation-nerf"
   ],
   "basliklar": [
    "WoW: Forever min-maxers are upset that its 40-player PvP mode now actually requires PvP to win",
-   "Blizzard steps in as World of Warcraft: Forever fans exploit Alterac Valley for reputation"
+   "Blizzard steps in as World of Warcraft: Forever fans exploit Alterac Valley for reputation",
+   "New World of Warcraft Forever patch notes will make Druids, Hunters, and Paladins happy"
   ],
   "ts": 1795730700.0,
   "tarih": "27.11.2026 04:08"
@@ -3974,206 +4146,6 @@
   ],
   "ts": 1795532073.0,
   "tarih": "25.11.2026 13:20",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "27820d761222fb0c5414e02ce547a1c5",
-  "baslik_tr": "Scott Pilgrim ve Ramona Flowers karakterleri bu hafta Fortnite oyununa geliyor",
-  "bd5": true,
-  "ozet": "Scott Pilgrim ve Ramona Flowers, popüler savaş arenası oyununun yeni iş birliğiyle bu hafta içinde mağazadaki yerini alacak. Epic Games tarafından yayınlanan tanıtım videosunda, grafik roman tasarımlarına sahip karakterlerin kostümleri oyunculara gösterildi. Öte yandan, aralık ayının başında büyük bir canlı etkinlik düzenlenecek ve oyuna yeni içerikler eklenecek.",
-  "link": "https://www.ign.com/articles/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/24/consider-the-fight-begun-scott-pilgrim-is-coming-to-fortnite-00-00-43-1795531859797.png",
-  "puan": 3.57,
-  "linkler": [
-   "https://www.ign.com/articles/scott-pilgrim-and-ramona-flowers-join-fortnite-this-week"
-  ],
-  "basliklar": [
-   "Scott Pilgrim and Ramona Flowers Join Fortnite This Week"
-  ],
-  "ts": 1795532011.0,
-  "tarih": "25.11.2026 13:22",
-  "onar_deneme": 3,
-  "bd6": true
- },
- {
-  "id": "7492968aec8ce02456d35614516271a7",
-  "baslik_tr": "Doom ortak yapımcısı John Romero, Columbine katliamı hakkında konuştu",
-  "bd5": true,
-  "ozet": "Doom oyununun ortak yaratıcısı John Romero, 1999 yılındaki Columbine lisesi katliamının ardından oyunun suçlanması süreciyle ilgili açıklamalarda bulundu. Medyanın oyunu hedef göstermesini Dungeons & Dragons'a geçmişte yapılan suçlamalara benzeten Romero, şiddetin sebebinin oyunlar olmadığını, aile hayatı, beyin kimyası veya akran zorbalığı gibi farklı etkenlerden kaynaklandığını vurguladı.",
-  "link": "https://www.videogameschronicle.com/news/it-wasnt-the-game-it-was-something-else-john-romero-reflects-on-doom-being-blamed-for-the-columbine-massacre/",
-  "kaynak": "VGC",
-  "diger_kaynaklar": [],
-  "gorsel": "https://www.videogameschronicle.com/files/2024/08/doom.jpg",
-  "puan": 3.56,
-  "linkler": [
-   "https://www.videogameschronicle.com/news/it-wasnt-the-game-it-was-something-else-john-romero-reflects-on-doom-being-blamed-for-the-columbine-massacre/"
-  ],
-  "basliklar": [
-   "‘It wasn’t the game, it was something else’: John Romero reflects on Doom being blamed for the Columbine Massacre"
-  ],
-  "ts": 1795531754.0,
-  "tarih": "25.11.2026 13:22",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "b6b05aceafcd59e31c4092031aa7ebf3",
-  "baslik_tr": "Nvidia yöneticisi Jensen Huang şirkete dönüşünden önce yeni ilişkilerini itiraf etti",
-  "bd5": true,
-  "ozet": "Nvidia CEO'su Jensen Huang, yaşanan skandalların ardından görevine geri dönmeden hemen önce yönetim kuruluna yeni ilişkileri olduğunu itiraf etti. Şirketin yönetim kurulu, ABD hükümetinden alınan görüşler doğrultusunda Huang'ın yeniden göreve gelmesinin ulusal güvenlik riski oluşturmadığını belirtti.",
-  "link": "https://www.gamesradar.com/hardware/nvidia-ceo-jensen-huang-reportedly-admitted-to-more-affairs-before-the-board-ahead-of-its-unanimous-vote-to-reinstate-him/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/mFVUBUBcP9kQMUkSjGkfma-1920-80.jpg",
-  "puan": 3.5,
-  "linkler": [
-   "https://www.gamesradar.com/hardware/nvidia-ceo-jensen-huang-reportedly-admitted-to-more-affairs-before-the-board-ahead-of-its-unanimous-vote-to-reinstate-him/"
-  ],
-  "basliklar": [
-   "Nvidia CEO Jensen Huang reportedly admitted to more affairs before the board ahead of his return"
-  ],
-  "ts": 1795530085.0,
-  "tarih": "25.11.2026 13:23",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "a1762549b698558827d41484b7a808f1",
-  "baslik_tr": "Square Enix, Final Fantasy 14 için kuzey amerika ve avrupa arasında geçici veri merkezi seyahati duyurdu",
-  "bd5": true,
-  "ozet": "Square Enix, Final Fantasy 14 oyununda yepyeni Evercold genişlemesinin çıkışıyla yaşanabilecek sunucu yoğunluğunu azaltmak amacıyla geçici bir hamle yapıyor. Stüdyo, 1 Aralık 2026 tarihinde yapılacak bakım ile birlikte Kuzey Amerika ve Avrupa veri merkezleri arasında bölgeler arası veri merkezi seyahatini geçici olarak etkinleştirecek. Oyuncu geri bildirimlerine göre bu özelliğin kalıcı hale getirilmesi veya diğer bölgelere de genişletilmesi ilerleyen dönemde değerlendirilecek.",
-  "link": "https://www.gamesradar.com/games/final-fantasy/final-fantasy-14-party-finder-chaos-is-about-to-hit-an-all-time-high-as-square-enix-readies-open-travel-between-na-and-europe-but-only-temporarily/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/YmkAKZqb5VcbvMzQFZABXh-1920-80.jpg",
-  "puan": 3.48,
-  "linkler": [
-   "https://www.gamesradar.com/games/final-fantasy/final-fantasy-14-party-finder-chaos-is-about-to-hit-an-all-time-high-as-square-enix-readies-open-travel-between-na-and-europe-but-only-temporarily/"
-  ],
-  "basliklar": [
-   "Final Fantasy 14 party finder chaos to hit an all-time high as devs prepare to \"open travel\" between NA and Europe servers"
-  ],
-  "ts": 1795529495.0,
-  "tarih": "25.11.2026 13:23",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "fbec5293aa6c7f8264200f5d55650507",
-  "baslik_tr": "Capcom bilimkurgu nişancı oyunu Exoprimal kapılarını kapatıyor",
-  "bd5": true,
-  "ozet": "Capcom, bilimkurgu temalı dinozor nişancı oyunu Exoprimal'ın 29 Eylül 2027 tarihinde tüm bölgelerde kapatılacağını açıkladı. Oyun ve tüm indirilebilir içerikleri 30 Mart'ta mağazalardan kaldırılacak ve çevrimdışı desteği bulunmadığı için kapanışın ardından tamamen oynanamaz hale gelecek.",
-  "link": "https://www.eurogamer.net/exo-primal-shutting-down-2027",
-  "kaynak": "Eurogamer",
-  "diger_kaynaklar": [
-   {
-    "ad": "GamesRadar",
-    "link": "https://www.gamesradar.com/games/action/capcom-is-shutting-down-online-dinosaur-shooter-exoprimal-next-year-4-years-after-it-first-released/"
-   },
-   {
-    "ad": "Rock Paper Shotgun",
-    "link": "https://www.rockpapershotgun.com/capcom-dinosaur-shooter-exoprimals-servers-will-go-extinct-next-year-as-shutdown-meteor-looms"
-   },
-   {
-    "ad": "VGC",
-    "link": "https://www.videogameschronicle.com/news/capcoms-online-dinosaur-shooter-exoprimal-is-officially-shutting-down-next-year/"
-   },
-   {
-    "ad": "Game Informer",
-    "link": "https://gameinformer.com/2026/11/25/exoprimal-capcoms-dinosaur-hero-shooter-will-go-offline-and-become-unplayable-next-year"
-   },
-   {
-    "ad": "PC Gamer",
-    "link": "https://www.pcgamer.com/games/third-person-shooter/capcoms-quirky-dinosaur-fighting-hero-shooter-is-shutting-down-in-2027/"
-   }
-  ],
-  "gorsel": "https://assetsio.gnwcdn.com/exoprimal-header_LnCNkXk.jpg?width=690&quality=85&format=jpg&auto=webp",
-  "puan": 5.96,
-  "linkler": [
-   "https://www.eurogamer.net/exo-primal-shutting-down-2027",
-   "https://www.gamesradar.com/games/action/capcom-is-shutting-down-online-dinosaur-shooter-exoprimal-next-year-4-years-after-it-first-released/",
-   "https://www.rockpapershotgun.com/capcom-dinosaur-shooter-exoprimals-servers-will-go-extinct-next-year-as-shutdown-meteor-looms",
-   "https://www.videogameschronicle.com/news/capcoms-online-dinosaur-shooter-exoprimal-is-officially-shutting-down-next-year/",
-   "https://gameinformer.com/2026/11/25/exoprimal-capcoms-dinosaur-hero-shooter-will-go-offline-and-become-unplayable-next-year",
-   "https://www.pcgamer.com/games/third-person-shooter/capcoms-quirky-dinosaur-fighting-hero-shooter-is-shutting-down-in-2027/"
-  ],
-  "basliklar": [
-   "Capcom's sci-fi dinosaur shooter Exoprimal is shutting down next year",
-   "Capcom is shutting down online dinosaur shooter Exoprimal next year, 4 years after it first released",
-   "Capcom dinosaur shooter Exoprimal's servers will go extinct next year, as shutdown meteor looms",
-   "Capcom’s online dinosaur shooter Exoprimal is officially shutting down next year",
-   "Exoprimal, Capcom's Dinosaur Hero Shooter, Will Go Offline And Become Unplayable Next Year",
-   "Capcom's quirky dinosaur-fighting hero shooter is shutting down in 2027"
-  ],
-  "ts": 1795599880.0,
-  "tarih": "25.11.2026 13:06",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "8780732efdcdd2fdbb7ea85e340758e0",
-  "baslik_tr": "Gravity Well stüdyosu finansman bulamayarak faaliyetlerini durdurdu",
-  "bd5": true,
-  "ozet": "Respawn ve Infinity Ward kıdemlileri tarafından kurulan Gravity Well, finansman bulamayarak askıya alındı. Stüdyo, Unreal Engine 5 ile yeni bir fikri mülkiyet geliştiriyordu.",
-  "link": "https://www.gamesindustry.biz/gravity-well-enters-hibernation-after-failing-to-secure-funding",
-  "kaynak": "GamesIndustry.biz",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assetsio.gnwcdn.com/concept_gw_piece_2_R25tGX13H-(1).jpg?width=690&quality=85&format=jpg&auto=webp",
-  "puan": 5.9,
-  "linkler": [
-   "https://www.gamesindustry.biz/gravity-well-enters-hibernation-after-failing-to-secure-funding"
-  ],
-  "basliklar": [
-   "Gravity Well enters hibernation after failing to secure funding"
-  ],
-  "ts": 1795598150.0,
-  "tarih": "25.11.2026 13:06",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "b8962f26542fb87c1bd83475fb6dbbde",
-  "baslik_tr": "Corsair Scimitar Elite Wireless SE oyuncu faresi siyah cuma indiriminde yarı yarıya ucuzladı",
-  "bd5": true,
-  "ozet": "Corsair Scimitar Elite Wireless SE modeli, siyah cuma indirimleri kapsamında yarı fiyatına düşerek 70 dolara satılmaya başlandı. Kablosuz MMO faresi, üzerindeki programlanabilir yan tuşların Stream Deck yazılımıyla entegre çalışabilmesi sayesinde oyun dışında kısayollar ve yayın kontrolü için de kullanılabiliyor. Ürün, 33.000 DPI optik sensöre ve ergonomik bir yapıya sahip.",
-  "link": "https://www.pcgamer.com/hardware/gaming-mice/the-best-mmo-gaming-mouse-is-half-off-for-black-friday-and-it-also-works-as-a-stream-deck/",
-  "kaynak": "PC Gamer",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/9LZViBT3Fm8pWwz2BhsjJW-1920-80.jpg",
-  "puan": 3.72,
-  "linkler": [
-   "https://www.pcgamer.com/hardware/gaming-mice/the-best-mmo-gaming-mouse-is-half-off-for-black-friday-and-it-also-works-as-a-stream-deck/"
-  ],
-  "basliklar": [
-   "The best MMO gaming mouse is half off for Black Friday, and it also works as a Stream Deck",
-   "The best MMO gaming mouse is half off at Amazon for Black Friday, and it is perfectly suited to streamers"
-  ],
-  "ts": 1795535450.0,
-  "tarih": "25.11.2026 13:06",
-  "onar_deneme": 1,
-  "bd6": true
- },
- {
-  "id": "459abfcc6c3a096c479d57444eabd743",
-  "baslik_tr": "Donald Trump, Jensen Huang'ın Nvidia'ya dönüşünde rol oynadığını açıkladı",
-  "bd5": true,
-  "ozet": "Amerika Birleşik Devletleri Başkanı Donald Trump, Jensen Huang'ın Nvidia CEO'su olarak göreve geri dönmesini sağlayan anlaşmayı kendisinin yaptığını belirtti. Nvidia yönetim kurulu kararda ABD hükümetinin katkısı olduğunu açıklarken, siyasetçiler ihracat kontrolleri ve ulusal güvenlik konularında şirketten açıklama talep ediyor.",
-  "link": "https://www.ign.com/articles/i-made-the-deal-president-trump-takes-credit-for-jensen-huangs-return-to-nvidia-posts-bizarre-ai-image-to-celebrate",
-  "kaynak": "IGN",
-  "diger_kaynaklar": [],
-  "gorsel": "https://assets-prd.ignimgs.com/2026/11/24/gettyimages-2212187921-1795534908924.jpg",
-  "puan": 3.71,
-  "linkler": [
-   "https://www.ign.com/articles/i-made-the-deal-president-trump-takes-credit-for-jensen-huangs-return-to-nvidia-posts-bizarre-ai-image-to-celebrate"
-  ],
-  "basliklar": [
-   "'I Made the Deal' – President Trump Takes Credit for Jensen Huang's Return to Nvidia, Posts Bizarre AI Image to Celebrate"
-  ],
-  "ts": 1795535136.0,
-  "tarih": "25.11.2026 13:06",
   "onar_deneme": 1,
   "bd6": true
  }
