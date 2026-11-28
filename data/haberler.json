@@ -1,5 +1,62 @@
 [
  {
+  "id": "e37e693851eeff6569767ee7404bf3f8",
+  "baslik_tr": "BioWare yapımcısı Mark Darrah, Mass Effect Andromeda geliştirme sürecindeki hataları anlattı",
+  "bd6": true,
+  "ozet": "Eski BioWare çalışanı Mark Darrah, bir röportajda Mass Effect Andromeda oyununun başarısızlığında prosedürel gezegen oluşturma sisteminin çok uzun süre kovalanmasının etkili olduğunu belirtti. Darrah, bu özelliğin çok geç iptal edildiğini ve içerik eksikliğine yol açtığını ifade etti.",
+  "link": "https://www.gamesradar.com/games/mass-effect/former-bioware-lead-says-mass-effect-andromeda-devs-chased-starfield-style-procedural-planet-generation-for-way-too-long/",
+  "kaynak": "GamesRadar",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/taWsJQeFLFmMUfiVYMsgGR-1920-80.jpg",
+  "puan": 5.9,
+  "linkler": [
+   "https://www.gamesradar.com/games/mass-effect/former-bioware-lead-says-mass-effect-andromeda-devs-chased-starfield-style-procedural-planet-generation-for-way-too-long/"
+  ],
+  "basliklar": [
+   "BioWare veteran says Mass Effect Andromeda chased procedural planet generation for way too long"
+  ],
+  "ts": 1795871830.0,
+  "tarih": "28.11.2026 17:06"
+ },
+ {
+  "id": "27f9d82d80fb9048d0c24ffc79f0d4c3",
+  "baslik_tr": "Marvel Rivals, Avengers: Doomsday sezonu için Ateez grubuyla ortaklık kuruyor",
+  "bd6": true,
+  "ozet": "Marvel Rivals, devam eden Avengers: Doomsday sezonunu kutlamak için Güney Koreli müzik grubu Ateez ile ortaklık duyurdu. 4 Aralık'ta çıkacak olan Doomsday adlı şarkı, oyunun yönetici yapımcısı Danny Koo tarafından ortaklaşa yazıldı. Bu iş birliği, Overwatch oyununun daha önce Le Sserafim ile yaptığı benzer ortaklıkları hatırlatıyor.",
+  "link": "https://www.gamesradar.com/games/third-person-shooter/marvel-rivals-takes-another-page-from-overwatchs-playbook-this-time-with-a-k-pop-collab-promoting-its-avengers-doomsday-season/",
+  "kaynak": "GamesRadar",
+  "diger_kaynaklar": [],
+  "gorsel": "https://cdn.mos.cms.futurecdn.net/qXXY8ssAujNgLsAzqSA8CU-1920-80.jpg",
+  "puan": 5.77,
+  "linkler": [
+   "https://www.gamesradar.com/games/third-person-shooter/marvel-rivals-takes-another-page-from-overwatchs-playbook-this-time-with-a-k-pop-collab-promoting-its-avengers-doomsday-season/"
+  ],
+  "basliklar": [
+   "Marvel Rivals takes another page from Overwatch with a K-pop collab promoting Avengers: Doomsday"
+  ],
+  "ts": 1795868223.0,
+  "tarih": "28.11.2026 17:06"
+ },
+ {
+  "id": "47b303a327998a75da634a2c597ccc48",
+  "baslik_tr": "Tinkerlands oyunu için ücretsiz hafta sonu ve büyük güncelleme duyuruldu",
+  "bd6": true,
+  "ozet": "Terraria benzeri hayatta kalma yapımcısı Tinkerlands, oyunculara oyunun tamamını ve Seas of Fortune güncellemesinin test sürümünü ücretsiz deneme fırsatı sunuyor. Beş yeni ada, gemi inşa etme, korsan sözleşmeleri ve bine yakın yeni eşya içeren bu büyük yama öncesindeki test süreci devam ederken, yapım aynı zamanda indirimli fiyatıyla da dikkat çekiyor.",
+  "link": "https://www.pcgamesn.com/tinkerlands/free-weekend-seas-of-fortune-playtest",
+  "kaynak": "PCGamesN",
+  "diger_kaynaklar": [],
+  "gorsel": "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2026/11/tinkerlands-update-seas-of-fortune-free-weekend-playtest.jpg",
+  "puan": 5.77,
+  "linkler": [
+   "https://www.pcgamesn.com/tinkerlands/free-weekend-seas-of-fortune-playtest"
+  ],
+  "basliklar": [
+   "Co-op survival crafter Tinkerlands gets its biggest update yet, and you can try the whole game for free to celebrate"
+  ],
+  "ts": 1795868097.0,
+  "tarih": "28.11.2026 17:06"
+ },
+ {
   "id": "f64745606703f60bf1b0abb95b731684",
   "baslik_tr": "Rockstar Games çalışanları bile GTA 6 oyununun çıkış gününün bir gün geleceğine inanmakta zorlanmış",
   "bd6": true,
@@ -276,17 +333,23 @@
    {
     "ad": "GamesRadar",
     "link": "https://www.gamesradar.com/games/open-world/fans-fear-for-simpsons-hit-and-run-remake-after-unannounced-game-from-veterans-behind-the-og-is-canceled-months-after-series-creator-matt-groening-teased-a-comeback/"
+   },
+   {
+    "ad": "IGN",
+    "link": "https://www.ign.com/articles/radical-entertainment-layoffs-simpsons-hit-run-remake-cancellation"
    }
   ],
   "gorsel": "https://www.videogameschronicle.com/files/2023/01/The-Simpsons-Hit-and-Run.jpg",
   "puan": 3.85,
   "linkler": [
    "https://www.videogameschronicle.com/news/the-simpsons-hit-run-remake-may-have-been-cancelled-as-developer-drops-hints-they-were-working-on-it/",
-   "https://www.gamesradar.com/games/open-world/fans-fear-for-simpsons-hit-and-run-remake-after-unannounced-game-from-veterans-behind-the-og-is-canceled-months-after-series-creator-matt-groening-teased-a-comeback/"
+   "https://www.gamesradar.com/games/open-world/fans-fear-for-simpsons-hit-and-run-remake-after-unannounced-game-from-veterans-behind-the-og-is-canceled-months-after-series-creator-matt-groening-teased-a-comeback/",
+   "https://www.ign.com/articles/radical-entertainment-layoffs-simpsons-hit-run-remake-cancellation"
   ],
   "basliklar": [
    "The Simpsons Hit & Run remake may have been cancelled as developer seemingly hints they were working on it",
-   "Fans fear for Simpsons Hit & Run remake after unannounced game from devs behind the OG is canceled"
+   "Fans fear for Simpsons Hit & Run remake after unannounced game from devs behind the OG is canceled",
+   "Concern for Rumored The Simpsons: Hit & Run Remake Amid Radical Game Cancelation"
   ],
   "ts": 1795784029.0,
   "tarih": "28.11.2026 09:07"
@@ -1155,18 +1218,24 @@
    {
     "ad": "Rock Paper Shotgun",
     "link": "https://www.rockpapershotgun.com/rumoured-simpsons-hit-run-remake-could-be-dead-in-the-water-as-new-radical-games-devs-suggest-their-unannounced-games-been-cancelled"
+   },
+   {
+    "ad": "PC Gamer",
+    "link": "https://www.pcgamer.com/gaming-industry/a-purported-remake-of-the-simpsons-hit-and-run-may-have-been-scrapped-after-a-developer-says-their-project-was-part-of-a-gaggle-of-cancellations/"
    }
   ],
   "gorsel": "https://assetsio.gnwcdn.com/OOgTcp23xRHycNyLw2Zdyj0nrVKNWh.jpg?width=690&quality=85&format=jpg&auto=webp",
   "puan": 8.75,
   "linkler": [
    "https://www.eurogamer.net/simpsons-hit-and-run-remake-rumored-cancelled",
-   "https://www.rockpapershotgun.com/rumoured-simpsons-hit-run-remake-could-be-dead-in-the-water-as-new-radical-games-devs-suggest-their-unannounced-games-been-cancelled"
+   "https://www.rockpapershotgun.com/rumoured-simpsons-hit-run-remake-could-be-dead-in-the-water-as-new-radical-games-devs-suggest-their-unannounced-games-been-cancelled",
+   "https://www.pcgamer.com/gaming-industry/a-purported-remake-of-the-simpsons-hit-and-run-may-have-been-scrapped-after-a-developer-says-their-project-was-part-of-a-gaggle-of-cancellations/"
   ],
   "basliklar": [
    "Rumored The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
    "Rumoured Simpsons: Hit & Run remake could be dead in the water, as New Radical Games devs suggest their unannounced game's been cancelled",
-   "Rumoured The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled"
+   "Rumoured The Simpsons: Hit & Run remake may be in trouble after one developer says their \"mind-blowingly awesome\" project is cancelled",
+   "A purported remake of The Simpsons: Hit & Run may have been scrapped, after a developer says their project was part of 'a gaggle of cancellations'"
   ],
   "ts": 1795802900.0,
   "tarih": "27.11.2026 23:06"
@@ -1760,14 +1829,21 @@
   "ozet": "GTA 6 oyununda oyuncuların sevgisini kazanan Mandy karakterinin geçmişte Jason ile bir ilişkisi olduğu ortaya çıktı. Oyundaki bazı diyaloglar ve meditasyon sahneleri, Jason ile Mandy'nin daha önceden birlikte olduğunu doğruluyor. Ayrıca Lucia karakterinin de Mandy ile yüzleştiği sahneler hikayenin detayları arasında yer alıyor.",
   "link": "https://www.ign.com/articles/it-turns-out-jason-might-have-a-history-with-mandy-in-gta-6-after-all",
   "kaynak": "IGN",
-  "diger_kaynaklar": [],
+  "diger_kaynaklar": [
+   {
+    "ad": "Eurogamer",
+    "link": "https://www.eurogamer.net/gta-6-jason-mandy-history-lucia-meditation-dialogue"
+   }
+  ],
   "gorsel": "https://assets-prd.ignimgs.com/2026/11/27/mandymain-1795783965057.jpg",
   "puan": 5.85,
   "linkler": [
-   "https://www.ign.com/articles/it-turns-out-jason-might-have-a-history-with-mandy-in-gta-6-after-all"
+   "https://www.ign.com/articles/it-turns-out-jason-might-have-a-history-with-mandy-in-gta-6-after-all",
+   "https://www.eurogamer.net/gta-6-jason-mandy-history-lucia-meditation-dialogue"
   ],
   "basliklar": [
-   "It Turns Out Jason Might Have a History With Mandy in GTA 6 After All"
+   "It Turns Out Jason Might Have a History With Mandy in GTA 6 After All",
+   "It looks like GTA 6's Jason and Mandy might have had a history after all"
   ],
   "ts": 1795784006.0,
   "tarih": "27.11.2026 17:06"
@@ -3960,77 +4036,6 @@
    "The best Black Friday deals for Zelda fans live: all the accessories, merch and collectables you're looking for"
   ],
   "ts": 1795694152.0,
-  "tarih": "26.11.2026 15:06"
- },
- {
-  "id": "f40a1535da3ac9b7fd5b01ba8e693f9d",
-  "baslik_tr": "NielsenIQ verilerine göre GTA 6, ingiltere'deki oyun pazarının gelirini uçurdu",
-  "bd6": true,
-  "ozet": "NielsenIQ verilerine göre Grand Theft Auto 6, ingiltere'de çıkış yaptığı üç günlük dönemde fiziksel satışlardan 32 milyon sterlin elde ederek toplam oyun perakende gelirini yüzde 99 oranında artırdı. Oyunun kutulu sürümü disk içermese de pazarın en büyük çıkışlarından birine imza attı. Bu devasa çıkış aynı zamanda konsol donanım, aksesuar ve kol satışlarında da büyük bir patlama yaşanmasını sağladı.",
-  "link": "https://www.gamesindustry.biz/nielseniq-gta-6-boosts-uk-games-retail-revenue-by-99-to-142m-during-launch-period",
-  "kaynak": "GamesIndustry.biz",
-  "diger_kaynaklar": [
-   {
-    "ad": "Eurogamer",
-    "link": "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk"
-   }
-  ],
-  "gorsel": "https://assetsio.gnwcdn.com/jason-lucia-bank.png?width=690&quality=85&format=jpg&auto=webp",
-  "puan": 5.98,
-  "linkler": [
-   "https://www.gamesindustry.biz/nielseniq-gta-6-boosts-uk-games-retail-revenue-by-99-to-142m-during-launch-period",
-   "https://www.eurogamer.net/gta-6-boxed-physical-sales-uk"
-  ],
-  "basliklar": [
-   "NielsenIQ: GTA 6 boosts UK games retail revenue by 99% to £142m during launch period",
-   "GTA 6 causes surge in UK physical game sales, despite there being no disc in the box"
-  ],
-  "ts": 1795694150.0,
-  "tarih": "26.11.2026 15:06"
- },
- {
-  "id": "49c8f056378452ef563bbc1846714091",
-  "baslik_tr": "Ubisoft, Skull and Bones için yapılan aaaa tanımının yanıltıcı olmadığını savundu",
-  "bd6": true,
-  "ozet": "Ubisoft, korsan rol yapma oyunu Skull and Bones için söylenen aaaa tanımının yanıltıcı olmadığını, bunun yalnızca abartılı ve öznel ifadeler içeren klasik bir reklam dili olduğunu belirtti. Şirket, açılan tüketici hakları davasında bu ifadelerin gerçeği yansıtmadığına dair somut bir kanıt bulunmadığını savundu. Ağustos ayında hakim Ubisoft lehine karar verse de davanın Kaliforniya'da yeniden açılabileceği ifade ediliyor.",
-  "link": "https://www.gamesradar.com/games/action/ubisoft-argued-calling-skull-and-bones-an-aaaa-game-wasnt-misleading-but-classic-puffery-not-intended-to-be-taken-as-fact-in-a-lawsuit/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [
-   {
-    "ad": "VGC",
-    "link": "https://www.videogameschronicle.com/news/ubisoft-defends-calling-skull-bones-a-quadruple-a-game-in-lawsuit/"
-   }
-  ],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/aeanSvhUXXSoE2WLPFWVqB-1920-80.jpg",
-  "puan": 5.97,
-  "linkler": [
-   "https://www.gamesradar.com/games/action/ubisoft-argued-calling-skull-and-bones-an-aaaa-game-wasnt-misleading-but-classic-puffery-not-intended-to-be-taken-as-fact-in-a-lawsuit/",
-   "https://www.videogameschronicle.com/news/ubisoft-defends-calling-skull-bones-a-quadruple-a-game-in-lawsuit/"
-  ],
-  "basliklar": [
-   "Ubisoft argued calling Skull and Bones a AAAA game wasn't \"misleading,\" but \"classic puffery\"",
-   "Ubisoft defends calling Skull & Bones a ‘quadruple-A’ game in lawsuit"
-  ],
-  "ts": 1795694021.0,
-  "tarih": "26.11.2026 15:06"
- },
- {
-  "id": "2b4ee68a5111e1cc22483aa276c4f623",
-  "baslik_tr": "Aeterna Lucis geliştiricileri, Hollow Knight: Silksong çakışmasına rağmen çıkış tarihini ertelemeyecek",
-  "bd6": true,
-  "ozet": "Aeterna Lucis geliştiricileri, Hollow Knight: Silksong duyurusu yüzünden oyunlarını daha önce ertelediklerini ancak Team Cherry ekibinin yeni yayınıyla çakışmasına rağmen bu kez tarihlerini değiştirmeyeceklerini açıkladı. Aralık ayında çıkacak yapım, oyuncuları daha fazla bekletmemek adına planlandığı gibi raflardaki yerini alacak.",
-  "link": "https://www.gamesradar.com/games/action/hollow-knight-silksong-delayed-this-metroidvania-once-but-its-devs-arent-letting-team-cherrys-sea-of-sorrows-broadcast-move-them-a-second-time-were-staying-put/",
-  "kaynak": "GamesRadar",
-  "diger_kaynaklar": [],
-  "gorsel": "https://cdn.mos.cms.futurecdn.net/dMHK7T7ccjFjyV5QbRHtCf-1920-80.jpg",
-  "puan": 5.96,
-  "linkler": [
-   "https://www.gamesradar.com/games/action/hollow-knight-silksong-delayed-this-metroidvania-once-but-its-devs-arent-letting-team-cherrys-sea-of-sorrows-broadcast-move-them-a-second-time-were-staying-put/"
-  ],
-  "basliklar": [
-   "Hollow Knight: Silksong delayed this Metroidvania once, but its devs refuse to move a second time"
-  ],
-  "ts": 1795693627.0,
   "tarih": "26.11.2026 15:06"
  }
 ]
